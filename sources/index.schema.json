@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/glowElephant/context-forge/sources/index.schema.json",
+  "title": "context-forge sources index",
+  "type": "object",
+  "required": ["version", "updated_at", "sources"],
+  "properties": {
+    "version": { "type": "integer", "const": 1 },
+    "updated_at": { "type": "string", "format": "date" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["upstream", "fork", "category", "tier"],
+        "properties": {
+          "upstream": { "type": "string", "format": "uri" },
+          "fork":     { "type": "string", "format": "uri" },
+          "name":     { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "claude-md", "agents-md", "skills", "conventions",
+              "multi-agent", "prompts", "spec-driven", "mcp", "boilerplate"
+            ]
+          },
+          "tier": { "type": "integer", "enum": [1, 2, 3] },
+          "stars": { "type": "integer", "minimum": 0 },
+          "pushed_at": { "type": "string", "format": "date" },
+          "archived": { "type": "boolean" },
+          "license":  { "type": "string" },
+          "added_at": { "type": "string", "format": "date" },
+          "notes":    { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
