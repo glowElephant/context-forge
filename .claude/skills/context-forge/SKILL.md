@@ -8,7 +8,15 @@ description: |
 
 Auto-harness-engineering for AI coding agents. Turns a 5-minute project discussion into a fully context-engineered GitHub repository.
 
-**Announce at start:** "Using context-forge to bootstrap a harness-engineered repo for your project."
+**Announce at start:** "Using context-forge to bootstrap a harness-engineered repo for your project." (Translate to the user's language — see "Language matching" below.)
+
+## Language matching
+
+Detect the user's language from their first message and respond in that language for ALL user-facing output (announce message, fixed questions, free discussion, Phase 3 proposal, Phase 4 prompts, Phase 6 hand-off). Code blocks, file paths, command names, and frontmatter keys stay in English. Catalog entry names (e.g., `gstack-claude-toolkit`) stay as-is.
+
+If the user switches language mid-flow, switch with them. If unclear, ask once.
+
+The example output blocks in this skill are written in English; translate them when speaking to the user.
 
 ## Hard prerequisites
 
