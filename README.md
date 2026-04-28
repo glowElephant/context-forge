@@ -65,16 +65,19 @@ v2 will broaden to domain conventions (game engines, mobile, web, backend, ML, s
 
 ## Status
 
-🚧 **Active development.** Design phase complete.
+✅ **v1.0.0 released** ([release notes](https://github.com/glowElephant/context-forge/releases/tag/v1.0.0))
 
 - [x] Design specification
-- [x] Candidate repositories curated (69 v1 + 210 v2)
-- [ ] Forking the v1 catalog sources
-- [ ] `/context-forge` slash command implementation
-- [ ] Catalog frontmatter authoring
-- [ ] Quarterly auto-discovery job
+- [x] Candidate repositories curated (67 v1 + 210 v2)
+- [x] Forking the v1 catalog sources (67/67)
+- [x] `/context-forge` slash command implementation
+- [x] Catalog frontmatter authoring (15 seeded entries)
+- [ ] End-to-end smoke test (manual, fresh-session required)
+- [ ] Automated catalog extraction from forked sources (v1.5)
+- [ ] Quarterly auto-discovery job (v1.5)
+- [ ] v2 domain expansion (game/mobile/web/backend/ML/security)
 
-Track progress in [`docs/specs/`](./docs/specs).
+Track progress in [`docs/specs/`](./docs/specs) and [`docs/plans/`](./docs/plans).
 
 ## Quick start
 
