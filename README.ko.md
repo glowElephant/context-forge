@@ -81,10 +81,14 @@ v2에서는 도메인별 컨벤션(게임 엔진, 모바일, 웹, 백엔드, ML,
 
 ## 빠른 시작
 
-> ⏳ 구현 진행 중. 출시되면:
-
 ```bash
-# 어느 디렉토리에서든:
+# 1. context-forge 로컬 클론
+git clone https://github.com/glowElephant/context-forge ~/code/context-forge
+
+# 2. Claude Code가 위치를 찾을 수 있도록 환경변수 설정
+export CONTEXT_FORGE_PATH=~/code/context-forge
+
+# 3. 어느 디렉토리에서든:
 /context-forge
 
 # 프로젝트 관련 몇 가지 질문에 답하세요.
@@ -94,6 +98,8 @@ v2에서는 도메인별 컨벤션(게임 엔진, 모바일, 웹, 백엔드, ML,
 #  3. 큐레이션된 CLAUDE.md, 스킬, 룰, 문서 자동 생성
 #  4. cd하여 바로 코딩 시작
 ```
+
+> `gh` CLI 인증 필요. v1.0.0 — 엔드투엔드 스모크 테스트 미실행 상태이므로 이슈는 [Discussions](https://github.com/glowElephant/context-forge/discussions)에 알려주세요.
 
 ## 기여하기
 

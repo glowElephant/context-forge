@@ -81,10 +81,14 @@ Track progress in [`docs/specs/`](./docs/specs) and [`docs/plans/`](./docs/plans
 
 ## Quick start
 
-> ⏳ Implementation in progress. Once shipped:
-
 ```bash
-# In any directory, run:
+# 1. Clone context-forge locally
+git clone https://github.com/glowElephant/context-forge ~/code/context-forge
+
+# 2. Point Claude Code at it (env var)
+export CONTEXT_FORGE_PATH=~/code/context-forge
+
+# 3. In any directory, run:
 /context-forge
 
 # Answer a few questions about your project.
@@ -94,6 +98,8 @@ Track progress in [`docs/specs/`](./docs/specs) and [`docs/plans/`](./docs/plans
 #  3. Populate it with curated CLAUDE.md, skills, rules, docs
 #  4. cd into it and start coding
 ```
+
+> Requires `gh` CLI authenticated. v1.0.0 — end-to-end smoke test still pending; report issues via [Discussions](https://github.com/glowElephant/context-forge/discussions).
 
 ## Contributing
 
