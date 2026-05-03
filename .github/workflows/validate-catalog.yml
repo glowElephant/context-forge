@@ -1,0 +1,23 @@
+name: validate-catalog
+
+on:
+  pull_request:
+    paths:
+      - "catalog/**"
+      - "scripts/validate-catalog.sh"
+      - "scripts/lib/**"
+      - ".github/workflows/validate-catalog.yml"
+  push:
+    branches: [main]
+    paths:
+      - "catalog/**"
+      - "scripts/validate-catalog.sh"
+      - "scripts/lib/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate catalog frontmatter
+        run: bash scripts/validate-catalog.sh

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "updated_at": null,
+  "policy": {
+    "scope": "v1",
+    "categories": ["claude-md", "agents-md", "skills", "conventions", "multi-agent", "prompts", "spec-driven", "mcp", "boilerplate"],
+    "min_pop_act_total": 7,
+    "min_stars": 500,
+    "freshness_months": 6
+  },
+  "entries": []
+}
