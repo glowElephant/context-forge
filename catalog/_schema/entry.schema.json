@@ -29,6 +29,20 @@
     "upstream":  { "type": "string", "format": "uri" },
     "when_to_use": { "type": "string", "minLength": 10 },
     "priority":  { "type": "integer", "minimum": 1, "maximum": 5 },
-    "applies_to_files": { "type": "array", "items": { "type": "string" } }
+    "applies_to_files": { "type": "array", "items": { "type": "string" } },
+    "status": { "type": "string", "enum": ["active", "archived"] },
+    "score": {
+      "type": "object",
+      "properties": {
+        "popularity":  { "type": "integer", "minimum": 1, "maximum": 5 },
+        "activity":    { "type": "integer", "minimum": 1, "maximum": 5 },
+        "reviews":     { "type": "integer", "minimum": 1, "maximum": 5 },
+        "quality":     { "type": "integer", "minimum": 1, "maximum": 5 },
+        "trust":       { "type": "integer", "minimum": 1, "maximum": 5 },
+        "total":       { "type": "integer", "minimum": 5, "maximum": 25 },
+        "tier":        { "type": "integer", "enum": [1, 2, 3] },
+        "last_scored": { "type": "string", "format": "date" }
+      }
+    }
   }
 }

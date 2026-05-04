@@ -1,0 +1,61 @@
+name: quarterly-rediscovery
+
+on:
+  schedule:
+    # 분기 첫 달(1, 4, 7, 10) 1일 04:00 UTC — full-rescore 직후
+    - cron: "0 4 1 1,4,7,10 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  discussions: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Search GitHub for new candidate repos (v1 scope)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/automation.py discover
+      - name: Open PR + Discussion if new candidates found
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          count=$(python -c "import json; print(len(json.load(open('_status/candidates.json'))['entries']))")
+          if [ "$count" = "0" ]; then
+            echo "no new candidates"
+            exit 0
+          fi
+          quarter="$(date +%Y)-Q$(( ($(date +%-m) - 1) / 3 + 1 ))"
+          branch="bot/rediscovery-${quarter}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add _status
+          git commit -m "chore(discover): 분기 신규 후보 ${count}건 (${quarter})"
+          git push -u origin "$branch"
+
+          # PR 본문에 후보 표 임베드
+          body_file=$(mktemp)
+          {
+            echo "## 분기 신규 후보 ${count}건 (${quarter})"
+            echo ""
+            echo "GitHub Search API 자동 발굴 결과. Pop+Act ≥ 7 통과 항목만 리스트업."
+            echo "사람이 Reviews/Quality/Trust 채점 후 \`sources/index.json\` + \`catalog/\`에 추가하세요."
+            echo ""
+            echo "| Category | Repo | ⭐ | Last push | Pop+Act |"
+            echo "|----------|------|----|-----------|---------|"
+            python scripts/render_candidates_table.py
+          } > "$body_file"
+
+          gh pr create \
+            --title "chore(discover): 분기 신규 후보 ${count}건 ${quarter}" \
+            --body-file "$body_file" \
+            --base main --head "$branch"

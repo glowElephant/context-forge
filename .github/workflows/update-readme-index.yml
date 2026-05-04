@@ -1,0 +1,38 @@
+name: update-readme-index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "catalog/*/*.md"
+      - "scripts/automation.py"
+      - ".github/workflows/update-readme-index.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Regenerate category README tables
+        run: python scripts/automation.py render-index
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- catalog/*/README.md; then
+            echo "no changes"
+            exit 0
+          fi
+          git add catalog/*/README.md
+          git commit -m "chore: 카테고리 README 인덱스 자동 갱신"
+          git push
