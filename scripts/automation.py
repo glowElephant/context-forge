@@ -32,6 +32,7 @@ import pathlib
 import re
 import subprocess
 import sys
+import time
 from typing import Any
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -122,31 +123,57 @@ def _coerce(v: str) -> Any:
     return v
 
 
-def write_frontmatter(path: pathlib.Path, fm: dict[str, Any], body: str) -> None:
-    """Serialize frontmatter back to file. Preserves nested score object."""
-    lines = ["---"]
-    for k, v in fm.items():
-        if isinstance(v, dict):
-            lines.append(f"{k}:")
-            for sk, sv in v.items():
-                lines.append(f"  {sk}: {_dump_scalar(sv)}")
-        elif isinstance(v, list):
-            lines.append(f"{k}: [{', '.join(_dump_scalar(x) for x in v)}]")
-        else:
-            lines.append(f"{k}: {_dump_scalar(v)}")
-    lines.append("---")
-    path.write_text("\n".join(lines) + "\n" + body, encoding="utf-8")
+def update_frontmatter(path: pathlib.Path, fm_text: str, body: str,
+                       *, score: dict[str, Any], status: str) -> None:
+    """Replace ONLY the `score:` block and `status:` line in the original
+    frontmatter text. All other fields (URLs, multi-line scalars, key order,
+    comments) are preserved byte-for-byte. Adds the keys at the end if missing.
+    """
+    new_fm = _replace_or_append(fm_text, "status", _format_status_line(status))
+    new_fm = _replace_or_append(new_fm, "score", _format_score_block(score), block=True)
+    path.write_text(f"---\n{new_fm}\n---\n{body}", encoding="utf-8")
 
 
-def _dump_scalar(v: Any) -> str:
-    if isinstance(v, bool):
-        return "true" if v else "false"
-    if isinstance(v, (int, float)):
-        return str(v)
-    s = str(v)
-    if any(c in s for c in ":#") and not (s.startswith('"') or s.startswith("'")):
-        return f'"{s}"'
-    return s
+def _format_status_line(status: str) -> str:
+    return f"status: {status}"
+
+
+def _format_score_block(score: dict[str, Any]) -> str:
+    lines = ["score:"]
+    order = ("popularity", "activity", "reviews", "quality", "trust", "total", "tier", "last_scored")
+    for k in order:
+        if k in score:
+            lines.append(f"  {k}: {score[k]}")
+    return "\n".join(lines)
+
+
+def _replace_or_append(fm_text: str, key: str, replacement: str, *, block: bool = False) -> str:
+    """Replace the existing key (single line, or block if `block=True` — block
+    spans through indented continuation lines until a non-indented non-blank
+    line). If key missing, append to the end."""
+    lines = fm_text.split("\n")
+    # find key at column 0
+    start = next((i for i, ln in enumerate(lines) if re.match(rf"^{re.escape(key)}\s*:", ln)), None)
+    if start is None:
+        # append (strip trailing blanks first)
+        while lines and not lines[-1].strip():
+            lines.pop()
+        return "\n".join(lines + [replacement])
+    if not block:
+        end = start + 1
+    else:
+        end = start + 1
+        while end < len(lines) and (lines[end].startswith(" ") or lines[end].startswith("\t") or not lines[end].strip()):
+            # stop on blank only if next non-blank is non-indented
+            if not lines[end].strip():
+                # peek
+                k = end + 1
+                while k < len(lines) and not lines[k].strip():
+                    k += 1
+                if k >= len(lines) or not (lines[k].startswith(" ") or lines[k].startswith("\t")):
+                    break
+            end += 1
+    return "\n".join(lines[:start] + [replacement] + lines[end:])
 
 
 # ─── GitHub API via gh CLI ───────────────────────────────────────────────────
@@ -255,8 +282,10 @@ def cmd_rescore(args: argparse.Namespace) -> int:
     new_borderline: list[dict[str, Any]] = []
     rescored = 0
 
+    rescored_borderline: dict[str, dict[str, Any]] = {}
+
     for path in iter_catalog_entries():
-        fm, _, body = read_frontmatter(path)
+        fm, fm_text, body = read_frontmatter(path)
         if not fm:
             continue
         name = fm.get("name", path.stem)
@@ -302,21 +331,34 @@ def cmd_rescore(args: argparse.Namespace) -> int:
                 "reason": "freshness rule" if (tier == 3 and new_score["activity"] == 1) else "rescore",
             })
 
-        fm["score"] = new_score
-        fm["status"] = new_status
-        write_frontmatter(path, fm, body)
+        update_frontmatter(path, fm_text, body, score=new_score, status=new_status)
         rescored += 1
 
-        if BORDERLINE_TIER1[0] <= total <= BORDERLINE_TIER1[1] or \
-           BORDERLINE_TIER3[0] <= total <= BORDERLINE_TIER3[1]:
+        in_borderline = (BORDERLINE_TIER1[0] <= total <= BORDERLINE_TIER1[1] or
+                         BORDERLINE_TIER3[0] <= total <= BORDERLINE_TIER3[1])
+        if in_borderline:
             new_borderline.append({"name": name, "category": category, "total": total, "tier": tier})
+            rescored_borderline[name] = {"name": name, "category": category, "total": total, "tier": tier}
+        else:
+            # explicit removal mark for borderline-only mode
+            rescored_borderline[name] = None  # type: ignore[assignment]
 
-    if not args.borderline_only:
+    if args.borderline_only:
+        # patch existing borderline list: drop entries that left the bands,
+        # update scores for entries that stayed
+        kept = []
+        for entry in borderline_doc.get("entries", []):
+            patched = rescored_borderline.get(entry["name"], entry)
+            if patched is not None:
+                kept.append(patched)
+        borderline_doc["updated_at"] = today
+        borderline_doc["entries"] = sorted(kept, key=lambda e: e["total"])
+    else:
         borderline_doc["updated_at"] = today
         borderline_doc["entries"] = sorted(new_borderline, key=lambda e: e["total"])
-        borderline_path.write_text(json.dumps(borderline_doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    borderline_path.write_text(json.dumps(borderline_doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    print(f"rescored {rescored} entries; borderline={len(new_borderline)}")
+    print(f"rescored {rescored} entries; borderline={len(borderline_doc['entries'])}")
     return 0
 
 
@@ -345,8 +387,13 @@ def cmd_discover(args: argparse.Namespace) -> int:
     known_upstreams = {s["upstream"].rstrip("/") for s in sources.get("sources", [])}
 
     found: list[dict[str, Any]] = []
+    first = True
     for category, keywords in DISCOVERY_QUERIES.items():
         for kw in keywords:
+            # GitHub Search API is 10 req/min for authenticated calls — pace at 7s between calls
+            if not first:
+                time.sleep(7)
+            first = False
             try:
                 results = gh_search(f"{kw}+stars:>={MIN_STARS}+pushed:>={_six_months_ago()}", per_page=20)
             except Exception as e:
