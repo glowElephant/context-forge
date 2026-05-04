@@ -22,7 +22,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/automation.py rescore --borderline-only
-      - name: Open PR if anything changed
+      - name: Validate catalog after rescore
+        run: bash scripts/validate-catalog.sh
+      - name: Open PR + auto-merge if no archive flips
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -38,7 +40,14 @@ jobs:
           git add catalog _status
           git commit -m "chore(rescore): 월간 borderline 재채점 ($(date +%Y-%m))"
           git push -u origin "$branch"
-          gh pr create \
+          pr_url=$(gh pr create \
             --title "chore(rescore): 월간 borderline 재채점 $(date +%Y-%m)" \
             --body "자동 생성: borderline 리스트 재채점 결과. \`_status/history.jsonl\` 의 새 항목과 frontmatter score 갱신을 검토해주세요." \
-            --base main --head "$branch"
+            --base main --head "$branch")
+          # archive/unarchive 발생 시 (status 라인이 변경된 경우) 사람 검토
+          if git diff origin/main..HEAD -- 'catalog/*/*.md' | grep -qE '^-status:'; then
+            echo "::notice::status flipped (archive/unarchive) — leaving PR for human review: $pr_url"
+          else
+            echo "::notice::score-only update — auto-merging $pr_url"
+            gh pr merge "$pr_url" --squash --delete-branch
+          fi
