@@ -22,7 +22,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/automation.py rescore
-      - name: Open PR if anything changed
+      - name: Validate catalog after rescore
+        run: bash scripts/validate-catalog.sh
+      - name: Open PR + auto-merge if no archive flips
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -39,7 +41,13 @@ jobs:
           git add catalog _status
           git commit -m "chore(rescore): 분기 전체 재채점 (${quarter})"
           git push -u origin "$branch"
-          gh pr create \
+          pr_url=$(gh pr create \
             --title "chore(rescore): 분기 전체 재채점 ${quarter}" \
             --body "자동 생성: 전체 카탈로그 Pop+Act 재채점 + borderline 리스트 갱신. 강등(active→archived)된 항목은 \`_status/history.jsonl\` 참고." \
-            --base main --head "$branch"
+            --base main --head "$branch")
+          if git diff origin/main..HEAD -- 'catalog/*/*.md' | grep -qE '^-status:'; then
+            echo "::notice::status flipped (archive/unarchive) — leaving PR for human review: $pr_url"
+          else
+            echo "::notice::score-only update — auto-merging $pr_url"
+            gh pr merge "$pr_url" --squash --delete-branch
+          fi
