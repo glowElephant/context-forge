@@ -72,9 +72,11 @@ v2에서는 도메인별 컨벤션(게임 엔진, 모바일, 웹, 백엔드, ML,
 - [x] v1 카탈로그 소스 포크 (67/67)
 - [x] `/context-forge` 슬래시 커맨드 구현
 - [x] 카탈로그 frontmatter 작성 (15개 시드)
+- [x] 주간 fork sync + link-check ([`docs/fork-sync-setup.md`](./docs/fork-sync-setup.md))
+- [x] 월간 borderline rescore + 분기 full rescore (5팩터 점수)
+- [x] 월간 자동 발굴 잡 (`automation.py discover` → Issue triage)
 - [ ] 엔드투엔드 스모크 테스트 (수동, fresh 세션 필요)
 - [ ] 카탈로그 자동 채굴 (v1.5)
-- [ ] 분기별 자동 발굴 잡 (v1.5)
 - [ ] v2 분야별 보강 (게임/모바일/웹/백엔드/ML/보안)
 
 진행 추적: [`docs/specs/`](./docs/specs), [`docs/plans/`](./docs/plans)
