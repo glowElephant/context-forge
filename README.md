@@ -70,6 +70,7 @@ v2 will broaden to domain conventions (game engines, mobile, web, backend, ML, s
 - [x] Design specification
 - [x] Candidate repositories curated (67 v1 + 210 v2)
 - [x] Forking the v1 catalog sources (67/67)
+- [x] Weekly fork sync automation ([`docs/fork-sync-setup.md`](./docs/fork-sync-setup.md))
 - [x] `/context-forge` slash command implementation
 - [x] Catalog frontmatter authoring (15 seeded entries)
 - [ ] End-to-end smoke test (manual, fresh-session required)
