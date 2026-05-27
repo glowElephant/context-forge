@@ -1,0 +1,80 @@
+name: monthly-rediscovery
+
+# 매월 1일 04:00 UTC — GitHub Search로 신규 카탈로그 후보 발굴.
+# 결과: _status/candidates.json 갱신 + Issue로 체크리스트 생성 (PR 아님).
+# Issue write는 기본 GITHUB_TOKEN으로 가능 — PR 권한 / branch 분리 불필요.
+
+on:
+  schedule:
+    - cron: "0 4 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Search GitHub for new candidate repos
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/automation.py discover
+
+      - name: Commit candidates.json to main
+        run: |
+          if git diff --quiet _status/; then
+            echo "no new candidates — nothing to commit"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _status/candidates.json _status/history.jsonl
+          git commit -m "chore(discover): 월간 신규 후보 갱신 $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Open Issue with checkbox triage list
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          count=$(python -c "import json; print(len(json.load(open('_status/candidates.json'))['entries']))")
+          if [ "$count" = "0" ]; then
+            echo "no new candidates — no issue"
+            exit 0
+          fi
+          month="$(date -u +%Y-%m)"
+          body_file=$(mktemp)
+          {
+            echo "## 월간 신규 후보 ${count}건 (${month})"
+            echo ""
+            echo "GitHub Search API 자동 발굴. 필터: \`★≥2000\`, \`Pop+Act≥7\`, 카테고리당 상위 5."
+            echo ""
+            echo "체크박스 = 카탈로그 채택 의사 → 본인이 \`sources/index.json\` + fork + \`catalog/\` frontmatter 작성."
+            echo "체크 안 한 항목은 \`sources/index.json\`에 영구 등록 전까지 다음 달에도 다시 잡힐 수 있음."
+            echo ""
+            python -c "
+import json
+from collections import defaultdict
+entries = json.load(open('_status/candidates.json'))['entries']
+by_cat = defaultdict(list)
+for x in entries:
+    by_cat[x['category']].append(x)
+for cat in sorted(by_cat):
+    print(f'### {cat} ({len(by_cat[cat])})')
+    print()
+    for x in by_cat[cat]:
+        print(f\"- [ ] **{x['name']}** — [GitHub]({x['url']}) · ★{x['stars']} · push {x['pushed_at'][:10]} · Pop+Act={x['popularity']+x['activity']}\")
+    print()
+"
+          } > "$body_file"
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "🔍 월간 신규 후보 ${count}건 (${month})" \
+            --body-file "$body_file"

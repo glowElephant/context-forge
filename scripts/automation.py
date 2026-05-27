@@ -377,8 +377,9 @@ DISCOVERY_QUERIES: dict[str, list[str]] = {
     "boilerplate": ["claude-code-boilerplate", "ai-coding-template"],
 }
 
-MIN_STARS = 500
-MIN_POP_ACT = 7  # 10점 만점 중
+MIN_STARS = 2000          # 별 2000 이상 — noise 컷
+MIN_POP_ACT = 7           # 10점 만점 중
+TOP_PER_CATEGORY = 5      # 카테고리당 상위 N개만 (검토 부담 cap)
 
 
 def cmd_discover(args: argparse.Namespace) -> int:
@@ -421,13 +422,26 @@ def cmd_discover(args: argparse.Namespace) -> int:
                     "discovered_at": today,
                 })
 
+    # 카테고리당 상위 TOP_PER_CATEGORY만 유지 — 사람 검토 부담 cap.
+    # 정렬 기준: (popularity+activity) desc, tie-break는 stars desc.
+    by_cat: dict[str, list[dict[str, Any]]] = {}
+    for entry in found:
+        by_cat.setdefault(entry["category"], []).append(entry)
+    capped: list[dict[str, Any]] = []
+    for cat_entries in by_cat.values():
+        cat_entries.sort(key=lambda e: (-(e["popularity"] + e["activity"]), -e["stars"]))
+        capped.extend(cat_entries[:TOP_PER_CATEGORY])
+
     candidates_path = STATUS / "candidates.json"
     doc = json.loads(candidates_path.read_text(encoding="utf-8"))
     doc["updated_at"] = today
-    doc["entries"] = sorted(found, key=lambda e: -(e["popularity"] + e["activity"]))
+    doc["policy"]["min_stars"] = MIN_STARS
+    doc["policy"]["top_per_category"] = TOP_PER_CATEGORY
+    doc["entries"] = sorted(capped, key=lambda e: -(e["popularity"] + e["activity"]))
     candidates_path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    for c in found:
+    # 캡 통과한 것만 history 기록 — 실제로 Issue/검토 대상이 되는 entries
+    for c in capped:
         log_history({"event": "discover", "name": c["name"], "category": c["category"],
                      "after": {"popularity": c["popularity"], "activity": c["activity"]}})
 
