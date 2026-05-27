@@ -65,16 +65,17 @@ v2 will broaden to domain conventions (game engines, mobile, web, backend, ML, s
 
 ## Status
 
-✅ **v1.0.0 released** ([release notes](https://github.com/glowElephant/context-forge/releases/tag/v1.0.0))
+✅ **v1.1.0 released** ([release notes](https://github.com/glowElephant/context-forge/releases/tag/v1.1.0))
 
 - [x] Design specification
 - [x] Candidate repositories curated (67 v1 + 210 v2)
-- [x] Forking the v1 catalog sources (67/67)
+- [x] Forking the v1 catalog sources (82 active after first monthly adoption)
 - [x] `/context-forge` slash command implementation
-- [x] Catalog frontmatter authoring (15 seeded entries)
+- [x] **Catalog frontmatter for every source (82/82)** — manual v1 seed (15) + auto-seeded via `scripts/seed_frontmatter.py` (67)
 - [x] Weekly fork sync + link-check ([`docs/fork-sync-setup.md`](./docs/fork-sync-setup.md))
 - [x] Monthly borderline rescore + quarterly full rescore (5-factor rubric)
-- [x] Quarterly auto-discovery job (`automation.py discover`)
+- [x] Monthly auto-discovery job → Issue triage (`automation.py discover` + `monthly-rediscovery.yml`)
+- [x] Topic tag `context-forge-source` on all forks ([browse](https://github.com/glowElephant?tab=repositories&q=topic%3Acontext-forge-source))
 - [ ] End-to-end smoke test (manual, fresh-session required)
 - [ ] Automated catalog extraction from forked sources (v1.5)
 - [ ] v2 domain expansion (game/mobile/web/backend/ML/security)
@@ -83,25 +84,53 @@ Track progress in [`docs/specs/`](./docs/specs) and [`docs/plans/`](./docs/plans
 
 ## Quick start
 
+### Prerequisites
+
+| # | Requirement | Check |
+|---|---|---|
+| 1 | `gh` CLI authenticated | `gh auth status` |
+| 2 | context-forge cloned locally | `git clone https://github.com/glowElephant/context-forge ~/code/context-forge` |
+| 3 | `CONTEXT_FORGE_PATH` env var pointing at the clone (**optional** — skill asks once per session if missing) | see below |
+
+The slash command itself runs `validate-catalog.sh` at startup and refuses to proceed if anything is wrong, so the catalog state is verified for you.
+
+### Set `CONTEXT_FORGE_PATH`
+
+**macOS / Linux:**
 ```bash
-# 1. Clone context-forge locally
-git clone https://github.com/glowElephant/context-forge ~/code/context-forge
-
-# 2. Point Claude Code at it (env var)
-export CONTEXT_FORGE_PATH=~/code/context-forge
-
-# 3. In any directory, run:
-/context-forge
-
-# Answer a few questions about your project.
-# context-forge will:
-#  1. Match catalog know-how to your stack and goals
-#  2. Create a new GitHub repository
-#  3. Populate it with curated CLAUDE.md, skills, rules, docs
-#  4. cd into it and start coding
+echo 'export CONTEXT_FORGE_PATH=~/code/context-forge' >> ~/.bashrc   # or ~/.zshrc
+source ~/.bashrc
 ```
 
-> Requires `gh` CLI authenticated. v1.0.0 — end-to-end smoke test still pending; report issues via [Discussions](https://github.com/glowElephant/context-forge/discussions).
+**Windows (PowerShell, persist across all shells):**
+```powershell
+[Environment]::SetEnvironmentVariable('CONTEXT_FORGE_PATH', 'C:\Git\context-forge', 'User')
+# 새 터미널/세션부터 적용
+```
+
+**Claude Code only (works across Mac/Linux/Windows, syncs with `.claude/settings.json`):**
+```json
+{
+  "env": {
+    "CONTEXT_FORGE_PATH": "C:\\Git\\context-forge"
+  }
+}
+```
+
+### Run
+
+In any directory:
+```
+/context-forge
+```
+
+Answer a few questions about your project. context-forge will:
+1. Match catalog know-how (82+ sources) to your stack and goals
+2. Create a new GitHub repository
+3. Populate it with curated `CLAUDE.md`, skills, rules, docs
+4. Hand off — `cd <new-repo> && claude` to start coding
+
+> v1.1.0 — weekly fork sync + monthly auto-discovery active. End-to-end smoke test still pending; report issues via [Discussions](https://github.com/glowElephant/context-forge/discussions).
 
 ## Contributing
 

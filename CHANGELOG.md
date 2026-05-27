@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.1.1 — 2026-05-27 (same day patch)
+
+### Added
+
+- **`scripts/seed_frontmatter.py`** — `sources/index.json` 순회하며 누락된 `catalog/<cat>/<name>.md` 자동 생성. gh API로 upstream description/topics 가져와 frontmatter + 본문 시드. upstream URL 기반 중복 체크로 manual semantic-name 시드와 충돌 방지. `.md`로 끝나는 name(예: `agents.md`)의 이중 확장자 방지.
+- **`link-check.yml` sync-forks job**에 seed step + validate-catalog step 통합 — 매주 sync 직후 누락 frontmatter 자동 채움, catalog 변경분도 같은 commit에.
+- **`context-forge-source` 토픽 일괄 부착** — 82개 fork 전부. `sync-forks.sh`에 토픽 자동 보장 로직 추가 (멱등). 외부에서 `topic:context-forge-source`로 originals와 분리 식별 가능.
+- **글로벌 프로필 README** (`glowElephant/glowElephant`)에 `CATALOG_SOURCES` 섹션 신설 — originals와 catalog source forks 시각적 분리.
+
+### Changed
+
+- catalog frontmatter 보유 entries: 15 → **82 (전부)**. `/context-forge` 슬래시 커맨드 Phase 3 매칭 풀이 5.5배 확장, Phase 5 `cp` 누락 가능성 0.
+- 자동 시드 13개가 manual semantic-name 시드와 같은 upstream을 가리키는 중복 발견 → 자동본 삭제, manual을 정본으로 유지.
+- `docs/scoring.md` "Quarterly rediscovery" → "Monthly rediscovery"로 갱신 (v1.1에서 cron 변경 반영 + seed_frontmatter 흐름 명시).
+- README/README.ko 사전 조건 섹션 보강: Windows PowerShell·Claude Code settings.json 환경변수 등록 가이드 추가. v1.0 → v1.1 갱신.
+- `docs/fork-sync-setup.md` 하드코딩된 "67개"를 count-agnostic 표현으로.
+
+### Why
+
+v1.1.0 직후 슬래시 커맨드 end-to-end 흐름 검토 중 발견: catalog frontmatter가 v1 시드 15개로 좁아서 sources/index.json 82 entries 중 67개가 슬래시 커맨드 매칭 풀에서 누락. 자동화의 데이터 측면이 비어있어서 "사람이 손으로 67개 frontmatter 써야" 했던 상태.
+
+`seed_frontmatter.py` + 주간 자동 hook으로 이 갭을 영구 해소 — 앞으로 새 채택은 다음 주 sync에서 자동 frontmatter 시드. Claude Code가 슬래시 커맨드 사용자 경험에서 사람 손 의존 없이 동작 가능.
+
 ## v1.1.0 — 2026-05-27
 
 ### Added

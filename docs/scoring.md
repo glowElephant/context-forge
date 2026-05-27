@@ -79,6 +79,8 @@ Sometimes a low-star repo is clearly excellent (a thoughtful 400-star coding con
 | github/swift-style-guide | 4 | 1 | 5 | 5 | 5 | 20 | 2 (archived → demoted) |
 | obscure-2018-repo | 1 | 1 | 1 | 2 | 1 | 6 | 3 |
 
-## Quarterly rediscovery
+## Monthly rediscovery
 
-Every quarter, a discovery job (currently manual, target v1.5: scheduled) sweeps for new candidates using the keyword list in `docs/specs/2026-04-28-fork-candidates.md`. New finds are scored, opened as discussions for community input, and promoted via PR.
+Every month (1st 04:00 UTC), `.github/workflows/monthly-rediscovery.yml` runs `scripts/automation.py discover`. It uses the keyword groups embedded in `automation.py:DISCOVERY_QUERIES`, sweeps GitHub Search API, filters by `MIN_STARS=2000` / `MIN_POP_ACT≥7` / category-top-5, and writes results to `_status/candidates.json`. An Issue with a checkbox triage list is opened so the maintainer can pick which to adopt. Adopted entries land in `sources/index.json`, and `scripts/seed_frontmatter.py` (also run weekly via `link-check.yml`) creates the corresponding `catalog/<cat>/<name>.md` skeleton automatically.
+
+History: v1.0 was designed as quarterly + PR-based; v1.1 switched to monthly + Issue-based to reduce review burden and noise. See [CHANGELOG.md](../CHANGELOG.md).

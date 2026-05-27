@@ -65,16 +65,17 @@ v2에서는 도메인별 컨벤션(게임 엔진, 모바일, 웹, 백엔드, ML,
 
 ## 진행 상태
 
-✅ **v1.0.0 릴리스 완료** ([릴리스 노트](https://github.com/glowElephant/context-forge/releases/tag/v1.0.0))
+✅ **v1.1.0 릴리스 완료** ([릴리스 노트](https://github.com/glowElephant/context-forge/releases/tag/v1.1.0))
 
 - [x] 설계 명세
 - [x] 후보 저장소 큐레이션 (v1 67개 + v2 210개)
-- [x] v1 카탈로그 소스 포크 (67/67)
+- [x] 카탈로그 소스 포크 (첫 월간 채택 후 82개 활성)
 - [x] `/context-forge` 슬래시 커맨드 구현
-- [x] 카탈로그 frontmatter 작성 (15개 시드)
+- [x] **카탈로그 frontmatter 전체 시드 (82/82)** — v1 수동 시드 15개 + `scripts/seed_frontmatter.py` 자동 시드 67개
 - [x] 주간 fork sync + link-check ([`docs/fork-sync-setup.md`](./docs/fork-sync-setup.md))
 - [x] 월간 borderline rescore + 분기 full rescore (5팩터 점수)
 - [x] 월간 자동 발굴 잡 (`automation.py discover` → Issue triage)
+- [x] 모든 fork에 `context-forge-source` 토픽 부착 ([브라우즈](https://github.com/glowElephant?tab=repositories&q=topic%3Acontext-forge-source))
 - [ ] 엔드투엔드 스모크 테스트 (수동, fresh 세션 필요)
 - [ ] 카탈로그 자동 채굴 (v1.5)
 - [ ] v2 분야별 보강 (게임/모바일/웹/백엔드/ML/보안)
@@ -83,25 +84,53 @@ v2에서는 도메인별 컨벤션(게임 엔진, 모바일, 웹, 백엔드, ML,
 
 ## 빠른 시작
 
+### 사전 조건
+
+| # | 항목 | 확인 |
+|---|---|---|
+| 1 | `gh` CLI 인증 | `gh auth status` |
+| 2 | context-forge 로컬 클론 | `git clone https://github.com/glowElephant/context-forge ~/code/context-forge` |
+| 3 | `CONTEXT_FORGE_PATH` 환경변수 (**선택** — 미설정 시 슬래시 커맨드가 세션당 1회 물어봄) | 아래 참고 |
+
+슬래시 커맨드 시작 시 `validate-catalog.sh`를 자동 실행해 카탈로그 무결성 검증. 문제 있으면 즉시 멈춤.
+
+### `CONTEXT_FORGE_PATH` 설정
+
+**macOS / Linux:**
 ```bash
-# 1. context-forge 로컬 클론
-git clone https://github.com/glowElephant/context-forge ~/code/context-forge
-
-# 2. Claude Code가 위치를 찾을 수 있도록 환경변수 설정
-export CONTEXT_FORGE_PATH=~/code/context-forge
-
-# 3. 어느 디렉토리에서든:
-/context-forge
-
-# 프로젝트 관련 몇 가지 질문에 답하세요.
-# context-forge가 자동으로:
-#  1. 당신의 스택과 목표에 카탈로그 노하우 매칭
-#  2. 새 GitHub 저장소 생성
-#  3. 큐레이션된 CLAUDE.md, 스킬, 룰, 문서 자동 생성
-#  4. cd하여 바로 코딩 시작
+echo 'export CONTEXT_FORGE_PATH=~/code/context-forge' >> ~/.bashrc   # 또는 ~/.zshrc
+source ~/.bashrc
 ```
 
-> `gh` CLI 인증 필요. v1.0.0 — 엔드투엔드 스모크 테스트 미실행 상태이므로 이슈는 [Discussions](https://github.com/glowElephant/context-forge/discussions)에 알려주세요.
+**Windows (PowerShell, 모든 셸 영구 적용):**
+```powershell
+[Environment]::SetEnvironmentVariable('CONTEXT_FORGE_PATH', 'C:\Git\context-forge', 'User')
+# 새 터미널/세션부터 적용
+```
+
+**Claude Code 전용 (OS 무관, `.claude/settings.json` 동기화):**
+```json
+{
+  "env": {
+    "CONTEXT_FORGE_PATH": "C:\\Git\\context-forge"
+  }
+}
+```
+
+### 실행
+
+어떤 디렉토리에서든:
+```
+/context-forge
+```
+
+프로젝트 관련 질문에 답하면 context-forge가 자동으로:
+1. 82+ 카탈로그 소스에서 본인 스택·목표에 맞는 것 매칭
+2. 새 GitHub 저장소 생성
+3. 큐레이션된 `CLAUDE.md` / 스킬 / 룰 / 문서 채워 넣기
+4. Hand-off — `cd <새 repo> && claude`로 바로 코딩 시작
+
+> v1.1.0 — 주간 fork sync + 월간 자동 발굴 활성. 엔드투엔드 스모크 테스트 미실행 상태이므로 이슈는 [Discussions](https://github.com/glowElephant/context-forge/discussions)에 알려주세요.
 
 ## 기여하기
 
