@@ -39,13 +39,13 @@
       "notes": "Garry Tan 23-tool 스택 (베이스라인)"
     },
     {
-      "upstream": "https://github.com/affaan-m/everything-claude-code",
+      "upstream": "https://github.com/affaan-m/ECC",
       "fork": "https://github.com/glowElephant/everything-claude-code",
       "name": "everything-claude-code",
       "category": "claude-md",
       "tier": 1,
       "added_at": "2026-04-28",
-      "notes": "Claude/Codex/Cursor 통합 하니스"
+      "notes": "Claude/Codex/Cursor 통합 하니스 (4/28 이후 ECC로 rename됨)"
     },
     {
       "upstream": "https://github.com/hesreallyhim/awesome-claude-code",
@@ -604,6 +604,141 @@
       "tier": 1,
       "added_at": "2026-04-28",
       "notes": "Rails 특화 스킬·에이전트·훅·MCP 묶음"
+    },
+    {
+      "upstream": "https://github.com/mergisi/awesome-openclaw-agents",
+      "fork": "https://github.com/glowElephant/awesome-openclaw-agents",
+      "name": "awesome-openclaw-agents",
+      "category": "agents-md",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "OpenClaw 162 agent 템플릿 (19 카테고리, SOUL.md 설정)"
+    },
+    {
+      "upstream": "https://github.com/davila7/claude-code-templates",
+      "fork": "https://github.com/glowElephant/claude-code-templates",
+      "name": "claude-code-templates",
+      "category": "claude-md",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "Claude Code 설정/모니터링 CLI"
+    },
+    {
+      "upstream": "https://github.com/Piebald-AI/claude-code-system-prompts",
+      "fork": "https://github.com/glowElephant/claude-code-system-prompts",
+      "name": "claude-code-system-prompts",
+      "category": "claude-md",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "Claude Code 내부 system prompt + 27 builtin tool prompts 해부"
+    },
+    {
+      "upstream": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "fork": "https://github.com/glowElephant/claude-code-ultimate-guide",
+      "name": "claude-code-ultimate-guide",
+      "category": "claude-md",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "Claude Code 종합 가이드 (초보→파워유저, production 템플릿)"
+    },
+    {
+      "upstream": "https://github.com/PrefectHQ/fastmcp",
+      "fork": "https://github.com/glowElephant/fastmcp",
+      "name": "fastmcp",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "MCP 서버/클라이언트 Pythonic 빌더"
+    },
+    {
+      "upstream": "https://github.com/cft0808/edict",
+      "fork": "https://github.com/glowElephant/edict",
+      "name": "edict",
+      "category": "multi-agent",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "OpenClaw 9-agent 오케스트레이션 (실시간 대시보드)"
+    },
+    {
+      "upstream": "https://github.com/microsoft/agent-framework",
+      "fork": "https://github.com/glowElephant/agent-framework",
+      "name": "microsoft-agent-framework",
+      "category": "multi-agent",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "MS 공식 agent framework (Python + .NET)"
+    },
+    {
+      "upstream": "https://github.com/kyegomez/swarms",
+      "fork": "https://github.com/glowElephant/swarms",
+      "name": "swarms",
+      "category": "multi-agent",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "Enterprise multi-agent orchestration framework"
+    },
+    {
+      "upstream": "https://github.com/builderz-labs/mission-control",
+      "fork": "https://github.com/glowElephant/mission-control",
+      "name": "mission-control",
+      "category": "multi-agent",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "셀프호스트 agent 오케스트레이션 + 거버넌스 대시보드"
+    },
+    {
+      "upstream": "https://github.com/mattpocock/skills",
+      "fork": "https://github.com/glowElephant/skills-mattpocock",
+      "name": "skills-mattpocock",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "Matt Pocock의 .claude 스킬 모음"
+    },
+    {
+      "upstream": "https://github.com/thedotmack/claude-mem",
+      "fork": "https://github.com/glowElephant/claude-mem",
+      "name": "claude-mem",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "세션 영구 컨텍스트 — agent 작업 압축 + 재주입"
+    },
+    {
+      "upstream": "https://github.com/code-yeongyu/oh-my-openagent",
+      "fork": "https://github.com/glowElephant/oh-my-openagent",
+      "name": "oh-my-openagent",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "agent harness (한국 개발, oh-my-opencode 후속)"
+    },
+    {
+      "upstream": "https://github.com/potpie-ai/potpie",
+      "fork": "https://github.com/glowElephant/potpie",
+      "name": "potpie",
+      "category": "spec-driven",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "대규모 코드베이스용 SDD"
+    },
+    {
+      "upstream": "https://github.com/gotalab/cc-sdd",
+      "fork": "https://github.com/glowElephant/cc-sdd",
+      "name": "cc-sdd",
+      "category": "spec-driven",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "Claude/Codex/Cursor/Copilot/Windsurf/OpenCode/Gemini 멀티 SDD harness"
+    },
+    {
+      "upstream": "https://github.com/gsd-build/gsd-2",
+      "fork": "https://github.com/glowElephant/gsd-2",
+      "name": "gsd-2",
+      "category": "spec-driven",
+      "tier": 1,
+      "added_at": "2026-05-27",
+      "notes": "get-shit-done 후속작 (긴 시간 자율 작업 컨텍스트 보존)"
     }
   ]
 }
