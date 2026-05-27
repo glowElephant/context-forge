@@ -1,5 +1,80 @@
 # Fork Sync Log
 
+
+## 2026-05-27T04:16:59Z
+
+**Summary**: ✅ 48 synced · ⚠️ 19 failed · ❌ 0 skipped (total 67)
+
+| Repo | Result | Branch |
+|---|---|---|
+| `skills` | ✅ synced | `main` |
+| `superpowers` | ✅ synced | `main` |
+| `andrej-karpathy-skills` | ✅ synced | `main` |
+| `gstack` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `everything-claude-code` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `awesome-claude-code` | ✅ synced | `main` |
+| `awesome-claude-skills` | ✅ synced | `main` |
+| `antigravity-awesome-skills` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `claude-howto` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `awesome-agent-skills` | ✅ synced | `main` |
+| `awesome-claude-code-subagents` | ✅ synced | `main` |
+| `ralph` | ✅ synced | `main` |
+| `awesome-claude-skills-travisvn` | ✅ synced | `main` |
+| `context-engineering-intro` | ✅ synced | `main` |
+| `claude-code-best-practice` | ✅ synced | `main` |
+| `how-claude-code-works` | ✅ synced | `main` |
+| `pro-workflow` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `claude-agents` | ✅ synced | `main` |
+| `awesome-claude-code-toolkit` | ✅ synced | `main` |
+| `claude-code-sub-agents` | ✅ synced | `main` |
+| `claude-code-subagents` | ✅ synced | `main` |
+| `awesome-claude-code-plugins` | ✅ synced | `main` |
+| `awesome-claude-agents` | ✅ synced | `main` |
+| `awesome-agent-skills-heilcheng` | ✅ synced | `main` |
+| `awesome-claude-code-jqueryscript` | ✅ synced | `main` |
+| `awesome-claude` | ✅ synced | `main` |
+| `claude-code-hooks-mastery` | ✅ synced | `main` |
+| `claude-code-infrastructure-showcase` | ✅ synced | `main` |
+| `claude-code-showcase` | ✅ synced | `main` |
+| `Continuous-Claude-v3` | ✅ synced | `main` |
+| `buildwithclaude` | ✅ synced | `main` |
+| `tdd-guard` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `Claude-Code-Everything-You-Need-to-Know` | ✅ synced | `main` |
+| `tweakcc` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `oh-my-claudecode` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `awesome-cursorrules` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `awesome-copilot` | ⚠️ HTTP 404: Not Found (https://api.github.com/repos/glowElephant/awesome-copilot/git/refs/heads/main)  | `main` |
+| `awesome-copilot-agents` | ✅ synced | `main` |
+| `awesome-cursorrules-zh` | ⚠️ HTTP 404: Not Found (https://api.github.com/repos/glowElephant/awesome-cursorrules-zh/git/refs/heads/master)  | `master` |
+| `myclaude` | ✅ synced | `master` |
+| `overstory` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `microsoft-skills` | ✅ synced | `main` |
+| `spec-kit` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `OpenSpec` | ✅ synced | `main` |
+| `spec-workflow-mcp` | ✅ synced | `main` |
+| `get-shit-done` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `shotgun` | ✅ synced | `main` |
+| `agents` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `ruflo` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `open-multi-agent` | ✅ synced | `main` |
+| `maestro-orchestrate` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `flow-next` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `claude-code-workflow` | ✅ synced | `main` |
+| `context-engineering-kit` | ✅ synced | `master` |
+| `mcp-servers-official` | ✅ synced | `main` |
+| `awesome-mcp-servers` | ✅ synced | `main` |
+| `Awesome-MCP-ZH` | ✅ synced | `main` |
+| `awesome-remote-mcp-servers` | ✅ synced | `main` |
+| `awesome-claude-plugins` | ✅ synced | `master` |
+| `awesome-mcp-servers-appcypher` | ✅ synced | `main` |
+| `agents.md` | ✅ synced | `main` |
+| `design.md` | ⚠️ Upstream commits contain workflow changes, which require the `workflow` scope or permission to merge. To request it, run: gh auth refresh -s workflow  | `main` |
+| `awesome-design-md` | ✅ synced | `main` |
+| `Prompt-Engineering-Guide` | ✅ synced | `main` |
+| `prompts.chat` | ✅ synced | `main` |
+| `SwiftAgents` | ✅ synced | `main` |
+| `rails_ai_agents` | ✅ synced | `main` |
+
 Auto-generated by `scripts/sync-forks.sh`. Newest entries first.
 
 <!-- The first real entry will appear above this line after the first run. -->
