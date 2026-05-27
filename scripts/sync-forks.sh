@@ -54,6 +54,12 @@ while IFS=$'\t' read -r fork_url upstream_url name; do
     printf '  %-50s  %s\n' "$name" "✅ synced ($default_branch)"
     printf '| `%s` | ✅ synced | `%s` |\n' "$name" "$default_branch" >> "$SUMMARY_TMP"
     ok=$((ok+1))
+    # context-forge-source 토픽 보장 (멱등 — 이미 있어도 PUT은 OK)
+    cur_topics=$(gh api "repos/$fork_path/topics" --jq '.names | join(" ")' 2>/dev/null || echo "")
+    if ! echo " $cur_topics " | grep -q " context-forge-source "; then
+      new_topics=$(echo "$cur_topics context-forge-source" | tr ' ' '\n' | sort -u | grep -v '^$' | jq -R . | jq -sc '{names: .}')
+      gh api -X PUT "repos/$fork_path/topics" --input - >/dev/null 2>&1 <<< "$new_topics" || true
+    fi
   else
     short=$(echo "$result" | tr '\n' ' ' | head -c 150)
     printf '  %-50s  %s\n' "$name" "⚠️  $short"
