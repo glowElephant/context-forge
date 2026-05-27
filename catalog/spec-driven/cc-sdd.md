@@ -1,11 +1,11 @@
 ---
-name: "cc-sdd"
-category: "spec-driven"
-domain: ['general']
-tags: ['spec-driven', 'agent-skills', 'claude-code', 'codex', 'cursor', 'gemini-cli']
-source: "https://github.com/glowElephant/cc-sdd"
-upstream: "https://github.com/gotalab/cc-sdd"
-when_to_use: "Claude/Codex/Cursor/Copilot/Windsurf/OpenCode/Gemini 멀티 SDD harness. Spec-Driven Development 워크플로우를 도입할 때 참고"
+name: cc-sdd
+category: spec-driven
+domain: [general]
+tags: [spec-driven, agent-skills, claude-code, codex, cursor, gemini-cli]
+source: https://github.com/glowElephant/cc-sdd
+upstream: https://github.com/gotalab/cc-sdd
+when_to_use: Claude/Codex/Cursor/Copilot/Windsurf/OpenCode/Gemini 멀티 SDD harness. Spec-Driven Development 워크플로우를 도입할 때 참고
 priority: 3
 status: active
 ---

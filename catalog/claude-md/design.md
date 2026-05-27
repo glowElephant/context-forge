@@ -1,10 +1,10 @@
 ---
 name: design.md
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md']
-source: "https://github.com/glowElephant/design.md"
-upstream: "https://github.com/google-labs-code/design.md"
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md]
+source: https://github.com/glowElephant/design.md
+upstream: https://github.com/google-labs-code/design.md
 when_to_use: DESIGN.md 비주얼 아이덴티티 명세 표준. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active

@@ -1,11 +1,11 @@
 ---
-name: "oh-my-openagent"
+name: oh-my-openagent
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'ai', 'ai-agents', 'amp', 'anthropic', 'chatgpt']
-source: "https://github.com/glowElephant/oh-my-openagent"
-upstream: "https://github.com/code-yeongyu/oh-my-openagent"
-when_to_use: "agent harness (한국 개발, oh-my-opencode 후속). Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고"
+domain: [general, ai-agent]
+tags: [skills, ai, ai-agents, amp, anthropic, chatgpt]
+source: https://github.com/glowElephant/oh-my-openagent
+upstream: https://github.com/code-yeongyu/oh-my-openagent
+when_to_use: agent harness (한국 개발, oh-my-opencode 후속). Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
 ---

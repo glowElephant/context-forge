@@ -1,10 +1,10 @@
 ---
-name: "awesome-claude"
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md', 'agentic-ai', 'anthropic', 'anthropic-claude', 'awesome', 'awesome-ai']
-source: "https://github.com/glowElephant/awesome-claude"
-upstream: "https://github.com/webfuse-com/awesome-claude"
+name: awesome-claude
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md, agentic-ai, anthropic, anthropic-claude, awesome, awesome-ai]
+source: https://github.com/glowElephant/awesome-claude
+upstream: https://github.com/webfuse-com/awesome-claude
 when_to_use: Claude 종합 리소스. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active

@@ -76,7 +76,7 @@ v2에서는 도메인별 컨벤션(게임 엔진, 모바일, 웹, 백엔드, ML,
 - [x] 월간 borderline rescore + 분기 full rescore (5팩터 점수)
 - [x] 월간 자동 발굴 잡 (`automation.py discover` → Issue triage)
 - [x] 모든 fork에 `context-forge-source` 토픽 부착 ([브라우즈](https://github.com/glowElephant?tab=repositories&q=topic%3Acontext-forge-source))
-- [ ] 엔드투엔드 스모크 테스트 (수동, fresh 세션 필요)
+- [x] 엔드투엔드 스모크 테스트 — Phase 0~6 dogfood 검증 2026-05-27 (버그 2건 발견·수정: 자동 시드 frontmatter의 category quote 누설, Windows에서 `git branch -M main` 누락). 실제 fresh Claude Code 세션에서의 Skill-tool 호출 흐름은 별도 권장.
 - [ ] 카탈로그 자동 채굴 (v1.5)
 - [ ] v2 분야별 보강 (게임/모바일/웹/백엔드/ML/보안)
 

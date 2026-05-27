@@ -1,10 +1,10 @@
 ---
 name: prompts.chat
 category: prompts
-domain: ['general']
-tags: ['prompts', 'ai', 'artificial-intelligence', 'awesome-list', 'chatgpt', 'chatgpt-prompts']
-source: "https://github.com/glowElephant/prompts.chat"
-upstream: "https://github.com/f/prompts.chat"
+domain: [general]
+tags: [prompts, ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts]
+source: https://github.com/glowElephant/prompts.chat
+upstream: https://github.com/f/prompts.chat
 when_to_use: ChatGPT/Claude 프롬프트 표준. 프롬프트 엔지니어링 패턴이 필요할 때 참고
 priority: 3
 status: active

@@ -1,10 +1,10 @@
 ---
-name: "claude-code-subagents"
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'claude']
-source: "https://github.com/glowElephant/claude-code-subagents"
-upstream: "https://github.com/0xfurai/claude-code-subagents"
+name: claude-code-subagents
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, claude]
+source: https://github.com/glowElephant/claude-code-subagents
+upstream: https://github.com/0xfurai/claude-code-subagents
 when_to_use: 100+ production 서브에이전트. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

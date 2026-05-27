@@ -1,10 +1,10 @@
 ---
-name: "microsoft-agent-framework"
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agent-framework', 'agentic-ai', 'agents', 'ai', 'dotnet']
-source: "https://github.com/glowElephant/agent-framework"
-upstream: "https://github.com/microsoft/agent-framework"
+name: microsoft-agent-framework
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agent-framework, agentic-ai, agents, ai, dotnet]
+source: https://github.com/glowElephant/agent-framework
+upstream: https://github.com/microsoft/agent-framework
 when_to_use: MS 공식 agent framework (Python + .NET). 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

@@ -1,10 +1,10 @@
 ---
-name: "microsoft-skills"
+name: microsoft-skills
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'agent-skills', 'agents', 'azure', 'foundry', 'mcp']
-source: "https://github.com/glowElephant/skills-1"
-upstream: "https://github.com/microsoft/skills"
+domain: [general, ai-agent]
+tags: [skills, agent-skills, agents, azure, foundry, mcp]
+source: https://github.com/glowElephant/skills-1
+upstream: https://github.com/microsoft/skills
 when_to_use: MS의 SDK용 스킬·MCP·AGENTS.md. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

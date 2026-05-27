@@ -1,10 +1,10 @@
 ---
-name: "awesome-agent-skills"
+name: awesome-agent-skills
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'agent-skills', 'ai-agents', 'antigravity-skills', 'awesome', 'awesome-list']
-source: "https://github.com/glowElephant/awesome-agent-skills"
-upstream: "https://github.com/VoltAgent/awesome-agent-skills"
+domain: [general, ai-agent]
+tags: [skills, agent-skills, ai-agents, antigravity-skills, awesome, awesome-list]
+source: https://github.com/glowElephant/awesome-agent-skills
+upstream: https://github.com/VoltAgent/awesome-agent-skills
 when_to_use: 1000+ Skills 멀티플랫폼. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

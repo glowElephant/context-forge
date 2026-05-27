@@ -1,10 +1,10 @@
 ---
-name: "Awesome-MCP-ZH"
+name: Awesome-MCP-ZH
 category: mcp
-domain: ['general', 'ai-agent']
-tags: ['mcp', 'claude', 'claude-mcp', 'deepseek', 'deepseek-mcp']
-source: "https://github.com/glowElephant/Awesome-MCP-ZH"
-upstream: "https://github.com/yzfly/Awesome-MCP-ZH"
+domain: [general, ai-agent]
+tags: [mcp, claude, claude-mcp, deepseek, deepseek-mcp]
+source: https://github.com/glowElephant/Awesome-MCP-ZH
+upstream: https://github.com/yzfly/Awesome-MCP-ZH
 when_to_use: MCP 한자권 가이드/클라이언트. MCP 서버를 추가하거나 발굴할 때 참고
 priority: 3
 status: active

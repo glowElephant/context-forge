@@ -1,10 +1,10 @@
 ---
 name: ralph
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agent']
-source: "https://github.com/glowElephant/ralph"
-upstream: "https://github.com/snarktank/ralph"
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agent]
+source: https://github.com/glowElephant/ralph
+upstream: https://github.com/snarktank/ralph
 when_to_use: 자율 PRD 완료 루프. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

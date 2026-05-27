@@ -1,11 +1,11 @@
 ---
 name: SwiftAgents
-category: "agents-md"
-domain: ['general', 'ai-agent']
-tags: ['agents-md']
-source: "https://github.com/glowElephant/SwiftAgents"
-upstream: "https://github.com/twostraws/SwiftAgents"
-when_to_use: "Swift/SwiftUI용 AGENTS.md 레퍼런스. AGENTS.md(IDE-agnostic) 컨벤션이 필요할 때 참고"
+category: agents-md
+domain: [general, ai-agent]
+tags: [agents-md]
+source: https://github.com/glowElephant/SwiftAgents
+upstream: https://github.com/twostraws/SwiftAgents
+when_to_use: Swift/SwiftUI용 AGENTS.md 레퍼런스. AGENTS.md(IDE-agnostic) 컨벤션이 필요할 때 참고
 priority: 3
 status: active
 ---

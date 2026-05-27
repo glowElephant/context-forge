@@ -1,11 +1,11 @@
 ---
-name: "claude-code-ultimate-guide"
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md', 'agentic-coding', 'ai-assistant', 'ai-coding', 'ai-pair-programming', 'ai-security']
-source: "https://github.com/glowElephant/claude-code-ultimate-guide"
-upstream: "https://github.com/FlorianBruniaux/claude-code-ultimate-guide"
-when_to_use: "Claude Code 종합 가이드 (초보→파워유저, production 템플릿). 프로젝트의 CLAUDE.md 구조를 결정할 때 참고"
+name: claude-code-ultimate-guide
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md, agentic-coding, ai-assistant, ai-coding, ai-pair-programming, ai-security]
+source: https://github.com/glowElephant/claude-code-ultimate-guide
+upstream: https://github.com/FlorianBruniaux/claude-code-ultimate-guide
+when_to_use: Claude Code 종합 가이드 (초보→파워유저, production 템플릿). 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
 ---

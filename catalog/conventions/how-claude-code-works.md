@@ -1,10 +1,10 @@
 ---
-name: "how-claude-code-works"
+name: how-claude-code-works
 category: conventions
-domain: ['general']
-tags: ['conventions', 'ai', 'ai-agent', 'anthropic', 'architecture', 'claude']
-source: "https://github.com/glowElephant/how-claude-code-works"
-upstream: "https://github.com/Windy3f3f3f3f/how-claude-code-works"
+domain: [general]
+tags: [conventions, ai, ai-agent, anthropic, architecture, claude]
+source: https://github.com/glowElephant/how-claude-code-works
+upstream: https://github.com/Windy3f3f3f3f/how-claude-code-works
 when_to_use: Claude Code 내부 동작 분석. 전체 코드/문서 규약을 정할 때 참고
 priority: 3
 status: active

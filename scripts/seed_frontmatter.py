@@ -139,19 +139,45 @@ def render_body(name: str, source: dict[str, Any], description: str | None,
 
 
 def yaml_block(d: dict[str, Any]) -> str:
-    """frontmatter용 간단 YAML 직렬화 (jq/yaml 무의존)."""
+    """frontmatter용 간단 YAML 직렬화 (jq/yaml 무의존).
+
+    quote 규칙은 YAML plain scalar 안전 범위에 맞춰 보수적으로:
+    - hyphen(-)은 단어 중간에 있으면 안전 → quote 안 함 (예: `claude-md` 그대로)
+    - URL(`://`)도 plain scalar OK (콜론 뒤가 슬래시면 안전)
+    - `: ` (콜론+공백), 따옴표, 시작 문자가 `-`/`{`/`[`/`&`/`*`/`!`/`|`/`>`/`'`/`"`/`%`/`@`/`` ` ``인 값만 quote
+    """
+    def needs_quote(v: str) -> bool:
+        if not v:
+            return False
+        # 첫 글자 위험
+        if v[0] in "-{[&*!|>'\"%@`":
+            return True
+        # 따옴표 자체 포함
+        if "'" in v or '"' in v:
+            return True
+        # 콜론 + 공백 (YAML map 구분자로 오해됨)
+        if ": " in v or v.endswith(":"):
+            return True
+        # # 주석
+        if " #" in v or v.startswith("#"):
+            return True
+        return False
+
+    def render_str(v: str) -> str:
+        if needs_quote(v):
+            escaped = v.replace("\\", "\\\\").replace('"', '\\"')
+            return f'"{escaped}"'
+        return v
+
     lines = ["---"]
     for k, v in d.items():
         if isinstance(v, list):
-            inner = ", ".join(repr(x) if isinstance(x, str) else str(x) for x in v)
+            inner = ", ".join(
+                render_str(x) if isinstance(x, str) else str(x) for x in v
+            )
             lines.append(f"{k}: [{inner}]")
         elif isinstance(v, str):
-            # 안전한 문자 안에 있으면 quote 없이, 아니면 double-quote
-            if any(ch in v for ch in ":#-{}[]&*!|>'\"%@`,"):
-                escaped = v.replace("\\", "\\\\").replace('"', '\\"')
-                lines.append(f'{k}: "{escaped}"')
-            else:
-                lines.append(f"{k}: {v}")
+            lines.append(f"{k}: {render_str(v)}")
         elif isinstance(v, int):
             lines.append(f"{k}: {v}")
         else:

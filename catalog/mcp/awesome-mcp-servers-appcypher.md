@@ -1,10 +1,10 @@
 ---
-name: "awesome-mcp-servers-appcypher"
+name: awesome-mcp-servers-appcypher
 category: mcp
-domain: ['general', 'ai-agent']
-tags: ['mcp', 'ai', 'anthropic-claude', 'awesome', 'context']
-source: "https://github.com/glowElephant/awesome-mcp-servers-1"
-upstream: "https://github.com/appcypher/awesome-mcp-servers"
+domain: [general, ai-agent]
+tags: [mcp, ai, anthropic-claude, awesome, context]
+source: https://github.com/glowElephant/awesome-mcp-servers-1
+upstream: https://github.com/appcypher/awesome-mcp-servers
 when_to_use: MCP 보완 큐레이션. MCP 서버를 추가하거나 발굴할 때 참고
 priority: 3
 status: active

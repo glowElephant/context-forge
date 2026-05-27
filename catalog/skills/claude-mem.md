@@ -1,10 +1,10 @@
 ---
-name: "claude-mem"
+name: claude-mem
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'ai', 'ai-agents', 'ai-memory', 'anthropic', 'artificial-intelligence']
-source: "https://github.com/glowElephant/claude-mem"
-upstream: "https://github.com/thedotmack/claude-mem"
+domain: [general, ai-agent]
+tags: [skills, ai, ai-agents, ai-memory, anthropic, artificial-intelligence]
+source: https://github.com/glowElephant/claude-mem
+upstream: https://github.com/thedotmack/claude-mem
 when_to_use: 세션 영구 컨텍스트 — agent 작업 압축 + 재주입. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

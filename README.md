@@ -76,7 +76,7 @@ v2 will broaden to domain conventions (game engines, mobile, web, backend, ML, s
 - [x] Monthly borderline rescore + quarterly full rescore (5-factor rubric)
 - [x] Monthly auto-discovery job → Issue triage (`automation.py discover` + `monthly-rediscovery.yml`)
 - [x] Topic tag `context-forge-source` on all forks ([browse](https://github.com/glowElephant?tab=repositories&q=topic%3Acontext-forge-source))
-- [ ] End-to-end smoke test (manual, fresh-session required)
+- [x] End-to-end smoke test — Phase 0~6 dogfood-validated 2026-05-27 (2 bugs found & fixed: YAML quote leak in auto-seeded category, `git branch -M main` missing for Windows). Fresh-session test in real Claude Code still recommended for full Skill-tool invocation flow.
 - [ ] Automated catalog extraction from forked sources (v1.5)
 - [ ] v2 domain expansion (game/mobile/web/backend/ML/security)
 

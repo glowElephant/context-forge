@@ -1,10 +1,10 @@
 ---
 name: tweakcc
 category: conventions
-domain: ['general']
-tags: ['conventions', 'agentic', 'anthropic', 'bun', 'claude-code', 'claude-code-native']
-source: "https://github.com/glowElephant/tweakcc"
-upstream: "https://github.com/Piebald-AI/tweakcc"
+domain: [general]
+tags: [conventions, agentic, anthropic, bun, claude-code, claude-code-native]
+source: https://github.com/glowElephant/tweakcc
+upstream: https://github.com/Piebald-AI/tweakcc
 when_to_use: Claude Code 시스템프롬프트 트윅. 전체 코드/문서 규약을 정할 때 참고
 priority: 3
 status: active

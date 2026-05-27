@@ -1,10 +1,10 @@
 ---
 name: ruflo
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agentic-ai', 'agentic-framework', 'agentic-rag', 'agentic-workflow', 'agents']
-source: "https://github.com/glowElephant/ruflo"
-upstream: "https://github.com/ruvnet/ruflo"
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agentic-ai, agentic-framework, agentic-rag, agentic-workflow, agents]
+source: https://github.com/glowElephant/ruflo
+upstream: https://github.com/ruvnet/ruflo
 when_to_use: 분산 스웜 + RAG + Claude/Codex. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

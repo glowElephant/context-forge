@@ -1,10 +1,10 @@
 ---
-name: "skills-mattpocock"
+name: skills-mattpocock
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'claude']
-source: "https://github.com/glowElephant/skills-mattpocock"
-upstream: "https://github.com/mattpocock/skills"
+domain: [general, ai-agent]
+tags: [skills, claude]
+source: https://github.com/glowElephant/skills-mattpocock
+upstream: https://github.com/mattpocock/skills
 when_to_use: Matt Pocock의 .claude 스킬 모음. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

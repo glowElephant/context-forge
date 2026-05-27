@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.1.2 — 2026-05-27 (smoke test fixes)
+
+### Fixed
+
+- **`scripts/seed_frontmatter.py` yaml_block의 quote 규칙이 너무 보수적** — hyphen 들어간 plain scalar(`claude-md` 등)를 quote해서 frontmatter에 `category: "claude-md"`로 나옴. `/context-forge` Phase 3가 같은 카테고리를 quoted/unquoted 두 그룹으로 분리해 표시. 67개 auto-seeded entries 재시드.
+- **`.claude/skills/context-forge/SKILL.md` Phase 5에 `git branch -M main` 추가** — Windows `init.defaultBranch=master` 환경에서 `gh repo create --clone --add-readme=false` 후 `git push -u origin main`이 "src refspec main does not match any"로 실패. 단순 한 줄 추가로 cross-platform 안전.
+
+### Why
+
+오늘(2026-05-27) end-to-end dogfood 스모크 테스트 실행 중 발견. 둘 다 차단성/사용성 이슈로 Phase 3·5 실제 흐름에서 노출됨. README의 `[x] End-to-end smoke test` 체크박스로 전환.
+
 ## v1.1.1 — 2026-05-27 (same day patch)
 
 ### Added

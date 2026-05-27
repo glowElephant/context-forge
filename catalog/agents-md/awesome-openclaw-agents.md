@@ -1,11 +1,11 @@
 ---
-name: "awesome-openclaw-agents"
-category: "agents-md"
-domain: ['general', 'ai-agent']
-tags: ['agents-md', 'ai-agent-templates', 'ai-agents', 'ai-automation', 'anthropic', 'automation']
-source: "https://github.com/glowElephant/awesome-openclaw-agents"
-upstream: "https://github.com/mergisi/awesome-openclaw-agents"
-when_to_use: "OpenClaw 162 agent 템플릿 (19 카테고리, SOUL.md 설정). AGENTS.md(IDE-agnostic) 컨벤션이 필요할 때 참고"
+name: awesome-openclaw-agents
+category: agents-md
+domain: [general, ai-agent]
+tags: [agents-md, ai-agent-templates, ai-agents, ai-automation, anthropic, automation]
+source: https://github.com/glowElephant/awesome-openclaw-agents
+upstream: https://github.com/mergisi/awesome-openclaw-agents
+when_to_use: OpenClaw 162 agent 템플릿 (19 카테고리, SOUL.md 설정). AGENTS.md(IDE-agnostic) 컨벤션이 필요할 때 참고
 priority: 3
 status: active
 ---

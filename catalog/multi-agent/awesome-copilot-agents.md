@@ -1,10 +1,10 @@
 ---
-name: "awesome-copilot-agents"
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agent-skills', 'ai-agents', 'awesome', 'awesome-list', 'copilot-instructions']
-source: "https://github.com/glowElephant/awesome-copilot-agents"
-upstream: "https://github.com/Code-and-Sorts/awesome-copilot-agents"
+name: awesome-copilot-agents
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agent-skills, ai-agents, awesome, awesome-list, copilot-instructions]
+source: https://github.com/glowElephant/awesome-copilot-agents
+upstream: https://github.com/Code-and-Sorts/awesome-copilot-agents
 when_to_use: Copilot agents/skills/MCP. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

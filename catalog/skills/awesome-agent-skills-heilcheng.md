@@ -1,10 +1,10 @@
 ---
-name: "awesome-agent-skills-heilcheng"
+name: awesome-agent-skills-heilcheng
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'agent-skills', 'ai-agents', 'ai-development', 'anthropic', 'automation']
-source: "https://github.com/glowElephant/awesome-agent-skills-1"
-upstream: "https://github.com/heilcheng/awesome-agent-skills"
+domain: [general, ai-agent]
+tags: [skills, agent-skills, ai-agents, ai-development, anthropic, automation]
+source: https://github.com/glowElephant/awesome-agent-skills-1
+upstream: https://github.com/heilcheng/awesome-agent-skills
 when_to_use: 진짜 스킬 큐레이션. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

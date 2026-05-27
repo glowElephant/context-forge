@@ -1,10 +1,10 @@
 ---
-name: "awesome-claude-code-jqueryscript"
+name: awesome-claude-code-jqueryscript
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'awesome-list', 'awesome-lists', 'claude', 'claude-code', 'claude-code-plugin']
-source: "https://github.com/glowElephant/awesome-claude-code-1"
-upstream: "https://github.com/jqueryscript/awesome-claude-code"
+domain: [general, ai-agent]
+tags: [skills, awesome-list, awesome-lists, claude, claude-code, claude-code-plugin]
+source: https://github.com/glowElephant/awesome-claude-code-1
+upstream: https://github.com/jqueryscript/awesome-claude-code
 when_to_use: Claude Code 도구/IDE 통합. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

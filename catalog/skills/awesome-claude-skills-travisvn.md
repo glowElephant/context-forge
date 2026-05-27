@@ -1,10 +1,10 @@
 ---
-name: "awesome-claude-skills-travisvn"
+name: awesome-claude-skills-travisvn
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'agentic-coding', 'anthropic', 'awesome', 'awesome-list', 'awesome-lists']
-source: "https://github.com/glowElephant/awesome-claude-skills"
-upstream: "https://github.com/travisvn/awesome-claude-skills"
+domain: [general, ai-agent]
+tags: [skills, agentic-coding, anthropic, awesome, awesome-list, awesome-lists]
+source: https://github.com/glowElephant/awesome-claude-skills
+upstream: https://github.com/travisvn/awesome-claude-skills
 when_to_use: Claude Code Skills 큐레이션. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

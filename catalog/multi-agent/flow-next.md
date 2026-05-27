@@ -1,11 +1,11 @@
 ---
-name: "flow-next"
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agentic-workflow', 'ai-agent', 'ai-workflow', 'anthropic', 'autonomous-agent']
-source: "https://github.com/glowElephant/flow-next"
-upstream: "https://github.com/gmickel/flow-next"
-when_to_use: "Plan-first + 크로스 모델 리뷰. 여러 에이전트가 협업·오케스트레이션될 때 참고"
+name: flow-next
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agentic-workflow, ai-agent, ai-workflow, anthropic, autonomous-agent]
+source: https://github.com/glowElephant/flow-next
+upstream: https://github.com/gmickel/flow-next
+when_to_use: Plan-first + 크로스 모델 리뷰. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active
 ---

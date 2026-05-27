@@ -1,11 +1,11 @@
 ---
-name: "awesome-claude-skills"
+name: awesome-claude-skills
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'agent-skills', 'ai-agents', 'antigravity', 'automation', 'claude']
-source: "https://github.com/glowElephant/awesome-claude-skills"
-upstream: "https://github.com/ComposioHQ/awesome-claude-skills"
-when_to_use: "Composio 멀티-IDE Skills. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고"
+domain: [general, ai-agent]
+tags: [skills, agent-skills, ai-agents, antigravity, automation, claude]
+source: https://github.com/glowElephant/awesome-claude-skills
+upstream: https://github.com/ComposioHQ/awesome-claude-skills
+when_to_use: Composio 멀티-IDE Skills. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
 ---

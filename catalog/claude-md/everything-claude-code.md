@@ -1,10 +1,10 @@
 ---
-name: "everything-claude-code"
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md', 'ai-agents', 'anthropic', 'claude', 'claude-code', 'developer-tools']
-source: "https://github.com/glowElephant/everything-claude-code"
-upstream: "https://github.com/affaan-m/ECC"
+name: everything-claude-code
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md, ai-agents, anthropic, claude, claude-code, developer-tools]
+source: https://github.com/glowElephant/everything-claude-code
+upstream: https://github.com/affaan-m/ECC
 when_to_use: Claude/Codex/Cursor 통합 하니스 (4/28 이후 ECC로 rename됨). 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active

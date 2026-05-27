@@ -1,10 +1,10 @@
 ---
 name: overstory
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agent-swarms', 'ai-agents', 'claude-code', 'tmux', 'claude']
-source: "https://github.com/glowElephant/overstory"
-upstream: "https://github.com/jayminwest/overstory"
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agent-swarms, ai-agents, claude-code, tmux, claude]
+source: https://github.com/glowElephant/overstory
+upstream: https://github.com/jayminwest/overstory
 when_to_use: 런타임 어댑터 패턴 (플러거블). 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

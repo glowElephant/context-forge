@@ -1,10 +1,10 @@
 ---
-name: "Claude-Code-Everything-You-Need-to-Know"
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md', 'claude', 'mcp', 'prompt']
-source: "https://github.com/glowElephant/Claude-Code-Everything-You-Need-to-Know"
-upstream: "https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know"
+name: Claude-Code-Everything-You-Need-to-Know
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md, claude, mcp, prompt]
+source: https://github.com/glowElephant/Claude-Code-Everything-You-Need-to-Know
+upstream: https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know
 when_to_use: MCP·훅·BMAD까지 망라. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active

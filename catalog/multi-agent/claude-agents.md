@@ -1,10 +1,10 @@
 ---
-name: "claude-agents"
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'claude']
-source: "https://github.com/glowElephant/claude-agents"
-upstream: "https://github.com/iannuttall/claude-agents"
+name: claude-agents
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, claude]
+source: https://github.com/glowElephant/claude-agents
+upstream: https://github.com/iannuttall/claude-agents
 when_to_use: 깔끔한 커스텀 서브에이전트. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

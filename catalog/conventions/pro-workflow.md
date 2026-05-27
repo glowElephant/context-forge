@@ -1,10 +1,10 @@
 ---
-name: "pro-workflow"
+name: pro-workflow
 category: conventions
-domain: ['general']
-tags: ['conventions', 'agent-orchestration', 'ai-agents', 'ai-coding', 'ai-workflow', 'claude']
-source: "https://github.com/glowElephant/pro-workflow"
-upstream: "https://github.com/rohitg00/pro-workflow"
+domain: [general]
+tags: [conventions, agent-orchestration, ai-agents, ai-coding, ai-workflow, claude]
+source: https://github.com/glowElephant/pro-workflow
+upstream: https://github.com/rohitg00/pro-workflow
 when_to_use: 자기교정 메모리 + 워크트리. 전체 코드/문서 규약을 정할 때 참고
 priority: 3
 status: active

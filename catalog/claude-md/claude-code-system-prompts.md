@@ -1,10 +1,10 @@
 ---
-name: "claude-code-system-prompts"
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md', 'claude-code', 'claude-code-system-prompts', 'system-prompts', 'claude', 'agent']
-source: "https://github.com/glowElephant/claude-code-system-prompts"
-upstream: "https://github.com/Piebald-AI/claude-code-system-prompts"
+name: claude-code-system-prompts
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md, claude-code, claude-code-system-prompts, system-prompts, claude, agent]
+source: https://github.com/glowElephant/claude-code-system-prompts
+upstream: https://github.com/Piebald-AI/claude-code-system-prompts
 when_to_use: Claude Code 내부 system prompt + 27 builtin tool prompts 해부. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active

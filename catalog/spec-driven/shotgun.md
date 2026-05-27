@@ -1,11 +1,11 @@
 ---
 name: shotgun
-category: "spec-driven"
-domain: ['general']
-tags: ['spec-driven', 'cli', 'codebase-indexing', 'developer-tools', 'prd', 'spec-driven-development']
-source: "https://github.com/glowElephant/shotgun"
-upstream: "https://github.com/shotgun-sh/shotgun"
-when_to_use: "코드베이스 인지형 spec 작성. Spec-Driven Development 워크플로우를 도입할 때 참고"
+category: spec-driven
+domain: [general]
+tags: [spec-driven, cli, codebase-indexing, developer-tools, prd, spec-driven-development]
+source: https://github.com/glowElephant/shotgun
+upstream: https://github.com/shotgun-sh/shotgun
+when_to_use: 코드베이스 인지형 spec 작성. Spec-Driven Development 워크플로우를 도입할 때 참고
 priority: 3
 status: active
 ---

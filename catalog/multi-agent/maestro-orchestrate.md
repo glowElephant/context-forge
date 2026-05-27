@@ -1,10 +1,10 @@
 ---
-name: "maestro-orchestrate"
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agentic', 'ai-agents', 'anthropic', 'claude', 'claude-code']
-source: "https://github.com/glowElephant/maestro-orchestrate"
-upstream: "https://github.com/josstei/maestro-orchestrate"
+name: maestro-orchestrate
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agentic, ai-agents, anthropic, claude, claude-code]
+source: https://github.com/glowElephant/maestro-orchestrate
+upstream: https://github.com/josstei/maestro-orchestrate
 when_to_use: 멀티에이전트 (Gemini/Claude/Codex/Qwen). 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

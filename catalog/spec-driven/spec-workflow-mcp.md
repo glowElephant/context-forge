@@ -1,11 +1,11 @@
 ---
-name: "spec-workflow-mcp"
-category: "spec-driven"
-domain: ['general']
-tags: ['spec-driven', 'mcp', 'spec']
-source: "https://github.com/glowElephant/spec-workflow-mcp"
-upstream: "https://github.com/Pimzino/spec-workflow-mcp"
-when_to_use: "구조화된 SDD MCP 서버 + 대시보드. Spec-Driven Development 워크플로우를 도입할 때 참고"
+name: spec-workflow-mcp
+category: spec-driven
+domain: [general]
+tags: [spec-driven, mcp, spec]
+source: https://github.com/glowElephant/spec-workflow-mcp
+upstream: https://github.com/Pimzino/spec-workflow-mcp
+when_to_use: 구조화된 SDD MCP 서버 + 대시보드. Spec-Driven Development 워크플로우를 도입할 때 참고
 priority: 3
 status: active
 ---

@@ -1,11 +1,11 @@
 ---
-name: "context-engineering-kit"
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md', 'agent', 'ai', 'claude', 'cline', 'cursor']
-source: "https://github.com/glowElephant/context-engineering-kit"
-upstream: "https://github.com/NeoLabHQ/context-engineering-kit"
-when_to_use: "멀티-IDE 컨텍스트 엔지니어링 키트. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고"
+name: context-engineering-kit
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md, agent, ai, claude, cline, cursor]
+source: https://github.com/glowElephant/context-engineering-kit
+upstream: https://github.com/NeoLabHQ/context-engineering-kit
+when_to_use: 멀티-IDE 컨텍스트 엔지니어링 키트. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
 ---

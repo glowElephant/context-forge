@@ -1,10 +1,10 @@
 ---
 name: myclaude
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'claude', 'agent', 'codex']
-source: "https://github.com/glowElephant/myclaude"
-upstream: "https://github.com/stellarlinkco/myclaude"
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, claude, agent, codex]
+source: https://github.com/glowElephant/myclaude
+upstream: https://github.com/stellarlinkco/myclaude
 when_to_use: Claude/Codex/Gemini 합동 워크플로우. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active

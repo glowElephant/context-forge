@@ -1,10 +1,10 @@
 ---
-name: "antigravity-awesome-skills"
+name: antigravity-awesome-skills
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'agent-skills', 'agentic-skills', 'ai-agent-skills', 'ai-agents', 'ai-coding']
-source: "https://github.com/glowElephant/antigravity-awesome-skills"
-upstream: "https://github.com/sickn33/antigravity-awesome-skills"
+domain: [general, ai-agent]
+tags: [skills, agent-skills, agentic-skills, ai-agent-skills, ai-agents, ai-coding]
+source: https://github.com/glowElephant/antigravity-awesome-skills
+upstream: https://github.com/sickn33/antigravity-awesome-skills
 when_to_use: 1400+ 스킬 + 인스톨러. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

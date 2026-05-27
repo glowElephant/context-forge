@@ -1,10 +1,10 @@
 ---
-name: "claude-code-showcase"
+name: claude-code-showcase
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'claude']
-source: "https://github.com/glowElephant/claude-code-showcase"
-upstream: "https://github.com/ChrisWiles/claude-code-showcase"
+domain: [general, ai-agent]
+tags: [skills, claude]
+source: https://github.com/glowElephant/claude-code-showcase
+upstream: https://github.com/ChrisWiles/claude-code-showcase
 when_to_use: 훅·스킬·에이전트·CMD·GHA 종합. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

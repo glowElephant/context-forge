@@ -1,10 +1,10 @@
 ---
 name: rails_ai_agents
 category: skills
-domain: ['general', 'ai-agent']
-tags: ['skills', 'mcp', 'spec']
-source: "https://github.com/glowElephant/rails_ai_agents"
-upstream: "https://github.com/ThibautBaissac/rails_ai_agents"
+domain: [general, ai-agent]
+tags: [skills, mcp, spec]
+source: https://github.com/glowElephant/rails_ai_agents
+upstream: https://github.com/ThibautBaissac/rails_ai_agents
 when_to_use: Rails 특화 스킬·에이전트·훅·MCP 묶음. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active

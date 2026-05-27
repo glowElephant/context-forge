@@ -1,10 +1,10 @@
 ---
-name: "awesome-cursorrules-zh"
-category: "claude-md"
-domain: ['general', 'ai-agent']
-tags: ['claude-md', 'ai', 'ai-assistant', 'ai-coding', 'awesome-list', 'bilingual']
-source: "https://github.com/glowElephant/awesome-cursorrules-zh"
-upstream: "https://github.com/LessUp/awesome-cursorrules-zh"
+name: awesome-cursorrules-zh
+category: claude-md
+domain: [general, ai-agent]
+tags: [claude-md, ai, ai-assistant, ai-coding, awesome-list, bilingual]
+source: https://github.com/glowElephant/awesome-cursorrules-zh
+upstream: https://github.com/LessUp/awesome-cursorrules-zh
 when_to_use: 중국어 Cursor rules. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active

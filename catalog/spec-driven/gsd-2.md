@@ -1,11 +1,11 @@
 ---
-name: "gsd-2"
-category: "spec-driven"
-domain: ['general']
-tags: ['spec-driven', 'context-engineering', 'meta-prompting', 'spec-driven-development', 'spec']
-source: "https://github.com/glowElephant/gsd-2"
-upstream: "https://github.com/gsd-build/gsd-2"
-when_to_use: "get-shit-done 후속작 (긴 시간 자율 작업 컨텍스트 보존). Spec-Driven Development 워크플로우를 도입할 때 참고"
+name: gsd-2
+category: spec-driven
+domain: [general]
+tags: [spec-driven, context-engineering, meta-prompting, spec-driven-development, spec]
+source: https://github.com/glowElephant/gsd-2
+upstream: https://github.com/gsd-build/gsd-2
+when_to_use: get-shit-done 후속작 (긴 시간 자율 작업 컨텍스트 보존). Spec-Driven Development 워크플로우를 도입할 때 참고
 priority: 3
 status: active
 ---

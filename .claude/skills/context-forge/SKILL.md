@@ -163,6 +163,11 @@ Run these in order. After each command, confirm the expected output before proce
 gh repo create "<USER>/<NAME>" --private --clone --add-readme=false   # or --public
 cd "<LOCAL_PATH>/<NAME>"
 
+# 1b. Normalize local branch to `main` — Windows defaults to `master`, which
+#     mismatches the remote's expected `main` and causes `git push` to fail with
+#     "src refspec main does not match any". Idempotent on macOS/Linux.
+git branch -M main
+
 # 2. Make directory structure
 mkdir -p docs/know-how .claude/skills .claude/agents .claude/rules
 

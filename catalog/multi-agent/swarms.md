@@ -1,11 +1,11 @@
 ---
 name: swarms
-category: "multi-agent"
-domain: ['general', 'ai-agent']
-tags: ['multi-agent', 'agentic-ai', 'agentic-workflow', 'agents', 'ai', 'artificial-intelligence']
-source: "https://github.com/glowElephant/swarms"
-upstream: "https://github.com/kyegomez/swarms"
-when_to_use: "Enterprise multi-agent orchestration framework. 여러 에이전트가 협업·오케스트레이션될 때 참고"
+category: multi-agent
+domain: [general, ai-agent]
+tags: [multi-agent, agentic-ai, agentic-workflow, agents, ai, artificial-intelligence]
+source: https://github.com/glowElephant/swarms
+upstream: https://github.com/kyegomez/swarms
+when_to_use: Enterprise multi-agent orchestration framework. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active
 ---
