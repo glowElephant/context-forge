@@ -1,6 +1,81 @@
 # Fork Sync Log
 
 
+## 2026-05-27T04:25:53Z
+
+**Summary**: ✅ 65 synced · ⚠️ 2 failed · ❌ 0 skipped (total 67)
+
+| Repo | Result | Branch |
+|---|---|---|
+| `skills` | ✅ synced | `main` |
+| `superpowers` | ✅ synced | `main` |
+| `andrej-karpathy-skills` | ✅ synced | `main` |
+| `gstack` | ✅ synced | `main` |
+| `everything-claude-code` | ✅ synced | `main` |
+| `awesome-claude-code` | ✅ synced | `main` |
+| `awesome-claude-skills` | ✅ synced | `main` |
+| `antigravity-awesome-skills` | ✅ synced | `main` |
+| `claude-howto` | ✅ synced | `main` |
+| `awesome-agent-skills` | ✅ synced | `main` |
+| `awesome-claude-code-subagents` | ✅ synced | `main` |
+| `ralph` | ✅ synced | `main` |
+| `awesome-claude-skills-travisvn` | ✅ synced | `main` |
+| `context-engineering-intro` | ✅ synced | `main` |
+| `claude-code-best-practice` | ✅ synced | `main` |
+| `how-claude-code-works` | ✅ synced | `main` |
+| `pro-workflow` | ✅ synced | `main` |
+| `claude-agents` | ✅ synced | `main` |
+| `awesome-claude-code-toolkit` | ✅ synced | `main` |
+| `claude-code-sub-agents` | ✅ synced | `main` |
+| `claude-code-subagents` | ✅ synced | `main` |
+| `awesome-claude-code-plugins` | ✅ synced | `main` |
+| `awesome-claude-agents` | ✅ synced | `main` |
+| `awesome-agent-skills-heilcheng` | ✅ synced | `main` |
+| `awesome-claude-code-jqueryscript` | ✅ synced | `main` |
+| `awesome-claude` | ✅ synced | `main` |
+| `claude-code-hooks-mastery` | ✅ synced | `main` |
+| `claude-code-infrastructure-showcase` | ✅ synced | `main` |
+| `claude-code-showcase` | ✅ synced | `main` |
+| `Continuous-Claude-v3` | ✅ synced | `main` |
+| `buildwithclaude` | ✅ synced | `main` |
+| `tdd-guard` | ✅ synced | `main` |
+| `Claude-Code-Everything-You-Need-to-Know` | ✅ synced | `main` |
+| `tweakcc` | ✅ synced | `main` |
+| `oh-my-claudecode` | ✅ synced | `main` |
+| `awesome-cursorrules` | ✅ synced | `main` |
+| `awesome-copilot` | ⚠️ can't sync because there are diverging changes; use `--force` to overwrite the destination branch  | `main` |
+| `awesome-copilot-agents` | ✅ synced | `main` |
+| `awesome-cursorrules-zh` | ⚠️ can't sync because there are diverging changes; use `--force` to overwrite the destination branch  | `master` |
+| `myclaude` | ✅ synced | `master` |
+| `overstory` | ✅ synced | `main` |
+| `microsoft-skills` | ✅ synced | `main` |
+| `spec-kit` | ✅ synced | `main` |
+| `OpenSpec` | ✅ synced | `main` |
+| `spec-workflow-mcp` | ✅ synced | `main` |
+| `get-shit-done` | ✅ synced | `main` |
+| `shotgun` | ✅ synced | `main` |
+| `agents` | ✅ synced | `main` |
+| `ruflo` | ✅ synced | `main` |
+| `open-multi-agent` | ✅ synced | `main` |
+| `maestro-orchestrate` | ✅ synced | `main` |
+| `flow-next` | ✅ synced | `main` |
+| `claude-code-workflow` | ✅ synced | `main` |
+| `context-engineering-kit` | ✅ synced | `master` |
+| `mcp-servers-official` | ✅ synced | `main` |
+| `awesome-mcp-servers` | ✅ synced | `main` |
+| `Awesome-MCP-ZH` | ✅ synced | `main` |
+| `awesome-remote-mcp-servers` | ✅ synced | `main` |
+| `awesome-claude-plugins` | ✅ synced | `master` |
+| `awesome-mcp-servers-appcypher` | ✅ synced | `main` |
+| `agents.md` | ✅ synced | `main` |
+| `design.md` | ✅ synced | `main` |
+| `awesome-design-md` | ✅ synced | `main` |
+| `Prompt-Engineering-Guide` | ✅ synced | `main` |
+| `prompts.chat` | ✅ synced | `main` |
+| `SwiftAgents` | ✅ synced | `main` |
+| `rails_ai_agents` | ✅ synced | `main` |
+
+
 ## 2026-05-27T04:22:55Z
 
 **Summary**: ✅ 48 synced · ⚠️ 19 failed · ❌ 0 skipped (total 67)
