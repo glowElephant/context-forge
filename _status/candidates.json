@@ -1,12 +1,376 @@
 {
   "version": 1,
-  "updated_at": null,
+  "updated_at": "2026-05-27",
   "policy": {
     "scope": "v1",
-    "categories": ["claude-md", "agents-md", "skills", "conventions", "multi-agent", "prompts", "spec-driven", "mcp", "boilerplate"],
+    "categories": [
+      "claude-md",
+      "agents-md",
+      "skills",
+      "conventions",
+      "multi-agent",
+      "prompts",
+      "spec-driven",
+      "mcp",
+      "boilerplate"
+    ],
     "min_pop_act_total": 7,
-    "min_stars": 500,
-    "freshness_months": 6
+    "min_stars": 2000,
+    "freshness_months": 6,
+    "top_per_category": 5
   },
-  "entries": []
+  "entries": [
+    {
+      "url": "https://github.com/affaan-m/ECC",
+      "name": "affaan-m/ECC",
+      "category": "skills",
+      "matched_keyword": "claude-code-skills",
+      "stars": 194768,
+      "pushed_at": "2026-05-25T18:28:39Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/mattpocock/skills",
+      "name": "mattpocock/skills",
+      "category": "skills",
+      "matched_keyword": "claude-skills",
+      "stars": 107229,
+      "pushed_at": "2026-05-20T08:46:54Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/thedotmack/claude-mem",
+      "name": "thedotmack/claude-mem",
+      "category": "skills",
+      "matched_keyword": "claude-skills",
+      "stars": 78806,
+      "pushed_at": "2026-05-26T05:10:19Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "name": "JuliusBrussee/caveman",
+      "category": "skills",
+      "matched_keyword": "claude-code-skills",
+      "stars": 65249,
+      "pushed_at": "2026-05-20T10:44:54Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "name": "code-yeongyu/oh-my-openagent",
+      "category": "skills",
+      "matched_keyword": "claude-skills",
+      "stars": 59698,
+      "pushed_at": "2026-05-27T04:59:04Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/davila7/claude-code-templates",
+      "name": "davila7/claude-code-templates",
+      "category": "claude-md",
+      "matched_keyword": "claude-code-template",
+      "stars": 27594,
+      "pushed_at": "2026-05-27T04:33:10Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+      "name": "Piebald-AI/claude-code-system-prompts",
+      "category": "claude-md",
+      "matched_keyword": "claude-md",
+      "stars": 10531,
+      "pushed_at": "2026-05-27T01:31:38Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/cft0808/edict",
+      "name": "cft0808/edict",
+      "category": "multi-agent",
+      "matched_keyword": "multi-agent-orchestration",
+      "stars": 15881,
+      "pushed_at": "2026-05-27T00:09:33Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/microsoft/agent-framework",
+      "name": "microsoft/agent-framework",
+      "category": "multi-agent",
+      "matched_keyword": "multi-agent-orchestration",
+      "stars": 10771,
+      "pushed_at": "2026-05-27T00:50:26Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/zeromicro/go-zero",
+      "name": "zeromicro/go-zero",
+      "category": "spec-driven",
+      "matched_keyword": "spec-driven-development",
+      "stars": 33048,
+      "pushed_at": "2026-05-26T13:25:52Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "name": "Mintplex-Labs/anything-llm",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 60652,
+      "pushed_at": "2026-05-26T19:37:51Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "name": "microsoft/playwright-mcp",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 33069,
+      "pushed_at": "2026-05-23T14:41:54Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/github/github-mcp-server",
+      "name": "github/github-mcp-server",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 30202,
+      "pushed_at": "2026-05-26T22:45:46Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "name": "PrefectHQ/fastmcp",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 25339,
+      "pushed_at": "2026-05-26T18:18:16Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/activepieces/activepieces",
+      "name": "activepieces/activepieces",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 22430,
+      "pushed_at": "2026-05-26T23:17:08Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts",
+      "name": "EvoLinkAI/awesome-gpt-image-2-API-and-Prompts",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 15574,
+      "pushed_at": "2026-05-22T09:06:04Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "name": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 12213,
+      "pushed_at": "2026-05-27T00:26:48Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "name": "FlorianBruniaux/claude-code-ultimate-guide",
+      "category": "claude-md",
+      "matched_keyword": "claude-code-template",
+      "stars": 4508,
+      "pushed_at": "2026-05-25T08:36:29Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/gadievron/raptor",
+      "name": "gadievron/raptor",
+      "category": "claude-md",
+      "matched_keyword": "claude-md",
+      "stars": 2758,
+      "pushed_at": "2026-05-26T23:52:12Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/centminmod/my-claude-code-setup",
+      "name": "centminmod/my-claude-code-setup",
+      "category": "claude-md",
+      "matched_keyword": "claude-md",
+      "stars": 2361,
+      "pushed_at": "2026-05-24T05:29:58Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/mergisi/awesome-openclaw-agents",
+      "name": "mergisi/awesome-openclaw-agents",
+      "category": "agents-md",
+      "matched_keyword": "agents-md",
+      "stars": 3460,
+      "pushed_at": "2026-05-25T10:21:05Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/kyegomez/swarms",
+      "name": "kyegomez/swarms",
+      "category": "multi-agent",
+      "matched_keyword": "multi-agent-orchestration",
+      "stars": 6747,
+      "pushed_at": "2026-05-25T19:28:10Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/open-multi-agent/open-multi-agent",
+      "name": "open-multi-agent/open-multi-agent",
+      "category": "multi-agent",
+      "matched_keyword": "multi-agent-orchestration",
+      "stars": 6257,
+      "pushed_at": "2026-05-27T03:49:10Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/builderz-labs/mission-control",
+      "name": "builderz-labs/mission-control",
+      "category": "multi-agent",
+      "matched_keyword": "multi-agent-orchestration",
+      "stars": 5022,
+      "pushed_at": "2026-05-20T21:54:55Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/gsd-build/gsd-2",
+      "name": "gsd-build/gsd-2",
+      "category": "spec-driven",
+      "matched_keyword": "spec-driven-development",
+      "stars": 7735,
+      "pushed_at": "2026-05-22T23:08:59Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/potpie-ai/potpie",
+      "name": "potpie-ai/potpie",
+      "category": "spec-driven",
+      "matched_keyword": "spec-driven-development",
+      "stars": 5404,
+      "pushed_at": "2026-05-26T11:21:04Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/gotalab/cc-sdd",
+      "name": "gotalab/cc-sdd",
+      "category": "spec-driven",
+      "matched_keyword": "spec-driven-development",
+      "stars": 3396,
+      "pushed_at": "2026-05-20T08:45:14Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/hawk86104/three-vue-tres",
+      "name": "hawk86104/three-vue-tres",
+      "category": "spec-driven",
+      "matched_keyword": "openspec",
+      "stars": 2259,
+      "pushed_at": "2026-05-22T03:31:40Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh",
+      "name": "PlexPt/awesome-chatgpt-prompts-zh",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 60367,
+      "pushed_at": "2026-04-28T10:52:14Z",
+      "popularity": 5,
+      "activity": 4,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/ai-boost/awesome-prompts",
+      "name": "ai-boost/awesome-prompts",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 8028,
+      "pushed_at": "2026-05-26T08:16:36Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/glidea/banana-prompt-quicker",
+      "name": "glidea/banana-prompt-quicker",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 2369,
+      "pushed_at": "2026-05-20T09:44:03Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-05-27"
+    },
+    {
+      "url": "https://github.com/MrLesk/Backlog.md",
+      "name": "MrLesk/Backlog.md",
+      "category": "agents-md",
+      "matched_keyword": "agents-md",
+      "stars": 5629,
+      "pushed_at": "2026-05-07T21:29:07Z",
+      "popularity": 4,
+      "activity": 4,
+      "discovered_at": "2026-05-27"
+    }
+  ]
 }
