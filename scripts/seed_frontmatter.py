@@ -180,7 +180,9 @@ def seed_one(source: dict[str, Any], force: bool = False,
     """단일 entry를 시드. 결과 상태 문자열 반환."""
     cat = source["category"]
     name = source["name"]
-    target = CATALOG / cat / f"{name}.md"
+    # name이 이미 .md로 끝나면 이중 확장자 방지 (예: "agents.md" → "agents.md", "design.md" → "design.md")
+    filename = name if name.endswith(".md") else f"{name}.md"
+    target = CATALOG / cat / filename
     upstream = source["upstream"].rstrip("/")
 
     # 같은 upstream을 가리키는 기존(또는 manual) catalog 파일이 있으면 skip
