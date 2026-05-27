@@ -27,7 +27,7 @@
 
 ## 3. 워크플로우 동작 확인
 
-1. https://github.com/glowElephant/context-forge/actions/workflows/sync-forks.yml
+1. https://github.com/glowElephant/context-forge/actions/workflows/link-check.yml
 2. **Run workflow** (수동 트리거)
 3. 1~3분 후 결과 확인:
    - 성공: `sources/sync-log.md`에 새 entry 추가 + auto-commit
@@ -35,8 +35,9 @@
 
 ## 4. 자동 스케줄
 
-- **매주 일요일 00:00 UTC** (= 월요일 09:00 KST) cron으로 자동 실행
-- `.github/workflows/sync-forks.yml`의 `schedule.cron` 수정으로 변경 가능
+- **매주 월요일 04:00 UTC** (= 13:00 KST) cron으로 자동 실행 — `link-check.yml`에 통합
+- 같은 워크플로우의 `check-source-urls` job과 병렬로 돔
+- `.github/workflows/link-check.yml`의 `schedule.cron` 수정으로 변경 가능
 
 ## 트러블슈팅
 

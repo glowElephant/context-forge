@@ -1,22 +1,65 @@
-name: link-check
+name: weekly-maintenance
+
+# 매주 월요일 새벽 정기 점검: fork sync + 카탈로그 링크 체크.
+# PR(`catalog/**.md` 수정 시)엔 링크 체크만 실행 — fork sync는 PR과 무관.
 
 on:
   pull_request:
     paths:
       - "catalog/**.md"
   schedule:
-    # Weekly Monday 04:00 UTC
+    # Mon 04:00 UTC = Mon 13:00 KST. fork sync는 link check 시작 4시간 전에 끝나도록
+    # 의도된 동작은 아니지만 sources/ 와 catalog/ 는 서로 안 겹쳐서 순서 무관.
     - cron: "0 4 * * 1"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: weekly-maintenance
+  cancel-in-progress: false
 
 jobs:
+  sync-forks:
+    # PR 트리거에선 67개 fork에 push할 이유 없음 — 스케줄/수동만 실행.
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify FORK_SYNC_TOKEN is configured
+        env:
+          GH_TOKEN: ${{ secrets.FORK_SYNC_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::FORK_SYNC_TOKEN secret is not set. See docs/fork-sync-setup.md"
+            exit 1
+          fi
+          gh auth status
+
+      - name: Sync all forks from upstream
+        env:
+          GH_TOKEN: ${{ secrets.FORK_SYNC_TOKEN }}
+        run: bash scripts/sync-forks.sh
+
+      - name: Commit log + index updates
+        run: |
+          if git diff --quiet sources/; then
+            echo "No changes to commit (everything was already up to date)."
+            exit 0
+          fi
+          git config user.name  "fork-sync-bot"
+          git config user.email "fork-sync-bot@users.noreply.github.com"
+          git add sources/sync-log.md sources/index.json
+          git commit -m "chore(sync): weekly fork sync $(date -u +%Y-%m-%d)"
+          git push
+
   check-source-urls:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Extract source/upstream URLs from catalog frontmatter
         id: urls
         run: |
@@ -26,6 +69,7 @@ jobs:
             | sed -E 's/^(source|upstream):[ ]*//' \
             | sort -u > /tmp/lc/urls.txt
           echo "Found $(wc -l </tmp/lc/urls.txt) unique URLs"
+
       - name: HEAD-check each URL
         run: |
           set -uo pipefail

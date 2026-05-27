@@ -70,12 +70,13 @@ v2 will broaden to domain conventions (game engines, mobile, web, backend, ML, s
 - [x] Design specification
 - [x] Candidate repositories curated (67 v1 + 210 v2)
 - [x] Forking the v1 catalog sources (67/67)
-- [x] Weekly fork sync automation ([`docs/fork-sync-setup.md`](./docs/fork-sync-setup.md))
 - [x] `/context-forge` slash command implementation
 - [x] Catalog frontmatter authoring (15 seeded entries)
+- [x] Weekly fork sync + link-check ([`docs/fork-sync-setup.md`](./docs/fork-sync-setup.md))
+- [x] Monthly borderline rescore + quarterly full rescore (5-factor rubric)
+- [x] Quarterly auto-discovery job (`automation.py discover`)
 - [ ] End-to-end smoke test (manual, fresh-session required)
 - [ ] Automated catalog extraction from forked sources (v1.5)
-- [ ] Quarterly auto-discovery job (v1.5)
 - [ ] v2 domain expansion (game/mobile/web/backend/ML/security)
 
 Track progress in [`docs/specs/`](./docs/specs) and [`docs/plans/`](./docs/plans).
