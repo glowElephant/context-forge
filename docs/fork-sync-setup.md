@@ -1,9 +1,9 @@
 # Fork Sync — Setup
 
-`scripts/sync-forks.sh` 가 `sources/index.json`의 67개 fork를 upstream과 fast-forward sync한다.
+`scripts/sync-forks.sh` 가 `sources/index.json`에 등록된 모든 fork를 upstream과 fast-forward sync한다.
 로컬에서는 `gh auth login` 한 번이면 동작하고, GitHub Actions로 매주 자동화하려면 **Personal Access Token (PAT)** 한 번 등록이 필요하다.
 
-기본 `GITHUB_TOKEN`은 워크플로우가 도는 repo(context-forge)만 만질 수 있어서, **다른 repo(=67개 fork)에 push 불가**. 그래서 PAT 필요.
+기본 `GITHUB_TOKEN`은 워크플로우가 도는 repo(context-forge)만 만질 수 있어서, **다른 repo(= 사용자의 모든 fork)에 push 불가**. 그래서 PAT 필요.
 
 ## 1. PAT 발급
 
@@ -43,7 +43,7 @@
 
 | 증상 | 원인 | 해결 |
 |---|---|---|
-| 모든 fork가 `❌ fork not found` | PAT scope 부족 | `repo` scope 확인. fine-grained PAT보다 classic PAT 권장 (fork 67개 일괄 권한이 단순) |
+| 모든 fork가 `❌ fork not found` | PAT scope 부족 | `repo` scope 확인. fine-grained PAT보다 classic PAT 권장 (사용자 fork 전체 일괄 권한이 단순) |
 | 특정 fork만 `⚠️ failed: divergent` | 그 fork에 직접 커밋한 적 있음 | 1) 해당 fork 직접 visiting → upstream에서 manual sync, 또는 2) `index.json`에서 제거 |
 | `upstream`이 삭제된 경우 | 원본 repo 사라짐 | `index.json`에서 해당 entry 삭제 |
 | PAT 만료 | 1년 경과 | 새 PAT 발급 → secret 갱신 |
@@ -56,4 +56,4 @@ gh auth login   # 한 번만
 bash scripts/sync-forks.sh
 ```
 
-워크플로우 가동 전 67개를 한 번에 따라잡고 싶을 때 사용. 결과는 워크플로우와 동일하게 `sources/sync-log.md`에 박힘.
+워크플로우 가동 전 전체를 한 번에 따라잡고 싶을 때 사용. 결과는 워크플로우와 동일하게 `sources/sync-log.md`에 박힘.
