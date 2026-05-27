@@ -43,16 +43,28 @@ jobs:
           GH_TOKEN: ${{ secrets.FORK_SYNC_TOKEN }}
         run: bash scripts/sync-forks.sh
 
-      - name: Commit log + index updates
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Seed missing catalog frontmatter
+        env:
+          GH_TOKEN: ${{ secrets.FORK_SYNC_TOKEN }}
+        run: python scripts/seed_frontmatter.py
+
+      - name: Validate catalog
+        run: bash scripts/validate-catalog.sh
+
+      - name: Commit sync log + index + new catalog entries
         run: |
-          if git diff --quiet sources/; then
+          if git diff --quiet sources/ catalog/; then
             echo "No changes to commit (everything was already up to date)."
             exit 0
           fi
           git config user.name  "fork-sync-bot"
           git config user.email "fork-sync-bot@users.noreply.github.com"
-          git add sources/sync-log.md sources/index.json
-          git commit -m "chore(sync): weekly fork sync $(date -u +%Y-%m-%d)"
+          git add sources/sync-log.md sources/index.json catalog/
+          git commit -m "chore(sync): weekly fork sync + catalog seed $(date -u +%Y-%m-%d)"
           git push
 
   check-source-urls:
