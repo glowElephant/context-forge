@@ -654,10 +654,9 @@ def cmd_adopt(args: argparse.Namespace) -> int:
     existing_forks = {_basename(s["fork"]) for s in source_list}
     fork_name = args.name or resolve_fork_name(base, existing_forks)
 
-    # fork 생성
+    # fork 생성 (glowElephant는 개인 계정이므로 --org 없이 인증 사용자 계정으로 fork)
     print(f"  forking {repo} → {GLOWELEPHANT}/{fork_name} ...")
-    fr = gh_run(["repo", "fork", repo, "--org", GLOWELEPHANT,
-                 "--fork-name", fork_name, "--clone=false"])
+    fr = gh_run(["repo", "fork", repo, "--fork-name", fork_name, "--clone=false"])
     if fr.returncode != 0:
         print(f"✗ fork failed: {fr.stderr.strip()}")
         return 1

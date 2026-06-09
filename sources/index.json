@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-08",
+  "updated_at": "2026-06-09",
   "sources": [
     {
       "upstream": "https://github.com/anthropics/skills",
@@ -739,6 +739,15 @@
       "tier": 1,
       "added_at": "2026-05-27",
       "notes": "get-shit-done 후속작 (긴 시간 자율 작업 컨텍스트 보존)"
+    },
+    {
+      "upstream": "https://github.com/github/github-mcp-server",
+      "fork": "https://github.com/glowElephant/github-mcp-server",
+      "name": "github-mcp-server",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "GitHub 공식 MCP 서버"
     }
   ]
 }

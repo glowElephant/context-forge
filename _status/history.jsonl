@@ -61,3 +61,4 @@
 {"ts": "2026-06-01T09:31:33+00:00", "event": "discover", "name": "ZeroLu/awesome-nanobanana-pro", "category": "prompts", "after": {"popularity": 5, "activity": 5}}
 {"ts": "2026-06-01T09:31:33+00:00", "event": "discover", "name": "ai-boost/awesome-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
 {"ts": "2026-06-01T09:31:33+00:00", "event": "discover", "name": "Meirtz/Awesome-Context-Engineering", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-06-09T00:44:21+00:00", "event": "adopt", "name": "github-mcp-server", "category": "mcp", "after": {"total": 19, "tier": 2}}
