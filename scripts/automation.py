@@ -35,6 +35,9 @@ import sys
 import time
 from typing import Any
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import seed_frontmatter  # noqa: E402  (같은 scripts/ 디렉토리)
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "catalog"
 STATUS = ROOT / "_status"
@@ -594,6 +597,107 @@ def cmd_render_index(args: argparse.Namespace) -> int:
     return 0
 
 
+# ─── subcommand: adopt ───────────────────────────────────────────────────────
+
+def gh_run(args: list[str], *, input_text: str | None = None) -> subprocess.CompletedProcess:
+    return subprocess.run(["gh", *args], capture_output=True, text=True,
+                          input=input_text, check=False)
+
+
+def ensure_topic(fork_path: str, topic: str = "context-forge-source") -> None:
+    """sync-forks.sh:57-62 이식 — 토픽 멱등 부착."""
+    cur = gh_run(["api", f"repos/{fork_path}/topics", "--jq", ".names | join(\" \")"])
+    names = cur.stdout.split() if cur.returncode == 0 else []
+    if topic in names:
+        return
+    payload = json.dumps({"names": sorted(set(names + [topic]))})
+    gh_run(["api", "-X", "PUT", f"repos/{fork_path}/topics", "--input", "-"], input_text=payload)
+
+
+def cmd_adopt(args: argparse.Namespace) -> int:
+    today = dt.date.today().isoformat()
+    repo = args.repo  # owner/repo
+    category = args.category
+    if category not in AI_CATEGORIES:
+        print(f"✗ category '{category}' not in {sorted(AI_CATEGORIES)}")
+        return 1
+    if not (CATALOG / category).is_dir():
+        print(f"✗ catalog/{category}/ directory missing")
+        return 1
+
+    sources_doc = json.loads(SOURCES_INDEX.read_text(encoding="utf-8"))
+    source_list = sources_doc.get("sources", [])
+    upstream_url = f"https://github.com/{repo}"
+
+    # 멱등: 이미 등록된 upstream이면 skip
+    if upstream_url.rstrip("/") in {s["upstream"].rstrip("/") for s in source_list}:
+        print(f"= already adopted: {repo}")
+        return 0
+
+    # 미러 검사
+    mirror_of = find_mirror(upstream_url, source_list)
+    if mirror_of and not args.force:
+        print(f"✗ mirror suspected (basename matches existing '{mirror_of}'). Use --force to override.")
+        return 1
+
+    # repo 메타 조회 + scope 가드
+    info = gh_api(f"repos/{repo}")
+    verdict, reason = classify_scope(info.get("description"), info.get("topics", []),
+                                     info.get("language"), category)
+    if verdict in ("BLOCK", "WARN") and not args.force:
+        print(f"✗ scope {verdict} ({reason}). Use --force to override.")
+        return 1
+    print(f"  scope {verdict}: {reason}")
+
+    # fork 이름 결정
+    base = repo.split("/")[-1]
+    existing_forks = {_basename(s["fork"]) for s in source_list}
+    fork_name = args.name or resolve_fork_name(base, existing_forks)
+
+    # fork 생성
+    print(f"  forking {repo} → {GLOWELEPHANT}/{fork_name} ...")
+    fr = gh_run(["repo", "fork", repo, "--org", GLOWELEPHANT,
+                 "--fork-name", fork_name, "--clone=false"])
+    if fr.returncode != 0:
+        print(f"✗ fork failed: {fr.stderr.strip()}")
+        return 1
+
+    # 토픽 부착
+    ensure_topic(f"{GLOWELEPHANT}/{fork_name}")
+
+    # index.json append
+    notes = args.notes or (info.get("description") or "")[:120]
+    entry = build_source_entry(upstream=upstream_url, fork_name=fork_name,
+                               name=fork_name, category=category, notes=notes, today=today)
+    source_list.append(entry)
+    sources_doc["sources"] = source_list
+    sources_doc["updated_at"] = today
+    SOURCES_INDEX.write_text(json.dumps(sources_doc, indent=2, ensure_ascii=False) + "\n",
+                             encoding="utf-8")
+
+    # catalog frontmatter 시드
+    seed_frontmatter.seed_one(entry, force=False,
+                              upstream_index=seed_frontmatter.existing_upstreams())
+
+    # 점수 채우기
+    path = CATALOG / category / f"{fork_name}.md"
+    fm, fm_text, body = read_frontmatter(path)
+    auto = auto_score(repo)
+    new_score = {"popularity": auto["popularity"], "activity": auto["activity"],
+                 "reviews": 3, "quality": 3, "trust": 3}
+    total, tier = compute_total_and_tier(new_score, category, auto["archived"])
+    new_score["total"] = total
+    new_score["tier"] = tier
+    new_score["last_scored"] = today
+    update_frontmatter(path, fm_text, body, score=new_score,
+                       status="active" if tier != 3 else "archived")
+
+    log_history({"event": "adopt", "name": fork_name, "category": category,
+                 "after": {"total": total, "tier": tier}})
+    print(f"✓ adopted {repo} as {category}/{fork_name} (total={total}, tier={tier})")
+    return 0
+
+
 # ─── main ────────────────────────────────────────────────────────────────────
 
 def main(argv: list[str] | None = None) -> int:
@@ -614,6 +718,14 @@ def main(argv: list[str] | None = None) -> int:
 
     p_render = sub.add_parser("render-index", help="Regenerate catalog/<cat>/README.md tables")
     p_render.set_defaults(func=cmd_render_index)
+
+    p_adopt = sub.add_parser("adopt", help="Adopt a candidate: fork + topic + index + catalog + score")
+    p_adopt.add_argument("repo", help="owner/repo")
+    p_adopt.add_argument("--category", required=True, help="catalog category")
+    p_adopt.add_argument("--name", help="override fork/catalog name")
+    p_adopt.add_argument("--notes", help="one-line notes (→ when_to_use seed)")
+    p_adopt.add_argument("--force", action="store_true", help="override scope WARN/BLOCK and mirror guard")
+    p_adopt.set_defaults(func=cmd_adopt)
 
     args = p.parse_args(argv)
     return args.func(args)
