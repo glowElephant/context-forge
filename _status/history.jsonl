@@ -61,3 +61,15 @@
 {"ts": "2026-06-01T09:31:33+00:00", "event": "discover", "name": "ZeroLu/awesome-nanobanana-pro", "category": "prompts", "after": {"popularity": 5, "activity": 5}}
 {"ts": "2026-06-01T09:31:33+00:00", "event": "discover", "name": "ai-boost/awesome-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
 {"ts": "2026-06-01T09:31:33+00:00", "event": "discover", "name": "Meirtz/Awesome-Context-Engineering", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-06-09T00:44:21+00:00", "event": "adopt", "name": "github-mcp-server", "category": "mcp", "after": {"total": 19, "tier": 2}}
+{"ts": "2026-06-09T07:11:18+00:00", "event": "adopt", "name": "my-claude-code-setup", "category": "claude-md", "after": {"total": 18, "tier": 2}}
+{"ts": "2026-06-09T07:11:25+00:00", "event": "adopt", "name": "claude-token-efficient", "category": "claude-md", "after": {"total": 16, "tier": 2}}
+{"ts": "2026-06-09T07:11:33+00:00", "event": "adopt", "name": "playwright-mcp", "category": "mcp", "after": {"total": 19, "tier": 2}}
+{"ts": "2026-06-09T07:11:37+00:00", "event": "adopt", "name": "mcp-toolbox", "category": "mcp", "after": {"total": 19, "tier": 2}}
+{"ts": "2026-06-09T07:11:42+00:00", "event": "adopt", "name": "awesome-codex-subagents", "category": "multi-agent", "after": {"total": 17, "tier": 2}}
+{"ts": "2026-06-09T07:11:58+00:00", "event": "adopt", "name": "Awesome-Context-Engineering", "category": "prompts", "after": {"total": 17, "tier": 2}}
+{"ts": "2026-06-09T07:12:02+00:00", "event": "adopt", "name": "graphify", "category": "skills", "after": {"total": 19, "tier": 2}}
+{"ts": "2026-06-09T07:12:07+00:00", "event": "adopt", "name": "Understand-Anything", "category": "skills", "after": {"total": 19, "tier": 2}}
+{"ts": "2026-06-09T07:12:12+00:00", "event": "adopt", "name": "awesome-openclaw-skills", "category": "skills", "after": {"total": 19, "tier": 2}}
+{"ts": "2026-06-09T07:12:16+00:00", "event": "adopt", "name": "gsd-core", "category": "spec-driven", "after": {"total": 18, "tier": 2}}
+{"ts": "2026-06-09T07:12:20+00:00", "event": "adopt", "name": "agent-os", "category": "spec-driven", "after": {"total": 16, "tier": 2}}

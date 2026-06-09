@@ -35,10 +35,15 @@ import sys
 import time
 from typing import Any
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import seed_frontmatter  # noqa: E402  (같은 scripts/ 디렉토리)
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "catalog"
 STATUS = ROOT / "_status"
 SOURCES_INDEX = ROOT / "sources" / "index.json"
+DENYLIST = STATUS / "denylist.json"
+GLOWELEPHANT = "glowElephant"
 
 # Tier 1 ≥20, Tier 2 13–19, Tier 3 ≤12 (docs/scoring.md)
 TIER1_MIN = 20
@@ -382,10 +387,106 @@ MIN_POP_ACT = 7           # 10점 만점 중
 TOP_PER_CATEGORY = 5      # 카테고리당 상위 N개만 (검토 부담 cap)
 
 
+# ─── scope guard (룰 기반 — docs/adopt-and-scope-guard.md) ────────────────────
+
+# BLOCK: 명백한 scope 밖 — 자동 거부 (--force로만 우회)
+SCOPE_BLOCK_PATTERNS: dict[str, list[str]] = {
+    "image-gen":   ["nano banana", "nanobanana", "gpt-image", "text-to-image",
+                    "diffusion", "image generation", "image-generation"],
+    "product-app": ["desktop app", "desktop &", "desktop ai", "job search",
+                    "job-hunting", "job hunting", "ad audit", "ad-audit",
+                    "ad auditing", "ad optimization", "advertising audit"],
+    "framework":   ["microservice", "micro-service", "web framework",
+                    "cloud-native", "cloud native"],
+}
+
+# 범용 하네스 신호 — 하나라도 있어야 PASS
+SCOPE_GENERIC_SIGNALS: list[str] = [
+    "claude.md", "claude-md", "claude code", "claude-code", "agents.md",
+    "agents-md", "cursor", "copilot", "mcp", "skill", "subagent", "sub-agent",
+    "spec-driven", "spec kit", "spec-kit", "prompt", "context engineering", "agent",
+]
+
+# 도메인 업무 키워드 — 제품성 의심, WARN으로 사람 확인
+SCOPE_DOMAIN_KEYWORDS: list[str] = [
+    "advertis", "marketing", "recruit", "career", "trading", "finance", "e-commerce",
+]
+
+
+def classify_scope(description: str | None, topics: list[str] | None,
+                   language: str | None, category: str) -> tuple[str, str]:
+    """Return ('PASS'|'WARN'|'BLOCK', reason).
+
+    BLOCK: 명백 scope 밖. WARN: 범용 신호 없음 또는 도메인 키워드(제품성 의심).
+    PASS: 범용 신호 있고 BLOCK/도메인 키워드 없음.
+    """
+    text = f"{description or ''} {' '.join(topics or [])} {language or ''}".lower()
+    for label, pats in SCOPE_BLOCK_PATTERNS.items():
+        for p in pats:
+            if p in text:
+                return "BLOCK", f"{label}: matched '{p}'"
+    has_generic = any(s in text for s in SCOPE_GENERIC_SIGNALS)
+    if not has_generic:
+        return "WARN", "no generic harness signal in description/topics/language"
+    has_domain = any(k in text for k in SCOPE_DOMAIN_KEYWORDS)
+    if has_domain:
+        return "WARN", "domain-specific keyword present — confirm reusable pattern, not a product"
+    return "PASS", "generic harness signal present"
+
+
+def _basename(url: str) -> str:
+    return url.rstrip("/").split("/")[-1].removesuffix(".git").lower()
+
+
+def find_mirror(candidate_url: str, sources: list[dict[str, Any]]) -> str | None:
+    """기존 source 중 repo basename이 같은 게 있으면 그 name 반환 (미러/org-전송 의심).
+    upstream URL 완전 일치는 호출부의 known_upstreams가 이미 거른다 — 여기는 basename 휴리스틱."""
+    cand = _basename(candidate_url)
+    for s in sources:
+        if _basename(s.get("upstream", "")) == cand:
+            return s.get("name")
+    return None
+
+
+def resolve_fork_name(base_name: str, existing: set[str]) -> str:
+    """glowElephant에 이미 있는 fork 이름과 충돌하면 -N suffix."""
+    if base_name not in existing:
+        return base_name
+    i = 1
+    while f"{base_name}-{i}" in existing:
+        i += 1
+    return f"{base_name}-{i}"
+
+
+def build_source_entry(*, upstream: str, fork_name: str, name: str,
+                       category: str, notes: str, today: str) -> dict[str, Any]:
+    return {
+        "upstream": upstream.rstrip("/"),
+        "fork": f"https://github.com/{GLOWELEPHANT}/{fork_name}",
+        "name": name,
+        "category": category,
+        "tier": 1,
+        "added_at": today,
+        "notes": notes,
+    }
+
+
+def denylist_urls(doc: dict[str, Any]) -> set[str]:
+    return {e["url"].rstrip("/") for e in doc.get("entries", [])}
+
+
+def load_denylist() -> dict[str, Any]:
+    if DENYLIST.exists():
+        return json.loads(DENYLIST.read_text(encoding="utf-8"))
+    return {"version": 1, "entries": []}
+
+
 def cmd_discover(args: argparse.Namespace) -> int:
     today = dt.date.today().isoformat()
     sources = json.loads(SOURCES_INDEX.read_text(encoding="utf-8"))
-    known_upstreams = {s["upstream"].rstrip("/") for s in sources.get("sources", [])}
+    source_list = sources.get("sources", [])
+    known_upstreams = {s["upstream"].rstrip("/") for s in source_list}
+    denied = denylist_urls(load_denylist())
 
     found: list[dict[str, Any]] = []
     first = True
@@ -403,6 +504,10 @@ def cmd_discover(args: argparse.Namespace) -> int:
             for repo in results:
                 url = repo["html_url"].rstrip("/")
                 if url in known_upstreams:
+                    continue
+                if url in denied:
+                    continue
+                if find_mirror(url, source_list):
                     continue
                 if any(c["url"] == url for c in found):
                     continue
@@ -492,6 +597,106 @@ def cmd_render_index(args: argparse.Namespace) -> int:
     return 0
 
 
+# ─── subcommand: adopt ───────────────────────────────────────────────────────
+
+def gh_run(args: list[str], *, input_text: str | None = None) -> subprocess.CompletedProcess:
+    return subprocess.run(["gh", *args], capture_output=True, text=True,
+                          input=input_text, check=False)
+
+
+def ensure_topic(fork_path: str, topic: str = "context-forge-source") -> None:
+    """sync-forks.sh:57-62 이식 — 토픽 멱등 부착."""
+    cur = gh_run(["api", f"repos/{fork_path}/topics", "--jq", ".names | join(\" \")"])
+    names = cur.stdout.split() if cur.returncode == 0 else []
+    if topic in names:
+        return
+    payload = json.dumps({"names": sorted(set(names + [topic]))})
+    gh_run(["api", "-X", "PUT", f"repos/{fork_path}/topics", "--input", "-"], input_text=payload)
+
+
+def cmd_adopt(args: argparse.Namespace) -> int:
+    today = dt.date.today().isoformat()
+    repo = args.repo  # owner/repo
+    category = args.category
+    if category not in AI_CATEGORIES:
+        print(f"✗ category '{category}' not in {sorted(AI_CATEGORIES)}")
+        return 1
+    if not (CATALOG / category).is_dir():
+        print(f"✗ catalog/{category}/ directory missing")
+        return 1
+
+    sources_doc = json.loads(SOURCES_INDEX.read_text(encoding="utf-8"))
+    source_list = sources_doc.get("sources", [])
+    upstream_url = f"https://github.com/{repo}"
+
+    # 멱등: 이미 등록된 upstream이면 skip
+    if upstream_url.rstrip("/") in {s["upstream"].rstrip("/") for s in source_list}:
+        print(f"= already adopted: {repo}")
+        return 0
+
+    # 미러 검사
+    mirror_of = find_mirror(upstream_url, source_list)
+    if mirror_of and not args.force:
+        print(f"✗ mirror suspected (basename matches existing '{mirror_of}'). Use --force to override.")
+        return 1
+
+    # repo 메타 조회 + scope 가드
+    info = gh_api(f"repos/{repo}")
+    verdict, reason = classify_scope(info.get("description"), info.get("topics", []),
+                                     info.get("language"), category)
+    if verdict in ("BLOCK", "WARN") and not args.force:
+        print(f"✗ scope {verdict} ({reason}). Use --force to override.")
+        return 1
+    print(f"  scope {verdict}: {reason}")
+
+    # fork 이름 결정
+    base = repo.split("/")[-1]
+    existing_forks = {_basename(s["fork"]) for s in source_list}
+    fork_name = args.name or resolve_fork_name(base, existing_forks)
+
+    # fork 생성 (glowElephant는 개인 계정이므로 --org 없이 인증 사용자 계정으로 fork)
+    print(f"  forking {repo} → {GLOWELEPHANT}/{fork_name} ...")
+    fr = gh_run(["repo", "fork", repo, "--fork-name", fork_name, "--clone=false"])
+    if fr.returncode != 0:
+        print(f"✗ fork failed: {fr.stderr.strip()}")
+        return 1
+
+    # 토픽 부착
+    ensure_topic(f"{GLOWELEPHANT}/{fork_name}")
+
+    # index.json append
+    notes = args.notes or (info.get("description") or "")[:120]
+    entry = build_source_entry(upstream=upstream_url, fork_name=fork_name,
+                               name=fork_name, category=category, notes=notes, today=today)
+    source_list.append(entry)
+    sources_doc["sources"] = source_list
+    sources_doc["updated_at"] = today
+    SOURCES_INDEX.write_text(json.dumps(sources_doc, indent=2, ensure_ascii=False) + "\n",
+                             encoding="utf-8")
+
+    # catalog frontmatter 시드
+    seed_frontmatter.seed_one(entry, force=False,
+                              upstream_index=seed_frontmatter.existing_upstreams())
+
+    # 점수 채우기
+    path = CATALOG / category / f"{fork_name}.md"
+    fm, fm_text, body = read_frontmatter(path)
+    auto = auto_score(repo)
+    new_score = {"popularity": auto["popularity"], "activity": auto["activity"],
+                 "reviews": 3, "quality": 3, "trust": 3}
+    total, tier = compute_total_and_tier(new_score, category, auto["archived"])
+    new_score["total"] = total
+    new_score["tier"] = tier
+    new_score["last_scored"] = today
+    update_frontmatter(path, fm_text, body, score=new_score,
+                       status="active" if tier != 3 else "archived")
+
+    log_history({"event": "adopt", "name": fork_name, "category": category,
+                 "after": {"total": total, "tier": tier}})
+    print(f"✓ adopted {repo} as {category}/{fork_name} (total={total}, tier={tier})")
+    return 0
+
+
 # ─── main ────────────────────────────────────────────────────────────────────
 
 def main(argv: list[str] | None = None) -> int:
@@ -512,6 +717,14 @@ def main(argv: list[str] | None = None) -> int:
 
     p_render = sub.add_parser("render-index", help="Regenerate catalog/<cat>/README.md tables")
     p_render.set_defaults(func=cmd_render_index)
+
+    p_adopt = sub.add_parser("adopt", help="Adopt a candidate: fork + topic + index + catalog + score")
+    p_adopt.add_argument("repo", help="owner/repo")
+    p_adopt.add_argument("--category", required=True, help="catalog category")
+    p_adopt.add_argument("--name", help="override fork/catalog name")
+    p_adopt.add_argument("--notes", help="one-line notes (→ when_to_use seed)")
+    p_adopt.add_argument("--force", action="store_true", help="override scope WARN/BLOCK and mirror guard")
+    p_adopt.set_defaults(func=cmd_adopt)
 
     args = p.parse_args(argv)
     return args.func(args)
