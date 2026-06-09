@@ -748,6 +748,105 @@
       "tier": 1,
       "added_at": "2026-06-09",
       "notes": "GitHub 공식 MCP 서버"
+    },
+    {
+      "upstream": "https://github.com/centminmod/my-claude-code-setup",
+      "fork": "https://github.com/glowElephant/my-claude-code-setup",
+      "name": "my-claude-code-setup",
+      "category": "claude-md",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "Claude Code 스타터 템플릿 + CLAUDE.md 메모리뱅크"
+    },
+    {
+      "upstream": "https://github.com/drona23/claude-token-efficient",
+      "fork": "https://github.com/glowElephant/claude-token-efficient",
+      "name": "claude-token-efficient",
+      "category": "claude-md",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "응답을 간결하게 만드는 단일 CLAUDE.md"
+    },
+    {
+      "upstream": "https://github.com/microsoft/playwright-mcp",
+      "fork": "https://github.com/glowElephant/playwright-mcp",
+      "name": "playwright-mcp",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "Playwright MCP 서버 (MS 공식)"
+    },
+    {
+      "upstream": "https://github.com/googleapis/mcp-toolbox",
+      "fork": "https://github.com/glowElephant/mcp-toolbox",
+      "name": "mcp-toolbox",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "DB용 MCP 서버 (Google 공식)"
+    },
+    {
+      "upstream": "https://github.com/VoltAgent/awesome-codex-subagents",
+      "fork": "https://github.com/glowElephant/awesome-codex-subagents",
+      "name": "awesome-codex-subagents",
+      "category": "multi-agent",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "Codex 서브에이전트 130+ 컬렉션"
+    },
+    {
+      "upstream": "https://github.com/Meirtz/Awesome-Context-Engineering",
+      "fork": "https://github.com/glowElephant/Awesome-Context-Engineering",
+      "name": "Awesome-Context-Engineering",
+      "category": "prompts",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "Context Engineering 서베이"
+    },
+    {
+      "upstream": "https://github.com/safishamsi/graphify",
+      "fork": "https://github.com/glowElephant/graphify",
+      "name": "graphify",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "코드→지식그래프 멀티-CLI 코딩 에이전트 스킬"
+    },
+    {
+      "upstream": "https://github.com/Lum1104/Understand-Anything",
+      "fork": "https://github.com/glowElephant/Understand-Anything",
+      "name": "Understand-Anything",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "코드→인터랙티브 지식그래프 스킬"
+    },
+    {
+      "upstream": "https://github.com/VoltAgent/awesome-openclaw-skills",
+      "fork": "https://github.com/glowElephant/awesome-openclaw-skills",
+      "name": "awesome-openclaw-skills",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "OpenClaw 스킬 5400+ 큐레이션"
+    },
+    {
+      "upstream": "https://github.com/open-gsd/gsd-core",
+      "fork": "https://github.com/glowElephant/gsd-core",
+      "name": "gsd-core",
+      "category": "spec-driven",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "Git Ship Done — spec-driven/meta-prompting"
+    },
+    {
+      "upstream": "https://github.com/buildermethods/agent-os",
+      "fork": "https://github.com/glowElephant/agent-os",
+      "name": "agent-os",
+      "category": "spec-driven",
+      "tier": 1,
+      "added_at": "2026-06-09",
+      "notes": "코드베이스 표준 주입 + spec-driven 시스템"
     }
   ]
 }

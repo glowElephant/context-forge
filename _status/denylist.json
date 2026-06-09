@@ -2,5 +2,25 @@
   "version": 1,
   "updated_at": "2026-06-09",
   "note": "discover가 재발굴하지 않도록 제외할 upstream URL. reason: duplicate-mirror | out-of-scope | product-not-pattern",
-  "entries": []
+  "entries": [
+    { "url": "https://github.com/multica-ai/andrej-karpathy-skills", "reason": "duplicate-mirror", "decided_at": "2026-06-09", "note": "forrestchang/andrej-karpathy-skills와 동일 repo(org-전송/미러)" },
+    { "url": "https://github.com/open-multi-agent/open-multi-agent", "reason": "duplicate-mirror", "decided_at": "2026-06-09", "note": "JackChen-me/open-multi-agent와 동일 repo(org-전송)" },
+    { "url": "https://github.com/AgriciDaniel/claude-ads", "reason": "product-not-pattern", "decided_at": "2026-06-09", "note": "광고 감사 도메인특화 제품" },
+    { "url": "https://github.com/santifer/career-ops", "reason": "product-not-pattern", "decided_at": "2026-06-09", "note": "구직 시스템 제품" },
+    { "url": "https://github.com/gadievron/raptor", "reason": "product-not-pattern", "decided_at": "2026-06-09", "note": "보안 에이전트 도메인특화" },
+    { "url": "https://github.com/golutra/golutra", "reason": "product-not-pattern", "decided_at": "2026-06-09", "note": "코딩 에이전트 오케스트레이션 데스크탑 앱(제품)" },
+    { "url": "https://github.com/activepieces/activepieces", "reason": "product-not-pattern", "decided_at": "2026-06-09", "note": "워크플로우 자동화 플랫폼(제품)" },
+    { "url": "https://github.com/MrLesk/Backlog.md", "reason": "product-not-pattern", "decided_at": "2026-06-09", "note": "마크다운 태스크관리 도구(제품), agents-md 표준 아님" },
+    { "url": "https://github.com/microsoft/SkillOpt", "reason": "product-not-pattern", "decided_at": "2026-06-09", "note": "LLM agent skill 최적화 연구 프레임워크, Claude Code 하네스 스킬 아님" },
+    { "url": "https://github.com/Mintplex-Labs/anything-llm", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "LLM 데스크탑 앱, MCP 서버 아님" },
+    { "url": "https://github.com/nexu-io/open-design", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "디자인 생성 데스크탑 앱(제품)" },
+    { "url": "https://github.com/VRSEN/agency-swarm", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "범용 agent 빌드 프레임워크(앱 개발용)" },
+    { "url": "https://github.com/SolaceLabs/solace-agent-mesh", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "엔터프라이즈 agent 프레임워크(앱 런타임)" },
+    { "url": "https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "이미지 생성 프롬프트" },
+    { "url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "이미지 생성 프롬프트" },
+    { "url": "https://github.com/ZeroLu/awesome-nanobanana-pro", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "이미지 생성 프롬프트" },
+    { "url": "https://github.com/zeromicro/go-zero", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "Go 마이크로서비스 프레임워크" },
+    { "url": "https://github.com/hawk86104/three-vue-tres", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "3D 시각화 Vue 프레임워크(제품)" },
+    { "url": "https://github.com/ai-boost/awesome-prompts", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "범용 GPT 프롬프트 라이브러리, 코딩 에이전트 전용 아님" }
+  ]
 }
