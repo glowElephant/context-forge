@@ -382,6 +382,53 @@ MIN_POP_ACT = 7           # 10점 만점 중
 TOP_PER_CATEGORY = 5      # 카테고리당 상위 N개만 (검토 부담 cap)
 
 
+# ─── scope guard (룰 기반 — docs/adopt-and-scope-guard.md) ────────────────────
+
+# BLOCK: 명백한 scope 밖 — 자동 거부 (--force로만 우회)
+SCOPE_BLOCK_PATTERNS: dict[str, list[str]] = {
+    "image-gen":   ["nano banana", "nanobanana", "gpt-image", "text-to-image",
+                    "diffusion", "image generation", "image-generation"],
+    "product-app": ["desktop app", "desktop &", "desktop ai", "job search",
+                    "job-hunting", "job hunting", "ad audit", "ad-audit",
+                    "ad auditing", "ad optimization", "advertising audit"],
+    "framework":   ["microservice", "micro-service", "web framework",
+                    "cloud-native", "cloud native"],
+}
+
+# 범용 하네스 신호 — 하나라도 있어야 PASS
+SCOPE_GENERIC_SIGNALS: list[str] = [
+    "claude.md", "claude-md", "claude code", "claude-code", "agents.md",
+    "agents-md", "cursor", "copilot", "mcp", "skill", "subagent", "sub-agent",
+    "spec-driven", "spec kit", "spec-kit", "prompt", "context engineering", "agent",
+]
+
+# 도메인 업무 키워드 — 제품성 의심, WARN으로 사람 확인
+SCOPE_DOMAIN_KEYWORDS: list[str] = [
+    "advertis", "marketing", "recruit", "career", "trading", "finance", "e-commerce",
+]
+
+
+def classify_scope(description: str | None, topics: list[str] | None,
+                   language: str | None, category: str) -> tuple[str, str]:
+    """Return ('PASS'|'WARN'|'BLOCK', reason).
+
+    BLOCK: 명백 scope 밖. WARN: 범용 신호 없음 또는 도메인 키워드(제품성 의심).
+    PASS: 범용 신호 있고 BLOCK/도메인 키워드 없음.
+    """
+    text = f"{description or ''} {' '.join(topics or [])} {language or ''}".lower()
+    for label, pats in SCOPE_BLOCK_PATTERNS.items():
+        for p in pats:
+            if p in text:
+                return "BLOCK", f"{label}: matched '{p}'"
+    has_generic = any(s in text for s in SCOPE_GENERIC_SIGNALS)
+    if not has_generic:
+        return "WARN", "no generic harness signal in description/topics/language"
+    has_domain = any(k in text for k in SCOPE_DOMAIN_KEYWORDS)
+    if has_domain:
+        return "WARN", "domain-specific keyword present — confirm reusable pattern, not a product"
+    return "PASS", "generic harness signal present"
+
+
 def cmd_discover(args: argparse.Namespace) -> int:
     today = dt.date.today().isoformat()
     sources = json.loads(SOURCES_INDEX.read_text(encoding="utf-8"))
