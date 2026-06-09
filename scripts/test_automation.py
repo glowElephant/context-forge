@@ -66,5 +66,27 @@ class TestMirrorAndForkName(unittest.TestCase):
         self.assertEqual(A.resolve_fork_name("skills", {"skills", "skills-1"}), "skills-2")
 
 
+class TestIndexAndDenylist(unittest.TestCase):
+    def test_build_source_entry(self):
+        e = A.build_source_entry(
+            upstream="https://github.com/github/github-mcp-server",
+            fork_name="github-mcp-server",
+            name="github-mcp-server",
+            category="mcp",
+            notes="GitHub 공식 MCP 서버",
+            today="2026-06-09",
+        )
+        self.assertEqual(e["upstream"], "https://github.com/github/github-mcp-server")
+        self.assertEqual(e["fork"], "https://github.com/glowElephant/github-mcp-server")
+        self.assertEqual(e["category"], "mcp")
+        self.assertEqual(e["tier"], 1)
+        self.assertEqual(e["added_at"], "2026-06-09")
+        self.assertEqual(e["notes"], "GitHub 공식 MCP 서버")
+
+    def test_denylist_urls(self):
+        doc = {"entries": [{"url": "https://github.com/a/b", "reason": "out-of-scope"}]}
+        self.assertEqual(A.denylist_urls(doc), {"https://github.com/a/b"})
+
+
 if __name__ == "__main__":
     unittest.main()

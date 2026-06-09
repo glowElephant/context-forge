@@ -39,6 +39,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "catalog"
 STATUS = ROOT / "_status"
 SOURCES_INDEX = ROOT / "sources" / "index.json"
+DENYLIST = STATUS / "denylist.json"
+GLOWELEPHANT = "glowElephant"
 
 # Tier 1 ≥20, Tier 2 13–19, Tier 3 ≤12 (docs/scoring.md)
 TIER1_MIN = 20
@@ -451,6 +453,29 @@ def resolve_fork_name(base_name: str, existing: set[str]) -> str:
     while f"{base_name}-{i}" in existing:
         i += 1
     return f"{base_name}-{i}"
+
+
+def build_source_entry(*, upstream: str, fork_name: str, name: str,
+                       category: str, notes: str, today: str) -> dict[str, Any]:
+    return {
+        "upstream": upstream.rstrip("/"),
+        "fork": f"https://github.com/{GLOWELEPHANT}/{fork_name}",
+        "name": name,
+        "category": category,
+        "tier": 1,
+        "added_at": today,
+        "notes": notes,
+    }
+
+
+def denylist_urls(doc: dict[str, Any]) -> set[str]:
+    return {e["url"].rstrip("/") for e in doc.get("entries", [])}
+
+
+def load_denylist() -> dict[str, Any]:
+    if DENYLIST.exists():
+        return json.loads(DENYLIST.read_text(encoding="utf-8"))
+    return {"version": 1, "entries": []}
 
 
 def cmd_discover(args: argparse.Namespace) -> int:

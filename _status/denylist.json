@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-09",
+  "note": "discover가 재발굴하지 않도록 제외할 upstream URL. reason: duplicate-mirror | out-of-scope | product-not-pattern",
+  "entries": []
+}
