@@ -481,7 +481,9 @@ def load_denylist() -> dict[str, Any]:
 def cmd_discover(args: argparse.Namespace) -> int:
     today = dt.date.today().isoformat()
     sources = json.loads(SOURCES_INDEX.read_text(encoding="utf-8"))
-    known_upstreams = {s["upstream"].rstrip("/") for s in sources.get("sources", [])}
+    source_list = sources.get("sources", [])
+    known_upstreams = {s["upstream"].rstrip("/") for s in source_list}
+    denied = denylist_urls(load_denylist())
 
     found: list[dict[str, Any]] = []
     first = True
@@ -499,6 +501,10 @@ def cmd_discover(args: argparse.Namespace) -> int:
             for repo in results:
                 url = repo["html_url"].rstrip("/")
                 if url in known_upstreams:
+                    continue
+                if url in denied:
+                    continue
+                if find_mirror(url, source_list):
                     continue
                 if any(c["url"] == url for c in found):
                     continue
