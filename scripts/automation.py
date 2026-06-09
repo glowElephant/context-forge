@@ -429,6 +429,30 @@ def classify_scope(description: str | None, topics: list[str] | None,
     return "PASS", "generic harness signal present"
 
 
+def _basename(url: str) -> str:
+    return url.rstrip("/").split("/")[-1].removesuffix(".git").lower()
+
+
+def find_mirror(candidate_url: str, sources: list[dict[str, Any]]) -> str | None:
+    """기존 source 중 repo basename이 같은 게 있으면 그 name 반환 (미러/org-전송 의심).
+    upstream URL 완전 일치는 호출부의 known_upstreams가 이미 거른다 — 여기는 basename 휴리스틱."""
+    cand = _basename(candidate_url)
+    for s in sources:
+        if _basename(s.get("upstream", "")) == cand:
+            return s.get("name")
+    return None
+
+
+def resolve_fork_name(base_name: str, existing: set[str]) -> str:
+    """glowElephant에 이미 있는 fork 이름과 충돌하면 -N suffix."""
+    if base_name not in existing:
+        return base_name
+    i = 1
+    while f"{base_name}-{i}" in existing:
+        i += 1
+    return f"{base_name}-{i}"
+
+
 def cmd_discover(args: argparse.Namespace) -> int:
     today = dt.date.today().isoformat()
     sources = json.loads(SOURCES_INDEX.read_text(encoding="utf-8"))
