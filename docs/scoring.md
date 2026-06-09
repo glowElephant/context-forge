@@ -83,4 +83,6 @@ Sometimes a low-star repo is clearly excellent (a thoughtful 400-star coding con
 
 Every month (1st 04:00 UTC), `.github/workflows/monthly-rediscovery.yml` runs `scripts/automation.py discover`. It uses the keyword groups embedded in `automation.py:DISCOVERY_QUERIES`, sweeps GitHub Search API, filters by `MIN_STARS=2000` / `MIN_POP_ACT≥7` / category-top-5, and writes results to `_status/candidates.json`. An Issue with a checkbox triage list is opened so the maintainer can pick which to adopt. Adopted entries land in `sources/index.json`, and `scripts/seed_frontmatter.py` (also run weekly via `link-check.yml`) creates the corresponding `catalog/<cat>/<name>.md` skeleton automatically.
 
+채택은 `scripts/automation.py adopt <owner/repo> --category <cat>`로 자동화된다 — fork·`context-forge-source` 토픽·index·catalog·점수를 한 번에 처리한다. 룰 기반 scope 가드가 범용 하네스만 통과시키고(제품성/도메인특화 제외), 미러/org-전송 중복을 차단하며, 제외 결정은 `_status/denylist.json`에 기록되어 다음 discover에서 빠진다. 자세한 규칙은 [adopt-and-scope-guard.md](./adopt-and-scope-guard.md).
+
 History: v1.0 was designed as quarterly + PR-based; v1.1 switched to monthly + Issue-based to reduce review burden and noise. See [CHANGELOG.md](../CHANGELOG.md).
