@@ -8,6 +8,15 @@ upstream: https://github.com/affaan-m/ECC
 when_to_use: Claude/Codex/Cursor 통합 하니스 (4/28 이후 ECC로 rename됨). 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # everything-claude-code

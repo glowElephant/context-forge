@@ -8,6 +8,15 @@ upstream: https://github.com/VoltAgent/awesome-claude-code-subagents
 when_to_use: 100+ 전문 서브에이전트. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-claude-code-subagents

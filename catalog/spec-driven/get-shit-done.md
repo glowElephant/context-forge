@@ -7,7 +7,16 @@ source: https://github.com/glowElephant/get-shit-done
 upstream: https://github.com/gsd-build/get-shit-done
 when_to_use: 메타프롬프팅 + Spec-driven. Spec-Driven Development 워크플로우를 도입할 때 참고
 priority: 3
-status: active
+status: archived
+score:
+  popularity: 5
+  activity: 4
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 18
+  tier: 3
+  last_scored: 2026-07-01
 ---
 
 # get-shit-done

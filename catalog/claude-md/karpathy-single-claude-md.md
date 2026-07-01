@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/andrej-karpathy-skills
 upstream: https://github.com/forrestchang/andrej-karpathy-skills
 when_to_use: Solo developer or small team that wants one carefully-crafted CLAUDE.md instead of a sprawling skill/rules tree. Especially relevant when the project codebase is small enough to articulate "here's how to write code in this repo" in one document.
 priority: 4
+status: active
+score:
+  popularity: 5
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 17
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Karpathy-style single CLAUDE.md

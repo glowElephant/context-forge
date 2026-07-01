@@ -8,6 +8,15 @@ upstream: https://github.com/ComposioHQ/awesome-claude-skills
 when_to_use: Composio 멀티-IDE Skills. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 17
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-claude-skills

@@ -8,6 +8,15 @@ upstream: https://github.com/mattpocock/skills
 when_to_use: Matt Pocock의 .claude 스킬 모음. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # skills-mattpocock

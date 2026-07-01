@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/superpowers
 upstream: https://github.com/obra/superpowers
 when_to_use: Any project where Claude Code skills will be the primary harness layer. Especially good when the team wants pre-made skills for brainstorming, plan writing, plan execution, debugging, code review, and TDD.
 priority: 5
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Superpowers skills pattern

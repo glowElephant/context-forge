@@ -8,6 +8,15 @@ upstream: https://github.com/LessUp/awesome-cursorrules-zh
 when_to_use: 중국어 Cursor rules. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 2
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-cursorrules-zh

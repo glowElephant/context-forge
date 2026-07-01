@@ -8,6 +8,15 @@ upstream: https://github.com/shanraisshan/claude-code-best-practice
 when_to_use: Vibe → Agentic engineering. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # claude-code-best-practice

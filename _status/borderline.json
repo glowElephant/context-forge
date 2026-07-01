@@ -11,5 +11,336 @@
       14
     ]
   },
-  "entries": []
+  "entries": [
+    {
+      "name": "awesome-claude-agents",
+      "category": "multi-agent",
+      "total": 13,
+      "tier": 2
+    },
+    {
+      "name": "claude-code-sub-agents",
+      "category": "multi-agent",
+      "total": 13,
+      "tier": 3
+    },
+    {
+      "name": "claude-code-subagents",
+      "category": "multi-agent",
+      "total": 13,
+      "tier": 3
+    },
+    {
+      "name": "awesome-claude-code-plugins",
+      "category": "skills",
+      "total": 13,
+      "tier": 3
+    },
+    {
+      "name": "SwiftAgents",
+      "category": "agents-md",
+      "total": 14,
+      "tier": 2
+    },
+    {
+      "name": "claude-agents",
+      "category": "multi-agent",
+      "total": 14,
+      "tier": 3
+    },
+    {
+      "name": "awesome-design-md",
+      "category": "claude-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "claude-code-ultimate-guide",
+      "category": "claude-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "design.md",
+      "category": "claude-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "pro-workflow",
+      "category": "conventions",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "tdd-guard",
+      "category": "conventions",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "tweakcc",
+      "category": "conventions",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "Awesome-MCP-ZH",
+      "category": "mcp",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "awesome-codex-subagents",
+      "category": "multi-agent",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "edict",
+      "category": "multi-agent",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "mission-control",
+      "category": "multi-agent",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "orchestration-pattern",
+      "category": "multi-agent",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "swarms",
+      "category": "multi-agent",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "buildwithclaude",
+      "category": "skills",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "microsoft-skills",
+      "category": "skills",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "get-shit-done",
+      "category": "spec-driven",
+      "total": 18,
+      "tier": 3
+    },
+    {
+      "name": "gsd-core",
+      "category": "spec-driven",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "potpie",
+      "category": "spec-driven",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "claude-code-best-practice",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "claude-code-system-prompts",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "claude-code-templates",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "claude-howto",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "everything-claude-code",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "gstack-claude-toolkit",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "awesome-mcp-discovery",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "fastmcp",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "github-mcp-server",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "mcp-server-bootstrap",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "mcp-toolbox",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "playwright-mcp",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "awesome-claude-code-subagents",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "microsoft-agent-framework",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "oh-my-claudecode",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "ruflo",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "wshobson-agents",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "prompts.chat",
+      "category": "prompts",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "Understand-Anything",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "antigravity-awesome-skills",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "awesome-agent-skills",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "awesome-claude-code",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "awesome-openclaw-skills",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "claude-mem",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "copilot-instructions-pattern",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "graphify",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "oh-my-openagent",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "skills-mattpocock",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "skills",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "superpowers-skills-pattern",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "github-spec-kit",
+      "category": "spec-driven",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "openspec",
+      "category": "spec-driven",
+      "total": 19,
+      "tier": 2
+    }
+  ]
 }

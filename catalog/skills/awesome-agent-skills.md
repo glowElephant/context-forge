@@ -8,6 +8,15 @@ upstream: https://github.com/VoltAgent/awesome-agent-skills
 when_to_use: 1000+ Skills 멀티플랫폼. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-agent-skills

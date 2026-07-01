@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/gstack
 upstream: https://github.com/garrytan/gstack
 when_to_use: Greenfield project that wants Garry Tan's curated 23-tool Claude Code stack out of the box. Best fit for solo founders or small teams shipping a SaaS-style product where pragmatism beats novelty.
 priority: 5
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # gstack — Garry Tan's Claude Code stack

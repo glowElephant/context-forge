@@ -8,6 +8,15 @@ upstream: https://github.com/code-yeongyu/oh-my-openagent
 when_to_use: agent harness (한국 개발, oh-my-opencode 후속). Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # oh-my-openagent

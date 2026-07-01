@@ -8,6 +8,15 @@ upstream: https://github.com/Piebald-AI/claude-code-system-prompts
 when_to_use: Claude Code 내부 system prompt + 27 builtin tool prompts 해부. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # claude-code-system-prompts

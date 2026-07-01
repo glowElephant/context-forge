@@ -8,6 +8,15 @@ upstream: https://github.com/Pimzino/spec-workflow-mcp
 when_to_use: 구조화된 SDD MCP 서버 + 대시보드. Spec-Driven Development 워크플로우를 도입할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # spec-workflow-mcp

@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/agents
 upstream: https://github.com/wshobson/agents
 when_to_use: Projects that want pre-built Claude Code subagents covering common dev roles (code reviewer, debugger, explorer, planner, etc.) without writing each from scratch.
 priority: 4
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # wshobson/agents — Claude Code subagent collection

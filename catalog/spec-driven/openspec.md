@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/OpenSpec
 upstream: https://github.com/Fission-AI/OpenSpec
 when_to_use: Spec-driven projects that prefer an open-source, CLI-first tool over GitHub-tied workflows. Good fit for self-hosted Git, GitLab, or teams that want spec linting and validation locally.
 priority: 4
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # OpenSpec — open-source spec-driven CLI

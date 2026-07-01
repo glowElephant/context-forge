@@ -8,6 +8,15 @@ upstream: https://github.com/NeoLabHQ/context-engineering-kit
 when_to_use: 멀티-IDE 컨텍스트 엔지니어링 키트. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 3
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 17
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # context-engineering-kit

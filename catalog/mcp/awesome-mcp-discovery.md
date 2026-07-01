@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/awesome-mcp-servers
 upstream: https://github.com/punkpeye/awesome-mcp-servers
 when_to_use: When choosing which MCP servers to install for a given stack. Use this as the discovery checklist; for canonical implementations of common services, defer to the official `modelcontextprotocol/servers` repo.
 priority: 4
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Awesome MCP servers — discovery catalog

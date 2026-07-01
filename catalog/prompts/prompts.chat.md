@@ -8,6 +8,15 @@ upstream: https://github.com/f/prompts.chat
 when_to_use: ChatGPT/Claude 프롬프트 표준. 프롬프트 엔지니어링 패턴이 필요할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # prompts.chat

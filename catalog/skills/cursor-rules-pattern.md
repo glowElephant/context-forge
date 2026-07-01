@@ -8,6 +8,16 @@ upstream: https://github.com/PatrickJS/awesome-cursorrules
 when_to_use: Project where Cursor is the primary editor (or one of multiple editors). Use to bootstrap `.cursorrules` and `.cursor/rules/*.mdc` with battle-tested patterns.
 priority: 4
 applies_to_files: [.cursorrules, .cursor]
+status: active
+score:
+  popularity: 5
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 17
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Cursor rules pattern

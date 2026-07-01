@@ -8,6 +8,15 @@ upstream: https://github.com/FlorianBruniaux/claude-code-ultimate-guide
 when_to_use: Claude Code 종합 가이드 (초보→파워유저, production 템플릿). 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 18
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # claude-code-ultimate-guide

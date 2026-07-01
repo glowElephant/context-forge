@@ -8,6 +8,15 @@ upstream: https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Kno
 when_to_use: MCP·훅·BMAD까지 망라. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Claude-Code-Everything-You-Need-to-Know

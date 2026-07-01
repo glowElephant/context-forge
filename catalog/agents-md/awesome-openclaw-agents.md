@@ -8,6 +8,15 @@ upstream: https://github.com/mergisi/awesome-openclaw-agents
 when_to_use: OpenClaw 162 agent 템플릿 (19 카테고리, SOUL.md 설정). AGENTS.md(IDE-agnostic) 컨벤션이 필요할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-openclaw-agents

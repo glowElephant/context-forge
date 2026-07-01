@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/servers
 upstream: https://github.com/modelcontextprotocol/servers
 when_to_use: Any project that will integrate at least one MCP server. The official Anthropic-maintained collection is the safest starting point — file system, GitHub, Postgres, Slack, etc.
 priority: 5
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # MCP server bootstrap (official)
