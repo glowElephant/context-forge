@@ -8,6 +8,15 @@ upstream: https://github.com/ChrisWiles/claude-code-showcase
 when_to_use: 훅·스킬·에이전트·CMD·GHA 종합. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 2
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 15
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # claude-code-showcase

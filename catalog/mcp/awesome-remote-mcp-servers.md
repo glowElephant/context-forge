@@ -8,6 +8,15 @@ upstream: https://github.com/jaw9c/awesome-remote-mcp-servers
 when_to_use: 원격 MCP 전용 (클라우드 통합). MCP 서버를 추가하거나 발굴할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 3
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 17
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-remote-mcp-servers

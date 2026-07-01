@@ -8,6 +8,15 @@ upstream: https://github.com/heilcheng/awesome-agent-skills
 when_to_use: 진짜 스킬 큐레이션. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-agent-skills-heilcheng

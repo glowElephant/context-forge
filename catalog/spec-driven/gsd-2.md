@@ -8,6 +8,15 @@ upstream: https://github.com/gsd-build/gsd-2
 when_to_use: get-shit-done 후속작 (긴 시간 자율 작업 컨텍스트 보존). Spec-Driven Development 워크플로우를 도입할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # gsd-2

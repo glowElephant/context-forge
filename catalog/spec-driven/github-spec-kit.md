@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/spec-kit
 upstream: https://github.com/github/spec-kit
 when_to_use: Teams adopting spec-driven development with GitHub-native tooling (Issues, Projects, PRs). Especially good when leadership wants traceability from spec → PR.
 priority: 5
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # GitHub spec-kit — spec-driven development

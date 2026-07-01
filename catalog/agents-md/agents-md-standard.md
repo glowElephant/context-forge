@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/agents.md
 upstream: https://github.com/agentsmd/agents.md
 when_to_use: Multi-agent or multi-tool projects where Claude, Cursor, Copilot, Codex, and other agents must read the same instructions. Use AGENTS.md as the neutral, tool-agnostic source of truth.
 priority: 5
+status: active
+score:
+  popularity: 5
+  activity: 2
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # AGENTS.md — the open standard

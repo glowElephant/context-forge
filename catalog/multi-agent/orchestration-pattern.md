@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/open-multi-agent
 upstream: https://github.com/JackChen-me/open-multi-agent
 when_to_use: Projects with goals that decompose into a DAG of subtasks (build pipeline, multi-stage data processing, complex feature with parallelizable parts). When a single linear plan won't capture the actual dependencies.
 priority: 3
+status: active
+score:
+  popularity: 4
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 18
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Open multi-agent orchestration pattern

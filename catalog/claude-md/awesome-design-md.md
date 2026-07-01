@@ -8,6 +8,15 @@ upstream: https://github.com/VoltAgent/awesome-design-md
 when_to_use: 브랜드별 DESIGN.md 드롭인 (베이스라인). 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 4
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 18
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-design-md

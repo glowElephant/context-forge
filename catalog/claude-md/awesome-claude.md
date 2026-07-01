@@ -8,6 +8,15 @@ upstream: https://github.com/webfuse-com/awesome-claude
 when_to_use: Claude 종합 리소스. 프로젝트의 CLAUDE.md 구조를 결정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 3
+  activity: 4
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # awesome-claude

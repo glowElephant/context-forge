@@ -8,6 +8,15 @@ upstream: https://github.com/PrefectHQ/fastmcp
 when_to_use: MCP 서버/클라이언트 Pythonic 빌더. MCP 서버를 추가하거나 발굴할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # fastmcp

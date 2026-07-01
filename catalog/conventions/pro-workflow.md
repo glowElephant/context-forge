@@ -8,6 +8,15 @@ upstream: https://github.com/rohitg00/pro-workflow
 when_to_use: 자기교정 메모리 + 워크트리. 전체 코드/문서 규약을 정할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 18
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # pro-workflow

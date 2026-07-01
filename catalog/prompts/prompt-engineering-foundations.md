@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/Prompt-Engineering-Guide
 upstream: https://github.com/dair-ai/Prompt-Engineering-Guide
 when_to_use: Any project where the team is new to prompt engineering, or when designing a complex prompt that needs few-shot examples, chain-of-thought, or structured output.
 priority: 3
+status: active
+score:
+  popularity: 5
+  activity: 2
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Prompt engineering foundations

@@ -8,6 +8,15 @@ upstream: https://github.com/gmickel/flow-next
 when_to_use: Plan-first + 크로스 모델 리뷰. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active
+score:
+  popularity: 3
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 17
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # flow-next

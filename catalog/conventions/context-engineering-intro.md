@@ -7,6 +7,16 @@ source: https://github.com/glowElephant/context-engineering-intro
 upstream: https://github.com/coleam00/context-engineering-intro
 when_to_use: Onboarding a team to context engineering as a discipline. Especially when team members come from a "just write a great prompt" mindset and need to internalize that context (memory, retrieval, tools, examples) is the actual leverage.
 priority: 4
+status: active
+score:
+  popularity: 5
+  activity: 2
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Context engineering — the discipline

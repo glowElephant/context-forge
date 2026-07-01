@@ -8,6 +8,16 @@ upstream: https://github.com/disler/claude-code-hooks-mastery
 when_to_use: Project that wants automated guardrails — block dangerous commands, enforce TDD, run formatters on save, log every tool call, etc. Hooks are how Claude Code automates "from now on always X."
 priority: 3
 applies_to_files: [.claude/settings.json, .claude/hooks]
+status: active
+score:
+  popularity: 4
+  activity: 2
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 15
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Claude Code hooks mastery

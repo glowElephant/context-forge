@@ -8,6 +8,15 @@ upstream: https://github.com/cft0808/edict
 when_to_use: OpenClaw 9-agent 오케스트레이션 (실시간 대시보드). 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
 status: active
+score:
+  popularity: 5
+  activity: 4
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 18
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # edict

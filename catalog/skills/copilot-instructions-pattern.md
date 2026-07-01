@@ -8,6 +8,16 @@ upstream: https://github.com/github/awesome-copilot
 when_to_use: Project using GitHub Copilot or Copilot Chat. Use to bootstrap `.github/copilot-instructions.md` and per-task instruction files with patterns curated by GitHub themselves.
 priority: 4
 applies_to_files: [.github/copilot-instructions.md, .github/instructions]
+status: active
+score:
+  popularity: 5
+  activity: 5
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 19
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # Copilot instructions pattern

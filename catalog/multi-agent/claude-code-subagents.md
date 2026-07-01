@@ -7,7 +7,16 @@ source: https://github.com/glowElephant/claude-code-subagents
 upstream: https://github.com/0xfurai/claude-code-subagents
 when_to_use: 100+ production 서브에이전트. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
-status: active
+status: archived
+score:
+  popularity: 3
+  activity: 1
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 13
+  tier: 3
+  last_scored: 2026-07-01
 ---
 
 # claude-code-subagents

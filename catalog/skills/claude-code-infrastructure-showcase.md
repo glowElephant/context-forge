@@ -8,6 +8,15 @@ upstream: https://github.com/diet103/claude-code-infrastructure-showcase
 when_to_use: 스킬 자동활성 + 훅 + 에이전트 통합. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
 status: active
+score:
+  popularity: 4
+  activity: 3
+  reviews: 3
+  quality: 3
+  trust: 3
+  total: 16
+  tier: 2
+  last_scored: 2026-07-01
 ---
 
 # claude-code-infrastructure-showcase
