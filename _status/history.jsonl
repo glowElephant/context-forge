@@ -159,3 +159,29 @@
 {"ts": "2026-07-01T07:54:38+00:00", "event": "rescore", "name": "potpie", "category": "spec-driven", "before": {"total": 0, "tier": 0, "status": "active"}, "after": {"total": 18, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-07-01T07:54:38+00:00", "event": "rescore", "name": "shotgun", "category": "spec-driven", "before": {"total": 0, "tier": 0, "status": "active"}, "after": {"total": 16, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-07-01T07:54:38+00:00", "event": "rescore", "name": "spec-workflow-mcp", "category": "spec-driven", "before": {"total": 0, "tier": 0, "status": "active"}, "after": {"total": 16, "tier": 2, "status": "active"}, "reason": "rescore"}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "DietrichGebert/ponytail", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "addyosmani/agent-skills", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "CherryHQ/cherry-studio", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "mvanhorn/last30days-skill", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "zhayujie/CowAgent", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "wasp-lang/open-saas", "category": "claude-md", "after": {"popularity": 5, "activity": 4}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "VoltAgent/awesome-claude-design", "category": "claude-md", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "SnailSploit/Claude-Red", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "ciembor/agent-rules-books", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "jsynowiec/node-typescript-boilerplate", "category": "agents-md", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "getkimchi/kimchi", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "openai/swarm", "category": "multi-agent", "after": {"popularity": 5, "activity": 3}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "dromara/liteflow", "category": "multi-agent", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "Kocoro-lab/Shannon", "category": "multi-agent", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "abhi1693/openclaw-mission-control", "category": "multi-agent", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "headroomlabs-ai/headroom", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "DeusData/codebase-memory-mcp", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "GLips/Figma-Context-MCP", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "casdoor/casdoor", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "modelcontextprotocol/inspector", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "google-labs-code/jules-awesome-list", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "PlexPt/awesome-chatgpt-prompts-zh", "category": "prompts", "after": {"popularity": 5, "activity": 3}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "serenakeyitan/awesome-notebookLM-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "glidea/banana-prompt-quicker", "category": "prompts", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "powerline/powerline", "category": "prompts", "after": {"popularity": 5, "activity": 2}}
+{"ts": "2026-07-01T08:18:08+00:00", "event": "discover", "name": "nexu-io/html-video", "category": "boilerplate", "after": {"popularity": 4, "activity": 4}}
