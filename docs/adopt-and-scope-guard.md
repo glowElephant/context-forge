@@ -71,3 +71,4 @@ reason 3종:
 1. **미러/org-전송 오탐** — 위 미러 검사로 대응. 단 basename 휴리스틱이라 완벽하지 않음. 채택 전 사람이 한 번 확인.
 2. **카테고리 오분류** — discover가 `matched_keyword`로 category를 자동 배정해서, `zeromicro/go-zero`가 `spec-driven`으로, `anything-llm`이 `mcp`로 잘못 들어온다. `validate-catalog.sh`가 `category` ≠ 디렉토리면 빌드를 깨뜨리므로, adopt 시 `--category`로 사람이 올바르게 지정해야 한다. adopt는 진입 시 category-디렉토리 정합성을 선검사한다.
 3. **별점 스냅샷 시점 불일치** — 후보마다 표기 별점과 실제 별점 차이가 큼(발굴 스냅샷이 일관되지 않음). 채점은 adopt 시점에 `auto_score`로 다시 조회하므로 카탈로그 점수에는 영향 없음.
+4. **Windows cp949 디코딩 크래시 (2026-07 수정)** — `subprocess.run(text=True)`에 encoding 미지정 시 Windows가 cp949로 디코딩해서, repo description에 em-dash(—) 등 non-ASCII가 있으면 stdout=None → `json.loads(None)` TypeError로 adopt가 죽는다(`seed_frontmatter.py`는 예외를 삼켜 description이 조용히 누락). `automation.py`/`seed_frontmatter.py`의 모든 gh subprocess 호출에 `encoding="utf-8", errors="replace"`를 명시해 해결. 새 subprocess 호출을 추가할 때도 반드시 encoding을 명시할 것.

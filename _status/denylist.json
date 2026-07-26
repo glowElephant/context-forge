@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-09",
+  "updated_at": "2026-07-26",
   "note": "discover가 재발굴하지 않도록 제외할 upstream URL. reason: duplicate-mirror | out-of-scope | product-not-pattern",
   "entries": [
     { "url": "https://github.com/multica-ai/andrej-karpathy-skills", "reason": "duplicate-mirror", "decided_at": "2026-06-09", "note": "forrestchang/andrej-karpathy-skills와 동일 repo(org-전송/미러)" },
@@ -21,6 +21,20 @@
     { "url": "https://github.com/ZeroLu/awesome-nanobanana-pro", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "이미지 생성 프롬프트" },
     { "url": "https://github.com/zeromicro/go-zero", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "Go 마이크로서비스 프레임워크" },
     { "url": "https://github.com/hawk86104/three-vue-tres", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "3D 시각화 Vue 프레임워크(제품)" },
-    { "url": "https://github.com/ai-boost/awesome-prompts", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "범용 GPT 프롬프트 라이브러리, 코딩 에이전트 전용 아님" }
+    { "url": "https://github.com/ai-boost/awesome-prompts", "reason": "out-of-scope", "decided_at": "2026-06-09", "note": "범용 GPT 프롬프트 라이브러리, 코딩 에이전트 전용 아님" },
+    { "url": "https://github.com/CherryHQ/cherry-studio", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "AI 생산성 데스크탑 앱(제품), anything-llm 선례" },
+    { "url": "https://github.com/zhayujie/CowAgent", "reason": "product-not-pattern", "decided_at": "2026-07-26", "note": "AI 어시스턴트 런타임 앱(구 chatgpt-on-wechat), 하네스 패턴 아님" },
+    { "url": "https://github.com/casdoor/casdoor", "reason": "product-not-pattern", "decided_at": "2026-07-26", "note": "IAM/auth 서버 제품, MCP 게이트웨이는 부가 기능" },
+    { "url": "https://github.com/getkimchi/kimchi", "reason": "product-not-pattern", "decided_at": "2026-07-26", "note": "터미널 코딩 에이전트 앱(제품), golutra 선례" },
+    { "url": "https://github.com/nexu-io/html-video", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "HTML→비디오 생성 도구(제품), nexu-io/open-design 선례" },
+    { "url": "https://github.com/openai/swarm", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "agent 빌드 교육용 프레임워크(deprecated), agency-swarm 선례" },
+    { "url": "https://github.com/dromara/liteflow", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "Java 룰엔진 프레임워크, 코딩 에이전트 하네스 아님" },
+    { "url": "https://github.com/Kocoro-lab/Shannon", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "multi-agent 앱 프레임워크(런타임), solace-agent-mesh 선례" },
+    { "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "범용 ChatGPT 프롬프트(중국어), 코딩 에이전트 전용 아님" },
+    { "url": "https://github.com/serenakeyitan/awesome-notebookLM-prompts", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "NotebookLM 슬라이드 프롬프트, 코딩 에이전트 아님" },
+    { "url": "https://github.com/glidea/banana-prompt-quicker", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "이미지 생성(Nano Banana) 프롬프트" },
+    { "url": "https://github.com/powerline/powerline", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "vim/shell statusline 플러그인 — 'prompt' 키워드 오탐" },
+    { "url": "https://github.com/SnailSploit/Claude-Red", "reason": "product-not-pattern", "decided_at": "2026-07-26", "note": "공격 보안(offensive security) 도메인특화 스킬, raptor 선례" },
+    { "url": "https://github.com/google-labs-code/jules-awesome-list", "reason": "out-of-scope", "decided_at": "2026-07-26", "note": "Google Jules 전용 프롬프트, 범용성 부족(사용자 결정)" }
   ]
 }

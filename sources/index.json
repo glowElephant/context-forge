@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-20",
+  "updated_at": "2026-07-26",
   "sources": [
     {
       "upstream": "https://github.com/anthropics/skills",
@@ -847,6 +847,114 @@
       "tier": 1,
       "added_at": "2026-06-09",
       "notes": "코드베이스 표준 주입 + spec-driven 시스템"
+    },
+    {
+      "upstream": "https://github.com/DietrichGebert/ponytail",
+      "fork": "https://github.com/glowElephant/ponytail",
+      "name": "ponytail",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
+    },
+    {
+      "upstream": "https://github.com/addyosmani/agent-skills",
+      "fork": "https://github.com/glowElephant/agent-skills",
+      "name": "agent-skills",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "Production-grade engineering skills for AI coding agents."
+    },
+    {
+      "upstream": "https://github.com/mvanhorn/last30days-skill",
+      "fork": "https://github.com/glowElephant/last30days-skill",
+      "name": "last30days-skill",
+      "category": "skills",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a gro"
+    },
+    {
+      "upstream": "https://github.com/headroomlabs-ai/headroom",
+      "fork": "https://github.com/glowElephant/headroom",
+      "name": "headroom",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95%"
+    },
+    {
+      "upstream": "https://github.com/GLips/Figma-Context-MCP",
+      "fork": "https://github.com/glowElephant/Figma-Context-MCP",
+      "name": "Figma-Context-MCP",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "MCP server to provide Figma layout information to AI coding agents like Cursor"
+    },
+    {
+      "upstream": "https://github.com/ciembor/agent-rules-books",
+      "fork": "https://github.com/glowElephant/agent-rules-books",
+      "name": "agent-rules-books",
+      "category": "agents-md",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Cl"
+    },
+    {
+      "upstream": "https://github.com/wasp-lang/open-saas",
+      "fork": "https://github.com/glowElephant/open-saas",
+      "name": "open-saas",
+      "category": "boilerplate",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "A 100% free modern JS SaaS boilerplate (React, NodeJS, Prisma). Full-featured: Auth (email, google, github, slack, MS), "
+    },
+    {
+      "upstream": "https://github.com/abhi1693/openclaw-mission-control",
+      "fork": "https://github.com/glowElephant/openclaw-mission-control",
+      "name": "openclaw-mission-control",
+      "category": "multi-agent",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw"
+    },
+    {
+      "upstream": "https://github.com/VoltAgent/awesome-claude-design",
+      "fork": "https://github.com/glowElephant/awesome-claude-design",
+      "name": "awesome-claude-design",
+      "category": "claude-md",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "Awesome Claude Design: 68 ready-to-use design system inspirations in DESIGN.md format. Drop one in, scaffold a full UI i"
+    },
+    {
+      "upstream": "https://github.com/modelcontextprotocol/inspector",
+      "fork": "https://github.com/glowElephant/mcp-inspector",
+      "name": "mcp-inspector",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "Visual testing tool for MCP servers"
+    },
+    {
+      "upstream": "https://github.com/DeusData/codebase-memory-mcp",
+      "fork": "https://github.com/glowElephant/codebase-memory-mcp",
+      "name": "codebase-memory-mcp",
+      "category": "mcp",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in mil"
+    },
+    {
+      "upstream": "https://github.com/jsynowiec/node-typescript-boilerplate",
+      "fork": "https://github.com/glowElephant/node-typescript-boilerplate",
+      "name": "node-typescript-boilerplate",
+      "category": "boilerplate",
+      "tier": 1,
+      "added_at": "2026-07-26",
+      "notes": "Production-ready Node.js TypeScript boilerplate: ESM, Vitest, ESLint, Prettier, GitHub Actions, Mise, and AGENTS.md incl"
     }
   ]
 }

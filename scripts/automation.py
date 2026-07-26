@@ -185,9 +185,11 @@ def _replace_or_append(fm_text: str, key: str, replacement: str, *, block: bool 
 
 def gh_api(path: str) -> dict[str, Any]:
     """Call gh api <path>; return parsed JSON."""
+    # encoding 명시 필수: Windows에서 text=True만 쓰면 cp949로 디코딩하다
+    # repo description의 non-ASCII(em-dash 등)에서 stdout=None이 된다
     proc = subprocess.run(
         ["gh", "api", path, "-H", "Accept: application/vnd.github+json"],
-        capture_output=True, text=True, check=False,
+        capture_output=True, text=True, encoding="utf-8", errors="replace", check=False,
     )
     if proc.returncode != 0:
         raise RuntimeError(f"gh api {path} failed: {proc.stderr.strip()}")
@@ -601,6 +603,7 @@ def cmd_render_index(args: argparse.Namespace) -> int:
 
 def gh_run(args: list[str], *, input_text: str | None = None) -> subprocess.CompletedProcess:
     return subprocess.run(["gh", *args], capture_output=True, text=True,
+                          encoding="utf-8", errors="replace",
                           input=input_text, check=False)
 
 

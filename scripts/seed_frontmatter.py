@@ -61,8 +61,10 @@ CATEGORY_HINT = {
 def gh_api(path: str) -> dict[str, Any] | None:
     """gh api wrapper. 실패 시 None."""
     try:
+        # encoding 명시 필수: Windows에서 cp949 디코딩 실패 시 stdout=None → description 조용히 누락
         r = subprocess.run(
-            ["gh", "api", path], capture_output=True, text=True, timeout=15
+            ["gh", "api", path], capture_output=True, text=True,
+            encoding="utf-8", errors="replace", timeout=15
         )
         if r.returncode != 0:
             return None
