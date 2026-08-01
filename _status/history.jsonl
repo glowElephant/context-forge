@@ -206,3 +206,24 @@
 {"ts": "2026-08-01T06:03:57+00:00", "event": "rescore", "name": "edict", "category": "multi-agent", "before": {"total": 18, "tier": 2, "status": "active"}, "after": {"total": 19, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-08-01T06:03:59+00:00", "event": "rescore", "name": "wshobson-agents", "category": "multi-agent", "before": {"total": 19, "tier": 2, "status": "active"}, "after": {"total": 18, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-08-01T06:04:03+00:00", "event": "rescore", "name": "get-shit-done", "category": "spec-driven", "before": {"total": 18, "tier": 3, "status": "archived"}, "after": {"total": 17, "tier": 3, "status": "archived"}, "reason": "rescore"}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "Shubhamsaboo/awesome-llm-apps", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "JuliusBrussee/caveman", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "calesthio/OpenMontage", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "sickn33/agentic-awesome-skills", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "multica-ai/multica", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "Vincentwei1021/video-shotcraft", "category": "claude-md", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "FrancyJGLisboa/agent-skill-creator", "category": "claude-md", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "Sahir619/fable-method", "category": "claude-md", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "bergside/awesome-design-skills", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "elementalsouls/Claude-OSINT", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "IBM/AssetOpsBench", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "matt1398/claude-devtools", "category": "multi-agent", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "0xSteph/pentest-ai-agents", "category": "multi-agent", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "gemini-cli-extensions/conductor", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "zylon-ai/private-gpt", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "MODSetter/SurfSense", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "t8y2/dbx", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "mcp-use/mcp-use", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "awslabs/mcp", "category": "mcp", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "EgoAlpha/prompt-in-context-learning", "category": "prompts", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-08-01T06:33:06+00:00", "event": "discover", "name": "study8677/awesome-architecture", "category": "boilerplate", "after": {"popularity": 4, "activity": 5}}
