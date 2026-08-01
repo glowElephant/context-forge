@@ -10,13 +10,13 @@ priority: 5
 status: active
 score:
   popularity: 5
-  activity: 5
+  activity: 4
   reviews: 3
   quality: 3
   trust: 3
-  total: 19
+  total: 18
   tier: 2
-  last_scored: 2026-07-01
+  last_scored: 2026-08-01
 ---
 
 # gstack — Garry Tan's Claude Code stack

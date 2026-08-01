@@ -16,7 +16,7 @@ score:
   trust: 3
   total: 18
   tier: 2
-  last_scored: 2026-07-01
+  last_scored: 2026-08-01
 ---
 
 # claude-code-ultimate-guide
