@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-01",
+  "updated_at": "2026-08-01",
   "policy": {
     "tier1_band": [
       18,
@@ -49,19 +49,7 @@
       "tier": 3
     },
     {
-      "name": "awesome-design-md",
-      "category": "claude-md",
-      "total": 18,
-      "tier": 2
-    },
-    {
       "name": "claude-code-ultimate-guide",
-      "category": "claude-md",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "design.md",
       "category": "claude-md",
       "total": 18,
       "tier": 2
@@ -73,32 +61,8 @@
       "tier": 2
     },
     {
-      "name": "tdd-guard",
-      "category": "conventions",
-      "total": 18,
-      "tier": 2
-    },
-    {
       "name": "tweakcc",
       "category": "conventions",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "Awesome-MCP-ZH",
-      "category": "mcp",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "awesome-codex-subagents",
-      "category": "multi-agent",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "edict",
-      "category": "multi-agent",
       "total": 18,
       "tier": 2
     },
@@ -133,12 +97,6 @@
       "tier": 2
     },
     {
-      "name": "get-shit-done",
-      "category": "spec-driven",
-      "total": 18,
-      "tier": 3
-    },
-    {
       "name": "gsd-core",
       "category": "spec-driven",
       "total": 18,
@@ -148,6 +106,36 @@
       "name": "potpie",
       "category": "spec-driven",
       "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "gstack-claude-toolkit",
+      "category": "claude-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "wshobson-agents",
+      "category": "multi-agent",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "awesome-design-md",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "design.md",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "edict",
+      "category": "multi-agent",
+      "total": 19,
       "tier": 2
     },
     {
@@ -176,12 +164,6 @@
     },
     {
       "name": "everything-claude-code",
-      "category": "claude-md",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "gstack-claude-toolkit",
       "category": "claude-md",
       "total": 19,
       "tier": 2
@@ -242,12 +224,6 @@
     },
     {
       "name": "ruflo",
-      "category": "multi-agent",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "wshobson-agents",
       "category": "multi-agent",
       "total": 19,
       "tier": 2

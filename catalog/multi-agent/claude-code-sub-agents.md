@@ -16,7 +16,7 @@ score:
   trust: 3
   total: 13
   tier: 3
-  last_scored: 2026-07-01
+  last_scored: 2026-08-01
 ---
 
 # claude-code-sub-agents
