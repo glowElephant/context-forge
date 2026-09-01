@@ -10,13 +10,13 @@ priority: 3
 status: active
 score:
   popularity: 5
-  activity: 5
+  activity: 3
   reviews: 3
   quality: 3
   trust: 3
-  total: 19
+  total: 17
   tier: 2
-  last_scored: 2026-08-01
+  last_scored: 2026-09-01
 ---
 
 # awesome-design-md

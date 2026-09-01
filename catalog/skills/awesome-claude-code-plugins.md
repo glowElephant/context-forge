@@ -7,16 +7,16 @@ source: https://github.com/glowElephant/awesome-claude-code-plugins
 upstream: https://github.com/ccplugins/awesome-claude-code-plugins
 when_to_use: Awesome Claude Code plugins — a curated list of slash commands, subagents, MCP servers, and hooks for Claude Code. Claude Code/Codex skills 또는 agent 스킬을 채택할 때 참고
 priority: 3
-status: archived
+status: active
 score:
   popularity: 3
-  activity: 1
+  activity: 4
   reviews: 3
   quality: 3
   trust: 3
-  total: 13
-  tier: 3
-  last_scored: 2026-08-01
+  total: 16
+  tier: 2
+  last_scored: 2026-09-01
 ---
 
 # awesome-claude-code-plugins

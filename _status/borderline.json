@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-01",
+  "updated_at": "2026-09-01",
   "policy": {
     "tier1_band": [
       18,
@@ -27,12 +27,6 @@
     {
       "name": "claude-code-subagents",
       "category": "multi-agent",
-      "total": 13,
-      "tier": 3
-    },
-    {
-      "name": "awesome-claude-code-plugins",
-      "category": "skills",
       "total": 13,
       "tier": 3
     },
@@ -109,31 +103,31 @@
       "tier": 2
     },
     {
-      "name": "gstack-claude-toolkit",
-      "category": "claude-md",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "wshobson-agents",
+      "name": "edict",
       "category": "multi-agent",
       "total": 18,
       "tier": 2
     },
     {
-      "name": "awesome-design-md",
+      "name": "awesome-claude-code-subagents",
+      "category": "multi-agent",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "skills",
+      "category": "skills",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "gstack-claude-toolkit",
       "category": "claude-md",
       "total": 19,
       "tier": 2
     },
     {
-      "name": "design.md",
-      "category": "claude-md",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "edict",
+      "name": "wshobson-agents",
       "category": "multi-agent",
       "total": 19,
       "tier": 2
@@ -201,12 +195,6 @@
     {
       "name": "playwright-mcp",
       "category": "mcp",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "awesome-claude-code-subagents",
-      "category": "multi-agent",
       "total": 19,
       "tier": 2
     },
@@ -290,12 +278,6 @@
     },
     {
       "name": "skills-mattpocock",
-      "category": "skills",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "skills",
       "category": "skills",
       "total": 19,
       "tier": 2
