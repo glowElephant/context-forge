@@ -235,3 +235,25 @@
 {"ts": "2026-09-01T08:29:05+00:00", "event": "rescore", "name": "wshobson-agents", "category": "multi-agent", "before": {"total": 18, "tier": 2, "status": "active"}, "after": {"total": 19, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-09-01T08:29:07+00:00", "event": "rescore", "name": "awesome-claude-code-plugins", "category": "skills", "before": {"total": 13, "tier": 3, "status": "archived"}, "after": {"total": 16, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-09-01T08:29:12+00:00", "event": "rescore", "name": "skills", "category": "skills", "before": {"total": 19, "tier": 2, "status": "active"}, "after": {"total": 18, "tier": 2, "status": "active"}, "reason": "rescore"}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "Shubhamsaboo/awesome-llm-apps", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "JuliusBrussee/caveman", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "coreyhaines31/marketingskills", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "sickn33/agentic-awesome-skills", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "Imbad0202/academic-research-skills", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "Vincentwei1021/video-shotcraft", "category": "claude-md", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "elementalsouls/Claude-OSINT", "category": "claude-md", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "bergside/awesome-design-skills", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "Sahir619/fable-method", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "HKUDS/DeepCode", "category": "multi-agent", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "IBM/AssetOpsBench", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "ageerle/ruoyi-ai", "category": "multi-agent", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "0xSteph/pentest-ai-agents", "category": "multi-agent", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "maxritter/pilot-shell", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "gemini-cli-extensions/conductor", "category": "spec-driven", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "zylon-ai/private-gpt", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "t8y2/dbx", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "MODSetter/SurfSense", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "mcp-use/mcp-use", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "0x4m4/hexstrike-ai", "category": "mcp", "after": {"popularity": 5, "activity": 4}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "langgptai/awesome-claude-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-09-01T09:17:36+00:00", "event": "discover", "name": "study8677/awesome-architecture", "category": "boilerplate", "after": {"popularity": 4, "activity": 4}}
