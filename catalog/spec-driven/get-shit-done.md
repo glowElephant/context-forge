@@ -10,13 +10,13 @@ priority: 3
 status: archived
 score:
   popularity: 5
-  activity: 3
+  activity: 2
   reviews: 3
   quality: 3
   trust: 3
-  total: 17
+  total: 16
   tier: 3
-  last_scored: 2026-08-01
+  last_scored: 2026-10-01
 ---
 
 # get-shit-done

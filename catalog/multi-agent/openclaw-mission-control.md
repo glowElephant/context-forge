@@ -7,16 +7,16 @@ source: https://github.com/glowElephant/openclaw-mission-control
 upstream: https://github.com/abhi1693/openclaw-mission-control
 when_to_use: AI Agent Orchestration Dashboard - Manage AI agents, assign tasks, and coordinate multi-agent collaboration via OpenClaw. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
-status: active
+status: archived
 score:
   popularity: 4
-  activity: 2
+  activity: 3
   reviews: 3
   quality: 3
   trust: 3
-  total: 15
-  tier: 2
-  last_scored: 2026-07-26
+  total: 16
+  tier: 3
+  last_scored: 2026-10-01
 ---
 
 # openclaw-mission-control

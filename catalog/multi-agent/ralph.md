@@ -7,16 +7,16 @@ source: https://github.com/glowElephant/ralph
 upstream: https://github.com/snarktank/ralph
 when_to_use: 자율 PRD 완료 루프. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
-status: active
+status: archived
 score:
   popularity: 5
-  activity: 2
+  activity: 1
   reviews: 3
   quality: 3
   trust: 3
-  total: 16
-  tier: 2
-  last_scored: 2026-07-01
+  total: 15
+  tier: 3
+  last_scored: 2026-10-01
 ---
 
 # ralph

@@ -16,7 +16,7 @@ score:
   trust: 3
   total: 19
   tier: 2
-  last_scored: 2026-07-26
+  last_scored: 2026-10-01
 ---
 
 # codebase-memory-mcp

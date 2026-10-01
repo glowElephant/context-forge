@@ -10,13 +10,13 @@ priority: 3
 status: active
 score:
   popularity: 4
-  activity: 4
+  activity: 2
   reviews: 3
   quality: 3
   trust: 3
-  total: 17
+  total: 15
   tier: 2
-  last_scored: 2026-07-26
+  last_scored: 2026-10-01
 ---
 
 # node-typescript-boilerplate
