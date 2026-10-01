@@ -302,3 +302,29 @@
 {"ts": "2026-10-01T10:23:42+00:00", "event": "rescore", "name": "get-shit-done", "category": "spec-driven", "before": {"total": 17, "tier": 3, "status": "archived"}, "after": {"total": 16, "tier": 3, "status": "archived"}, "reason": "rescore"}
 {"ts": "2026-10-01T10:23:43+00:00", "event": "rescore", "name": "gsd-2", "category": "spec-driven", "before": {"total": 16, "tier": 2, "status": "active"}, "after": {"total": 15, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-10-01T10:23:44+00:00", "event": "rescore", "name": "shotgun", "category": "spec-driven", "before": {"total": 16, "tier": 2, "status": "active"}, "after": {"total": 14, "tier": 2, "status": "active"}, "reason": "rescore"}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "Shubhamsaboo/awesome-llm-apps", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "JuliusBrussee/caveman", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "tt-a1i/archify", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "blader/humanizer", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "Imbad0202/academic-research-skills", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "Vincentwei1021/video-shotcraft", "category": "claude-md", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "elementalsouls/Claude-OSINT", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "Sahir619/fable-method", "category": "claude-md", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "HKUDS/DeepCode", "category": "multi-agent", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "ageerle/ruoyi-ai", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "matt1398/claude-devtools", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "IBM/AssetOpsBench", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "deusyu/translate-book", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "bmad-code-org/BMAD-METHOD", "category": "spec-driven", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "Gentleman-Programming/gentle-ai", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "maxritter/pilot-shell", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "gemini-cli-extensions/conductor", "category": "spec-driven", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "zylon-ai/private-gpt", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "feder-cr/invisible_playwright_mcp", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "t8y2/dbx", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "Evil0ctal/Douyin_TikTok_Download_API", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "budtmo/docker-android", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "dontriskit/awesome-ai-system-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "YouMind-OpenLab/awesome-seedance-2-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "langgptai/awesome-claude-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 3}}
+{"ts": "2026-10-01T10:49:10+00:00", "event": "discover", "name": "study8677/awesome-architecture", "category": "boilerplate", "after": {"popularity": 4, "activity": 4}}

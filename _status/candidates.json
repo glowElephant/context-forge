@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-10-01",
   "policy": {
     "scope": "v1",
     "categories": [
@@ -25,242 +25,286 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "category": "skills",
       "matched_keyword": "agent-skills",
-      "stars": 135498,
-      "pushed_at": "2026-08-31T04:54:57Z",
+      "stars": 140452,
+      "pushed_at": "2026-09-30T20:31:22Z",
       "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
       "url": "https://github.com/JuliusBrussee/caveman",
       "name": "JuliusBrussee/caveman",
       "category": "skills",
-      "matched_keyword": "claude-code-skills",
-      "stars": 102117,
-      "pushed_at": "2026-08-29T22:17:17Z",
+      "matched_keyword": "agent-skills",
+      "stars": 108652,
+      "pushed_at": "2026-10-01T08:58:43Z",
       "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/coreyhaines31/marketingskills",
-      "name": "coreyhaines31/marketingskills",
+      "url": "https://github.com/tt-a1i/archify",
+      "name": "tt-a1i/archify",
       "category": "skills",
-      "matched_keyword": "claude-code-skills",
-      "stars": 46383,
-      "pushed_at": "2026-08-28T22:23:47Z",
+      "matched_keyword": "agent-skills",
+      "stars": 75520,
+      "pushed_at": "2026-09-30T15:57:42Z",
       "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/sickn33/agentic-awesome-skills",
-      "name": "sickn33/agentic-awesome-skills",
+      "url": "https://github.com/blader/humanizer",
+      "name": "blader/humanizer",
       "category": "skills",
-      "matched_keyword": "claude-code-skills",
-      "stars": 45784,
-      "pushed_at": "2026-08-31T17:15:27Z",
+      "matched_keyword": "agent-skills",
+      "stars": 53244,
+      "pushed_at": "2026-09-28T05:55:12Z",
       "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
       "url": "https://github.com/Imbad0202/academic-research-skills",
       "name": "Imbad0202/academic-research-skills",
       "category": "skills",
       "matched_keyword": "claude-code-skills",
-      "stars": 44501,
-      "pushed_at": "2026-08-30T18:02:31Z",
+      "stars": 50054,
+      "pushed_at": "2026-10-01T09:27:25Z",
       "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
-    },
-    {
-      "url": "https://github.com/HKUDS/DeepCode",
-      "name": "HKUDS/DeepCode",
-      "category": "multi-agent",
-      "matched_keyword": "multi-agent-orchestration",
-      "stars": 16457,
-      "pushed_at": "2026-08-28T15:50:29Z",
-      "popularity": 5,
-      "activity": 5,
-      "discovered_at": "2026-09-01"
-    },
-    {
-      "url": "https://github.com/zylon-ai/private-gpt",
-      "name": "zylon-ai/private-gpt",
-      "category": "mcp",
-      "matched_keyword": "mcp-servers",
-      "stars": 57489,
-      "pushed_at": "2026-09-01T06:50:16Z",
-      "popularity": 5,
-      "activity": 5,
-      "discovered_at": "2026-09-01"
-    },
-    {
-      "url": "https://github.com/t8y2/dbx",
-      "name": "t8y2/dbx",
-      "category": "mcp",
-      "matched_keyword": "mcp-servers",
-      "stars": 17646,
-      "pushed_at": "2026-09-01T09:13:17Z",
-      "popularity": 5,
-      "activity": 5,
-      "discovered_at": "2026-09-01"
-    },
-    {
-      "url": "https://github.com/MODSetter/SurfSense",
-      "name": "MODSetter/SurfSense",
-      "category": "mcp",
-      "matched_keyword": "mcp-servers",
-      "stars": 16046,
-      "pushed_at": "2026-08-31T22:36:58Z",
-      "popularity": 5,
-      "activity": 5,
-      "discovered_at": "2026-09-01"
-    },
-    {
-      "url": "https://github.com/mcp-use/mcp-use",
-      "name": "mcp-use/mcp-use",
-      "category": "mcp",
-      "matched_keyword": "mcp-servers",
-      "stars": 10549,
-      "pushed_at": "2026-08-31T17:32:02Z",
-      "popularity": 5,
-      "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
       "url": "https://github.com/Vincentwei1021/video-shotcraft",
       "name": "Vincentwei1021/video-shotcraft",
       "category": "claude-md",
       "matched_keyword": "claude-code-template",
-      "stars": 6977,
-      "pushed_at": "2026-08-30T15:22:22Z",
-      "popularity": 4,
+      "stars": 10107,
+      "pushed_at": "2026-09-28T16:15:03Z",
+      "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/elementalsouls/Claude-OSINT",
-      "name": "elementalsouls/Claude-OSINT",
-      "category": "claude-md",
-      "matched_keyword": "claude-md",
-      "stars": 2430,
-      "pushed_at": "2026-08-30T18:38:56Z",
-      "popularity": 4,
-      "activity": 5,
-      "discovered_at": "2026-09-01"
-    },
-    {
-      "url": "https://github.com/IBM/AssetOpsBench",
-      "name": "IBM/AssetOpsBench",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "name": "HKUDS/DeepCode",
       "category": "multi-agent",
       "matched_keyword": "multi-agent-orchestration",
-      "stars": 2250,
-      "pushed_at": "2026-09-01T01:49:10Z",
-      "popularity": 4,
+      "stars": 16663,
+      "pushed_at": "2026-09-28T08:06:05Z",
+      "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/maxritter/pilot-shell",
-      "name": "maxritter/pilot-shell",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "name": "bmad-code-org/BMAD-METHOD",
       "category": "spec-driven",
       "matched_keyword": "spec-driven-development",
-      "stars": 2059,
-      "pushed_at": "2026-09-01T06:53:29Z",
-      "popularity": 4,
+      "stars": 53689,
+      "pushed_at": "2026-09-29T12:49:45Z",
+      "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/0x4m4/hexstrike-ai",
-      "name": "0x4m4/hexstrike-ai",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "name": "zylon-ai/private-gpt",
       "category": "mcp",
       "matched_keyword": "mcp-servers",
-      "stars": 11479,
-      "pushed_at": "2026-08-03T14:33:09Z",
+      "stars": 57557,
+      "pushed_at": "2026-09-29T10:20:26Z",
       "popularity": 5,
-      "activity": 4,
-      "discovered_at": "2026-09-01"
+      "activity": 5,
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/langgptai/awesome-claude-prompts",
-      "name": "langgptai/awesome-claude-prompts",
-      "category": "prompts",
-      "matched_keyword": "awesome-prompts",
-      "stars": 5453,
-      "pushed_at": "2026-08-25T13:49:28Z",
-      "popularity": 4,
+      "url": "https://github.com/feder-cr/invisible_playwright_mcp",
+      "name": "feder-cr/invisible_playwright_mcp",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 31732,
+      "pushed_at": "2026-09-25T13:53:08Z",
+      "popularity": 5,
       "activity": 5,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/t8y2/dbx",
+      "name": "t8y2/dbx",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 23587,
+      "pushed_at": "2026-10-01T08:02:59Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
+      "name": "Evil0ctal/Douyin_TikTok_Download_API",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 20420,
+      "pushed_at": "2026-10-01T00:49:08Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/budtmo/docker-android",
+      "name": "budtmo/docker-android",
+      "category": "mcp",
+      "matched_keyword": "mcp-servers",
+      "stars": 15925,
+      "pushed_at": "2026-10-01T06:45:21Z",
+      "popularity": 5,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
     },
     {
       "url": "https://github.com/ageerle/ruoyi-ai",
       "name": "ageerle/ruoyi-ai",
       "category": "multi-agent",
       "matched_keyword": "multi-agent-orchestration",
-      "stars": 5674,
-      "pushed_at": "2026-08-16T12:58:53Z",
+      "stars": 5731,
+      "pushed_at": "2026-09-30T06:54:32Z",
       "popularity": 4,
-      "activity": 4,
-      "discovered_at": "2026-09-01"
+      "activity": 5,
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/0xSteph/pentest-ai-agents",
-      "name": "0xSteph/pentest-ai-agents",
+      "url": "https://github.com/matt1398/claude-devtools",
+      "name": "matt1398/claude-devtools",
       "category": "multi-agent",
       "matched_keyword": "claude-subagents",
-      "stars": 2184,
-      "pushed_at": "2026-08-16T15:07:17Z",
+      "stars": 3957,
+      "pushed_at": "2026-09-26T07:43:48Z",
       "popularity": 4,
-      "activity": 4,
-      "discovered_at": "2026-09-01"
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/IBM/AssetOpsBench",
+      "name": "IBM/AssetOpsBench",
+      "category": "multi-agent",
+      "matched_keyword": "multi-agent-orchestration",
+      "stars": 2323,
+      "pushed_at": "2026-10-01T00:51:58Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/deusyu/translate-book",
+      "name": "deusyu/translate-book",
+      "category": "multi-agent",
+      "matched_keyword": "claude-subagents",
+      "stars": 2016,
+      "pushed_at": "2026-09-24T10:11:07Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/Gentleman-Programming/gentle-ai",
+      "name": "Gentleman-Programming/gentle-ai",
+      "category": "spec-driven",
+      "matched_keyword": "spec-driven-development",
+      "stars": 7440,
+      "pushed_at": "2026-10-01T08:13:11Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/maxritter/pilot-shell",
+      "name": "maxritter/pilot-shell",
+      "category": "spec-driven",
+      "matched_keyword": "spec-driven-development",
+      "stars": 2081,
+      "pushed_at": "2026-09-29T12:17:10Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/dontriskit/awesome-ai-system-prompts",
+      "name": "dontriskit/awesome-ai-system-prompts",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 6231,
+      "pushed_at": "2026-09-29T20:38:31Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts",
+      "name": "YouMind-OpenLab/awesome-seedance-2-prompts",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 2065,
+      "pushed_at": "2026-10-01T04:49:47Z",
+      "popularity": 4,
+      "activity": 5,
+      "discovered_at": "2026-10-01"
     },
     {
       "url": "https://github.com/gemini-cli-extensions/conductor",
       "name": "gemini-cli-extensions/conductor",
       "category": "spec-driven",
       "matched_keyword": "spec-driven-development",
-      "stars": 3719,
-      "pushed_at": "2026-08-11T01:56:34Z",
+      "stars": 3752,
+      "pushed_at": "2026-09-01T22:58:24Z",
       "popularity": 4,
       "activity": 4,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
       "url": "https://github.com/study8677/awesome-architecture",
       "name": "study8677/awesome-architecture",
       "category": "boilerplate",
       "matched_keyword": "ai-coding-template",
-      "stars": 2241,
-      "pushed_at": "2026-08-21T09:41:29Z",
+      "stars": 2375,
+      "pushed_at": "2026-09-21T03:20:49Z",
       "popularity": 4,
       "activity": 4,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
-      "url": "https://github.com/bergside/awesome-design-skills",
-      "name": "bergside/awesome-design-skills",
+      "url": "https://github.com/elementalsouls/Claude-OSINT",
+      "name": "elementalsouls/Claude-OSINT",
       "category": "claude-md",
       "matched_keyword": "claude-md",
-      "stars": 2600,
-      "pushed_at": "2026-06-28T10:05:22Z",
+      "stars": 2708,
+      "pushed_at": "2026-08-30T18:38:56Z",
       "popularity": 4,
       "activity": 3,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
     },
     {
       "url": "https://github.com/Sahir619/fable-method",
       "name": "Sahir619/fable-method",
       "category": "claude-md",
       "matched_keyword": "claude-md",
-      "stars": 2269,
+      "stars": 2299,
       "pushed_at": "2026-07-15T15:11:12Z",
       "popularity": 4,
       "activity": 3,
-      "discovered_at": "2026-09-01"
+      "discovered_at": "2026-10-01"
+    },
+    {
+      "url": "https://github.com/langgptai/awesome-claude-prompts",
+      "name": "langgptai/awesome-claude-prompts",
+      "category": "prompts",
+      "matched_keyword": "awesome-prompts",
+      "stars": 5512,
+      "pushed_at": "2026-08-25T13:49:28Z",
+      "popularity": 4,
+      "activity": 3,
+      "discovered_at": "2026-10-01"
     }
   ]
 }
