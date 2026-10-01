@@ -7,16 +7,16 @@ source: https://github.com/glowElephant/awesome-claude-agents
 upstream: https://github.com/rahulvrane/awesome-claude-agents
 when_to_use: 커뮤니티 서브에이전트. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
-status: active
+status: archived
 score:
   popularity: 2
-  activity: 2
+  activity: 1
   reviews: 3
   quality: 3
   trust: 3
-  total: 13
-  tier: 2
-  last_scored: 2026-09-01
+  total: 12
+  tier: 3
+  last_scored: 2026-10-01
 ---
 
 # awesome-claude-agents

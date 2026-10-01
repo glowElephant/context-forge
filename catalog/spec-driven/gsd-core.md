@@ -9,14 +9,14 @@ when_to_use: Git Ship Done — spec-driven/meta-prompting. Spec-Driven Developme
 priority: 3
 status: active
 score:
-  popularity: 4
+  popularity: 5
   activity: 5
   reviews: 3
   quality: 3
   trust: 3
-  total: 18
+  total: 19
   tier: 2
-  last_scored: 2026-09-01
+  last_scored: 2026-10-01
 ---
 
 # gsd-core
