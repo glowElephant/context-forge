@@ -10,13 +10,13 @@ priority: 3
 status: active
 score:
   popularity: 2
-  activity: 5
+  activity: 4
   reviews: 3
   quality: 3
   trust: 3
-  total: 16
+  total: 15
   tier: 2
-  last_scored: 2026-07-01
+  last_scored: 2026-10-01
 ---
 
 # awesome-cursorrules-zh

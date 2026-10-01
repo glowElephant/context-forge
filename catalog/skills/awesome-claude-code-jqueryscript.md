@@ -9,14 +9,14 @@ when_to_use: Claude Code 도구/IDE 통합. Claude Code/Codex skills 또는 agen
 priority: 3
 status: active
 score:
-  popularity: 2
-  activity: 5
+  popularity: 3
+  activity: 4
   reviews: 3
   quality: 3
   trust: 3
   total: 16
   tier: 2
-  last_scored: 2026-07-01
+  last_scored: 2026-10-01
 ---
 
 # awesome-claude-code-jqueryscript

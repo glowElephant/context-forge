@@ -19,6 +19,12 @@
       "tier": 3
     },
     {
+      "name": "SwiftAgents",
+      "category": "agents-md",
+      "total": 13,
+      "tier": 3
+    },
+    {
       "name": "claude-code-sub-agents",
       "category": "multi-agent",
       "total": 13,
@@ -31,10 +37,16 @@
       "tier": 3
     },
     {
-      "name": "SwiftAgents",
-      "category": "agents-md",
-      "total": 13,
+      "name": "Continuous-Claude-v3",
+      "category": "multi-agent",
+      "total": 14,
       "tier": 3
+    },
+    {
+      "name": "awesome-copilot-agents",
+      "category": "multi-agent",
+      "total": 14,
+      "tier": 2
     },
     {
       "name": "claude-agents",
@@ -43,7 +55,73 @@
       "tier": 3
     },
     {
+      "name": "maestro-orchestrate",
+      "category": "multi-agent",
+      "total": 14,
+      "tier": 2
+    },
+    {
+      "name": "overstory",
+      "category": "multi-agent",
+      "total": 14,
+      "tier": 3
+    },
+    {
+      "name": "claude-code-hooks-mastery",
+      "category": "skills",
+      "total": 14,
+      "tier": 3
+    },
+    {
+      "name": "claude-code-showcase",
+      "category": "skills",
+      "total": 14,
+      "tier": 3
+    },
+    {
+      "name": "rails_ai_agents",
+      "category": "skills",
+      "total": 14,
+      "tier": 2
+    },
+    {
+      "name": "shotgun",
+      "category": "spec-driven",
+      "total": 14,
+      "tier": 2
+    },
+    {
+      "name": "agents-md-standard",
+      "category": "agents-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "awesome-openclaw-agents",
+      "category": "agents-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "open-saas",
+      "category": "boilerplate",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "awesome-design-md",
+      "category": "claude-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
       "name": "claude-code-ultimate-guide",
+      "category": "claude-md",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "my-claude-code-setup",
       "category": "claude-md",
       "total": 18,
       "tier": 2
@@ -57,6 +135,18 @@
     {
       "name": "tweakcc",
       "category": "conventions",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "Figma-Context-MCP",
+      "category": "mcp",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "awesome-claude-code-subagents",
+      "category": "multi-agent",
       "total": 18,
       "tier": 2
     },
@@ -79,6 +169,12 @@
       "tier": 2
     },
     {
+      "name": "awesome-claude-skills",
+      "category": "skills",
+      "total": 18,
+      "tier": 2
+    },
+    {
       "name": "buildwithclaude",
       "category": "skills",
       "total": 18,
@@ -91,45 +187,15 @@
       "tier": 2
     },
     {
+      "name": "ponytail",
+      "category": "skills",
+      "total": 18,
+      "tier": 2
+    },
+    {
       "name": "potpie",
       "category": "spec-driven",
       "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "awesome-claude-code-subagents",
-      "category": "multi-agent",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "gsd-core",
-      "category": "spec-driven",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "edict",
-      "category": "multi-agent",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "skills",
-      "category": "skills",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "gstack-claude-toolkit",
-      "category": "claude-md",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "wshobson-agents",
-      "category": "multi-agent",
-      "total": 19,
       "tier": 2
     },
     {
@@ -157,13 +223,31 @@
       "tier": 2
     },
     {
+      "name": "design.md",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
       "name": "everything-claude-code",
       "category": "claude-md",
       "total": 19,
       "tier": 2
     },
     {
+      "name": "gstack-claude-toolkit",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
       "name": "awesome-mcp-discovery",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "codebase-memory-mcp",
       "category": "mcp",
       "total": 19,
       "tier": 2
@@ -176,6 +260,18 @@
     },
     {
       "name": "github-mcp-server",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "headroom",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "mcp-inspector",
       "category": "mcp",
       "total": 19,
       "tier": 2
@@ -199,6 +295,12 @@
       "tier": 2
     },
     {
+      "name": "edict",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
       "name": "microsoft-agent-framework",
       "category": "multi-agent",
       "total": 19,
@@ -217,6 +319,12 @@
       "tier": 2
     },
     {
+      "name": "wshobson-agents",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
       "name": "prompts.chat",
       "category": "prompts",
       "total": 19,
@@ -224,6 +332,12 @@
     },
     {
       "name": "Understand-Anything",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "agent-skills",
       "category": "skills",
       "total": 19,
       "tier": 2
@@ -271,6 +385,12 @@
       "tier": 2
     },
     {
+      "name": "last30days-skill",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
       "name": "oh-my-openagent",
       "category": "skills",
       "total": 19,
@@ -283,6 +403,12 @@
       "tier": 2
     },
     {
+      "name": "skills",
+      "category": "skills",
+      "total": 19,
+      "tier": 2
+    },
+    {
       "name": "superpowers-skills-pattern",
       "category": "skills",
       "total": 19,
@@ -290,6 +416,12 @@
     },
     {
       "name": "github-spec-kit",
+      "category": "spec-driven",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "gsd-core",
       "category": "spec-driven",
       "total": 19,
       "tier": 2

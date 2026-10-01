@@ -10,13 +10,13 @@ priority: 3
 status: active
 score:
   popularity: 3
-  activity: 3
+  activity: 2
   reviews: 3
   quality: 3
   trust: 3
-  total: 15
+  total: 14
   tier: 2
-  last_scored: 2026-07-01
+  last_scored: 2026-10-01
 ---
 
 # awesome-copilot-agents

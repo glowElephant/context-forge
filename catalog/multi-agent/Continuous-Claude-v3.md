@@ -7,16 +7,16 @@ source: https://github.com/glowElephant/Continuous-Claude-v3
 upstream: https://github.com/parcadei/Continuous-Claude-v3
 when_to_use: 훅 ledger + MCP 격리 + 오케스트레이션. 여러 에이전트가 협업·오케스트레이션될 때 참고
 priority: 3
-status: active
+status: archived
 score:
   popularity: 4
-  activity: 2
+  activity: 1
   reviews: 3
   quality: 3
   trust: 3
-  total: 15
-  tier: 2
-  last_scored: 2026-07-01
+  total: 14
+  tier: 3
+  last_scored: 2026-10-01
 ---
 
 # Continuous-Claude-v3

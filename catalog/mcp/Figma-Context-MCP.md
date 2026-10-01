@@ -16,7 +16,7 @@ score:
   trust: 3
   total: 18
   tier: 2
-  last_scored: 2026-07-26
+  last_scored: 2026-10-01
 ---
 
 # Figma-Context-MCP

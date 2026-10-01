@@ -9,14 +9,14 @@ when_to_use: 스킬 자동활성 + 훅 + 에이전트 통합. Claude Code/Codex 
 priority: 3
 status: active
 score:
-  popularity: 4
+  popularity: 5
   activity: 3
   reviews: 3
   quality: 3
   trust: 3
-  total: 16
+  total: 17
   tier: 2
-  last_scored: 2026-07-01
+  last_scored: 2026-10-01
 ---
 
 # claude-code-infrastructure-showcase
