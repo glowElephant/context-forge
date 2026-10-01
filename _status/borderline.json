@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-10-01",
   "policy": {
     "tier1_band": [
       18,
@@ -15,8 +15,8 @@
     {
       "name": "awesome-claude-agents",
       "category": "multi-agent",
-      "total": 13,
-      "tier": 2
+      "total": 12,
+      "tier": 3
     },
     {
       "name": "claude-code-sub-agents",
@@ -33,8 +33,8 @@
     {
       "name": "SwiftAgents",
       "category": "agents-md",
-      "total": 14,
-      "tier": 2
+      "total": 13,
+      "tier": 3
     },
     {
       "name": "claude-agents",
@@ -91,20 +91,8 @@
       "tier": 2
     },
     {
-      "name": "gsd-core",
-      "category": "spec-driven",
-      "total": 18,
-      "tier": 2
-    },
-    {
       "name": "potpie",
       "category": "spec-driven",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "edict",
-      "category": "multi-agent",
       "total": 18,
       "tier": 2
     },
@@ -115,9 +103,21 @@
       "tier": 2
     },
     {
+      "name": "gsd-core",
+      "category": "spec-driven",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "edict",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
       "name": "skills",
       "category": "skills",
-      "total": 18,
+      "total": 19,
       "tier": 2
     },
     {

@@ -7,16 +7,16 @@ source: https://github.com/glowElephant/SwiftAgents
 upstream: https://github.com/twostraws/SwiftAgents
 when_to_use: Swift/SwiftUI용 AGENTS.md 레퍼런스. AGENTS.md(IDE-agnostic) 컨벤션이 필요할 때 참고
 priority: 3
-status: active
+status: archived
 score:
   popularity: 3
-  activity: 2
+  activity: 1
   reviews: 3
   quality: 3
   trust: 3
-  total: 14
-  tier: 2
-  last_scored: 2026-09-01
+  total: 13
+  tier: 3
+  last_scored: 2026-10-01
 ---
 
 # SwiftAgents
