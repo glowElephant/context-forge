@@ -10,13 +10,13 @@ priority: 3
 status: active
 score:
   popularity: 2
-  activity: 3
+  activity: 5
   reviews: 3
   quality: 3
   trust: 3
-  total: 14
+  total: 16
   tier: 2
-  last_scored: 2026-10-01
+  last_scored: 2026-11-01
 ---
 
 # maestro-orchestrate

@@ -17,7 +17,7 @@ score:
   trust: 3
   total: 19
   tier: 2
-  last_scored: 2026-10-01
+  last_scored: 2026-11-01
 ---
 
 # Copilot instructions pattern

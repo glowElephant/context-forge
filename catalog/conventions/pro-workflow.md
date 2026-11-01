@@ -10,13 +10,13 @@ priority: 3
 status: active
 score:
   popularity: 4
-  activity: 5
+  activity: 3
   reviews: 3
   quality: 3
   trust: 3
-  total: 18
+  total: 16
   tier: 2
-  last_scored: 2026-10-01
+  last_scored: 2026-11-01
 ---
 
 # pro-workflow

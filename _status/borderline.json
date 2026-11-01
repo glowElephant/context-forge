@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-11-01",
   "policy": {
     "tier1_band": [
       18,
@@ -37,28 +37,22 @@
       "tier": 3
     },
     {
+      "name": "awesome-copilot-agents",
+      "category": "multi-agent",
+      "total": 13,
+      "tier": 3
+    },
+    {
       "name": "Continuous-Claude-v3",
       "category": "multi-agent",
       "total": 14,
       "tier": 3
     },
     {
-      "name": "awesome-copilot-agents",
-      "category": "multi-agent",
-      "total": 14,
-      "tier": 2
-    },
-    {
       "name": "claude-agents",
       "category": "multi-agent",
       "total": 14,
       "tier": 3
-    },
-    {
-      "name": "maestro-orchestrate",
-      "category": "multi-agent",
-      "total": 14,
-      "tier": 2
     },
     {
       "name": "overstory",
@@ -91,26 +85,8 @@
       "tier": 2
     },
     {
-      "name": "agents-md-standard",
-      "category": "agents-md",
-      "total": 18,
-      "tier": 2
-    },
-    {
       "name": "awesome-openclaw-agents",
       "category": "agents-md",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "open-saas",
-      "category": "boilerplate",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "awesome-design-md",
-      "category": "claude-md",
       "total": 18,
       "tier": 2
     },
@@ -121,32 +97,8 @@
       "tier": 2
     },
     {
-      "name": "my-claude-code-setup",
-      "category": "claude-md",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "pro-workflow",
-      "category": "conventions",
-      "total": 18,
-      "tier": 2
-    },
-    {
       "name": "tweakcc",
       "category": "conventions",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "Figma-Context-MCP",
-      "category": "mcp",
-      "total": 18,
-      "tier": 2
-    },
-    {
-      "name": "awesome-claude-code-subagents",
-      "category": "multi-agent",
       "total": 18,
       "tier": 2
     },
@@ -169,12 +121,6 @@
       "tier": 2
     },
     {
-      "name": "awesome-claude-skills",
-      "category": "skills",
-      "total": 18,
-      "tier": 2
-    },
-    {
       "name": "buildwithclaude",
       "category": "skills",
       "total": 18,
@@ -187,15 +133,51 @@
       "tier": 2
     },
     {
-      "name": "ponytail",
-      "category": "skills",
+      "name": "potpie",
+      "category": "spec-driven",
       "total": 18,
       "tier": 2
     },
     {
-      "name": "potpie",
-      "category": "spec-driven",
+      "name": "design.md",
+      "category": "claude-md",
       "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "awesome-mcp-discovery",
+      "category": "mcp",
+      "total": 18,
+      "tier": 2
+    },
+    {
+      "name": "open-saas",
+      "category": "boilerplate",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "awesome-design-md",
+      "category": "claude-md",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "Figma-Context-MCP",
+      "category": "mcp",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "awesome-claude-code-subagents",
+      "category": "multi-agent",
+      "total": 19,
+      "tier": 2
+    },
+    {
+      "name": "ponytail",
+      "category": "skills",
+      "total": 19,
       "tier": 2
     },
     {
@@ -223,12 +205,6 @@
       "tier": 2
     },
     {
-      "name": "design.md",
-      "category": "claude-md",
-      "total": 19,
-      "tier": 2
-    },
-    {
       "name": "everything-claude-code",
       "category": "claude-md",
       "total": 19,
@@ -237,12 +213,6 @@
     {
       "name": "gstack-claude-toolkit",
       "category": "claude-md",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "awesome-mcp-discovery",
-      "category": "mcp",
       "total": 19,
       "tier": 2
     },
@@ -291,12 +261,6 @@
     {
       "name": "playwright-mcp",
       "category": "mcp",
-      "total": 19,
-      "tier": 2
-    },
-    {
-      "name": "edict",
-      "category": "multi-agent",
       "total": 19,
       "tier": 2
     },
