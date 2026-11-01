@@ -342,3 +342,34 @@
 {"ts": "2026-11-01T10:16:04+00:00", "event": "rescore", "name": "maestro-orchestrate", "category": "multi-agent", "before": {"total": 14, "tier": 2, "status": "active"}, "after": {"total": 16, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-11-01T10:16:09+00:00", "event": "rescore", "name": "awesome-claude-skills", "category": "skills", "before": {"total": 18, "tier": 2, "status": "active"}, "after": {"total": 17, "tier": 2, "status": "active"}, "reason": "rescore"}
 {"ts": "2026-11-01T10:16:13+00:00", "event": "rescore", "name": "ponytail", "category": "skills", "before": {"total": 18, "tier": 2, "status": "active"}, "after": {"total": 19, "tier": 2, "status": "active"}, "reason": "rescore"}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "morluto/rea", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "JuliusBrussee/caveman", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "paperclipai/paperclip", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "Leonxlnx/taste-skill", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "pbakaus/impeccable", "category": "skills", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "gamedev-skills/awesome-gamedev-agent-skills", "category": "claude-md", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "elementalsouls/Claude-OSINT", "category": "claude-md", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "nateherkai/herk-edit-kit", "category": "claude-md", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "Sahir619/fable-method", "category": "claude-md", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "nirholas/fresh-start", "category": "agents-md", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "HKUDS/DeepCode", "category": "multi-agent", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "IBM/AssetOpsBench", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "soumatheusgomes/vibe-coding-toolkit", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "deusyu/translate-book", "category": "multi-agent", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "ageerle/ruoyi-ai", "category": "multi-agent", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "bmad-code-org/BMAD-METHOD", "category": "spec-driven", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "google/elephant-goldfish-model", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "Gentleman-Programming/gentle-ai", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "JetBrains/thinkrail", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "maxritter/qualitylayer", "category": "spec-driven", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "zylon-ai/private-gpt", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "DayuanJiang/next-ai-draw-io", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "t8y2/dbx", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "Evil0ctal/Douyin_TikTok_Download_API", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "xerj-org/xerj", "category": "mcp", "after": {"popularity": 5, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "ai-boost/awesome-image-video-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "EgoAlpha/prompt-in-context-learning", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "YouMind-OpenLab/awesome-seedance-2-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 5}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "langgptai/awesome-claude-prompts", "category": "prompts", "after": {"popularity": 4, "activity": 4}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "Evolink-AI/awesome-gpt-image-2-API-Prompts", "category": "prompts", "after": {"popularity": 5, "activity": 2}}
+{"ts": "2026-11-01T11:07:42+00:00", "event": "discover", "name": "study8677/awesome-architecture", "category": "boilerplate", "after": {"popularity": 4, "activity": 3}}
